@@ -1,48 +1,48 @@
 # POE2 Rare Pricing — Runes of Aldur
 
-_Generated 2026-07-04T00:19:06+00:00 by POE2-Scanner 0.1.0._
+_Generated 2026-07-04T02:28:37+00:00 by POE2-Scanner 0.1.0._
 
 ## Dataset
-- Rare listings: **74190** (74190 priced in exalted)
-- Distinct bases: 828 · distinct mods: 1852 · mod rows: 364673
-- Sold signals: **6779** sold · 9756 censored (left the sample window, fate unknown)
-- Observed: 2026-07-01T20:49:02+00:00 → 2026-07-04T00:10:33+00:00
+- Rare listings: **80110** (80110 priced in exalted)
+- Distinct bases: 838 · distinct mods: 1900 · mod rows: 392400
+- Sold signals: **11201** sold · 13012 censored (left the sample window, fate unknown)
+- Observed: 2026-07-01T20:49:02+00:00 → 2026-07-04T02:23:33+00:00
 
 ## Prediction accuracy (holdout backtest)
 
 Newest ~20% of each group held out (split at scan boundaries, relist duplicates dropped); equation fitted on the rest predicts them.
 
-- Typical error: **×7.50** (median |log error| 2.0154)
-- Within ±30% of asking price: **29%**
-- Skill vs constant-price guess: **+0.04** (> 0 = the mods carry signal)
+- Typical error: **×8.17** (median |log error| 2.1002)
+- Within ±30% of asking price: **33%**
+- Skill vs constant-price guess: **+0.01** (> 0 = the mods carry signal)
 - Calibration: 66% of actuals above prediction (target ≈ 75%)
-- Premium segment (5ex+): skill **+0.12** · typical error ×32.84 · ±30% 6% · n=10548
-- Premium segment (60ex+): skill **+0.11** · typical error ×183.61 · ±30% 0% · n=6027
-- Sold listings (clearing prices): skill **-0.04** · typical error ×2.49 · ±30% 44% · n=3566
+- Premium segment (5ex+): skill **+0.08** · typical error ×23.41 · ±30% 18% · n=11421
+- Premium segment (60ex+): skill **+0.08** · typical error ×110.45 · ±30% 1% · n=6543
+- Sold listings (clearing prices): skill **-0.01** · typical error ×15.33 · ±30% 28% · n=4996
 
 | group | n_test | ×err | ±30% | skill | gbm |
 |---|---|---|---|---|---|
-| accessory.belt | 1276 | ×9.51 | 24% | +0.03 | +0.05 |
-| accessory.ring | 1167 | ×6.46 | 7% | +0.03 | +0.08 |
-| accessory.amulet | 1165 | ×22.92 | 4% | -0.15 | -0.12 |
-| armour.helmet | 1153 | ×8.32 | 20% | +0.01 | +0.08 |
-| armour.chest | 1136 | ×8.30 | 23% | +0.01 | +0.07 |
-| armour.gloves | 1061 | ×8.22 | 26% | +0.02 | +0.04 |
-| other | 1004 | ×9.97 | 34% | +0.42 | +0.41 |
-| armour.boots | 998 | ×8.65 | 27% | +0.00 | +0.08 |
-| weapon.wand | 845 | ×9.31 | 34% | +0.02 | +0.07 |
-| weapon.bow | 760 | ×8.95 | 32% | +0.04 | +0.10 |
-| weapon.crossbow | 717 | ×8.03 | 22% | -0.01 | +0.11 |
-| jewel | 581 | ×5.87 | 9% | +0.06 | +0.27 |
-| weapon.sceptre | 213 | ×1.00 | 99% | +0.00 | +0.00 |
-| weapon.spear | 182 | ×1.00 | 100% | +0.00 | +0.00 |
-| armour.focus | 170 | ×1.00 | 99% | +0.00 | +0.00 |
-| armour.shield | 144 | ×1.00 | 99% | +0.00 | +0.00 |
-| weapon.staff | 144 | ×1.00 | 98% | +0.00 | +0.00 |
-| weapon.warstaff | 143 | ×1.00 | 99% | +0.00 | +0.00 |
+| armour.chest | 1297 | ×10.00 | 39% | -0.01 | -0.16 |
+| accessory.amulet | 1292 | ×19.54 | 6% | -0.12 | -0.12 |
+| accessory.belt | 1286 | ×9.00 | 25% | +0.02 | +0.06 |
+| accessory.ring | 1272 | ×9.61 | 5% | -0.26 | -0.20 |
+| armour.helmet | 1221 | ×10.00 | 38% | +0.01 | -0.07 |
+| armour.boots | 1157 | ×10.00 | 31% | -0.01 | -0.09 |
+| armour.gloves | 1122 | ×10.00 | 33% | -0.00 | -0.08 |
+| other | 1007 | ×9.99 | 36% | +0.43 | +0.41 |
+| weapon.wand | 882 | ×9.10 | 37% | -0.01 | +0.07 |
+| weapon.bow | 807 | ×8.97 | 33% | -0.02 | +0.08 |
+| weapon.crossbow | 772 | ×8.54 | 30% | +0.02 | +0.11 |
+| jewel | 713 | ×7.43 | 7% | -0.06 | +0.21 |
+| weapon.sceptre | 220 | ×1.00 | 99% | +0.00 | +0.00 |
+| weapon.spear | 191 | ×1.00 | 100% | +0.00 | +0.00 |
+| armour.focus | 183 | ×1.00 | 99% | +0.00 | +0.00 |
+| weapon.warstaff | 168 | ×1.00 | 100% | +0.00 | +0.00 |
+| weapon.staff | 166 | ×1.00 | 98% | +0.00 | +0.00 |
+| armour.shield | 150 | ×1.00 | 99% | +0.00 | +0.00 |
 | armour.quiver | 116 | ×1.00 | 97% | +0.00 | +0.00 |
-| weapon.twomace | 67 | ×1.00 | 99% | +0.00 | +0.00 |
-| flask.charm | 19 | ×1.45 | 21% | -0.07 | -0.08 |
+| weapon.twomace | 99 | ×1.00 | 99% | +0.00 | +0.00 |
+| flask.charm | 30 | ×1.28 | 60% | +0.00 | -0.01 |
 
 ## Fitted price equations
 
@@ -50,235 +50,235 @@ Consumer evaluates: `price_exalted = exp(intercept + Σ coef[stat_id] × mod_val
 
 _Grouped by **category**._
 
-### other — n=8608, R²=-0.0936
+### other — n=9323, R²=-0.1388
 
-intercept: `1.5270`  ·  log_price: True  ·  ilvl: `0.00513`  ·  n_mods: `0.04104`  ·  n_top_tier: `0.13919`  ·  corrupted: `0.42564`  ·  n_sockets: `-0.11266`  ·  quality: `-0.01353`
-
-| stat_id | coef |
-|---|---|
-| `explicit.stat_124131830@T1` | 2.39410 |
-| `explicit.stat_124131830@T2` | 1.16424 |
-| `explicit.stat_124131830` | -0.99010 |
-| `implicit.stat_718638445` | 0.45069 |
-| `implicit.stat_3182714256` | 0.44582 |
-| `implicit.stat_1379411836` | -0.29487 |
-| `explicit.stat_4052037485@T1` | -0.22896 |
-| `explicit.stat_3299347043@T2` | -0.22241 |
-| `explicit.stat_3299347043@T1` | -0.20986 |
-| `implicit.stat_4041853756` | 0.19390 |
-| `implicit.stat_3879011313` | 0.19340 |
-| `implicit.stat_958696139` | -0.18904 |
-
-### accessory.belt — n=5797, R²=-1.2113
-
-intercept: `4.6152`  ·  log_price: True  ·  ilvl: `-0.05609`  ·  n_mods: `-0.02308`  ·  n_top_tier: `0.01860`  ·  corrupted: `0.08565`  ·  n_sockets: `-0.19058`
+intercept: `1.5046`  ·  log_price: True  ·  ilvl: `0.00501`  ·  n_mods: `0.05038`  ·  n_top_tier: `0.14579`  ·  corrupted: `0.41899`  ·  n_sockets: `-0.11372`  ·  quality: `-0.01254`
 
 | stat_id | coef |
 |---|---|
-| `crafted.stat_3249412463` | 1.75292 |
-| `explicit.stat_2923486259@T2` | 1.01768 |
-| `explicit.stat_1836676211@T1` | 0.87770 |
-| `explicit.stat_4220027924@T1` | 0.85516 |
-| `explicit.stat_3372524247@T1` | 0.53871 |
-| `explicit.stat_3299347043@T1` | -0.27650 |
-| `explicit.stat_2923486259@T1` | -0.20365 |
-| `explicit.stat_2639966148` | 0.11840 |
-| `explicit.stat_3299347043@T2` | -0.10420 |
-| `explicit.stat_174664100` | 0.09811 |
-| `explicit.stat_2881298780@T2` | 0.07961 |
-| `explicit.stat_4080418644@T2` | -0.07604 |
+| `explicit.stat_124131830` | -0.48931 |
+| `implicit.stat_718638445` | 0.44693 |
+| `implicit.stat_3182714256` | 0.44202 |
+| `explicit.stat_2974417149@T1` | 0.30512 |
+| `implicit.stat_1379411836` | -0.29291 |
+| `explicit.stat_3299347043@T2` | -0.23741 |
+| `explicit.stat_4052037485@T1` | -0.23703 |
+| `explicit.stat_3299347043@T1` | -0.21288 |
+| `explicit.stat_1050105434@T1` | -0.20156 |
+| `implicit.stat_4041853756` | 0.19614 |
+| `implicit.stat_3879011313` | 0.19566 |
+| `explicit.stat_789117908@T1` | 0.19114 |
 
-### armour.chest — n=5574, R²=-1.3438
+### accessory.belt — n=6200, R²=-1.2512
 
-intercept: `3.4813`  ·  log_price: True  ·  ilvl: `-0.04343`  ·  n_mods: `-0.02530`  ·  n_top_tier: `0.38249`  ·  corrupted: `0.08139`  ·  n_sockets: `0.03362`  ·  quality: `0.01554`
-
-| stat_id | coef |
-|---|---|
-| `rune.stat_836936635` | 4.04082 |
-| `explicit.stat_3981240776@T1` | 1.50728 |
-| `explicit.stat_3372524247@T1` | 0.86693 |
-| `explicit.stat_1671376347@T1` | 0.83318 |
-| `explicit.stat_2339757871@T1` | -0.63449 |
-| `explicit.stat_915769802@T1` | -0.56713 |
-| `explicit.stat_4052037485@T1` | -0.56377 |
-| `explicit.stat_3261801346@T2` | -0.51133 |
-| `explicit.stat_3261801346@T1` | -0.50720 |
-| `explicit.stat_2339757871@T2` | -0.49809 |
-| `explicit.stat_3981240776@T2` | 0.48726 |
-| `explicit.stat_3325883026@T2` | -0.47101 |
-
-### armour.helmet — n=5570, R²=-1.2651
-
-intercept: `3.9312`  ·  log_price: True  ·  ilvl: `-0.04981`  ·  n_mods: `-0.02777`  ·  n_top_tier: `0.69057`  ·  corrupted: `0.13719`  ·  n_sockets: `0.01134`  ·  quality: `0.02366`
+intercept: `4.5106`  ·  log_price: True  ·  ilvl: `-0.05456`  ·  n_mods: `-0.02059`  ·  n_top_tier: `0.04110`  ·  corrupted: `0.06513`  ·  n_sockets: `-0.17773`
 
 | stat_id | coef |
 |---|---|
-| `crafted.stat_3917489142@T1` | 2.85943 |
-| `explicit.stat_3372524247@T1` | 1.30872 |
-| `explicit.stat_3325883026@T1` | -0.91814 |
-| `explicit.stat_1263695895@T1` | -0.90451 |
-| `explicit.stat_3362812763@T1` | -0.87302 |
-| `explicit.stat_3033371881@T2` | -0.87061 |
-| `explicit.stat_2923486259@T1` | -0.86339 |
-| `explicit.stat_3033371881@T1` | -0.86193 |
-| `explicit.stat_4052037485@T2` | -0.83806 |
-| `explicit.stat_3325883026@T2` | -0.83508 |
-| `explicit.stat_3362812763@T2` | -0.82286 |
-| `explicit.stat_124859000@T1` | -0.82227 |
+| `explicit.stat_2923486259@T2` | 1.27914 |
+| `crafted.stat_3249412463` | 1.01061 |
+| `explicit.stat_1836676211@T1` | 0.74823 |
+| `implicit.stat_731781020` | -0.22554 |
+| `explicit.stat_3299347043@T1` | -0.21421 |
+| `explicit.stat_3372524247@T1` | 0.20114 |
+| `explicit.stat_3299347043@T2` | -0.18069 |
+| `explicit.stat_2639966148` | 0.13410 |
+| `explicit.stat_4220027924@T1` | 0.10671 |
+| `explicit.stat_809229260@T2` | -0.10467 |
+| `explicit.stat_2923486259@T1` | -0.09898 |
+| `explicit.stat_1389754388@T1` | -0.09518 |
 
-### accessory.amulet — n=5484, R²=-2.2561
+### armour.helmet — n=5966, R²=-0.207
 
-intercept: `5.5531`  ·  log_price: True  ·  ilvl: `-0.05850`  ·  n_mods: `-0.18311`  ·  n_top_tier: `0.01247`  ·  corrupted: `0.01781`  ·  n_sockets: `-0.47598`
-
-| stat_id | coef |
-|---|---|
-| `explicit.stat_1202301673@T2` | 3.13078 |
-| `explicit.stat_1444556985@T1` | 2.60640 |
-| `explicit.stat_983749596@T1` | -2.15859 |
-| `explicit.stat_1671376347@T1` | 1.94829 |
-| `explicit.stat_9187492@T2` | -1.89912 |
-| `explicit.stat_2923486259@T1` | -1.89259 |
-| `explicit.stat_3981240776@T2` | 1.74430 |
-| `explicit.stat_3981240776@T1` | 1.67576 |
-| `explicit.stat_4220027924@T1` | 1.45637 |
-| `explicit.stat_9187492` | 1.34366 |
-| `explicit.stat_124131830` | 1.32436 |
-| `explicit.stat_983749596@T2` | -1.30165 |
-
-### accessory.ring — n=5420, R²=-2.0252
-
-intercept: `4.7790`  ·  log_price: True  ·  ilvl: `-0.03802`  ·  n_mods: `-0.21497`  ·  n_top_tier: `0.55549`  ·  corrupted: `0.27530`  ·  n_sockets: `3.14250`  ·  quality: `-0.00059`
+intercept: `2.3026`  ·  log_price: True  ·  ilvl: `-0.00000`  ·  n_mods: `-0.00001`  ·  n_top_tier: `0.56372`  ·  corrupted: `0.00006`  ·  n_sockets: `-0.00002`  ·  quality: `-0.00000`
 
 | stat_id | coef |
 |---|---|
-| `explicit.stat_3299347043@T1` | -1.81791 |
-| `explicit.stat_1573130764@T1` | -1.77365 |
-| `explicit.stat_1263695895@T2` | -1.74205 |
-| `explicit.stat_2231156303@T2` | -1.38478 |
-| `explicit.stat_2231156303@T1` | -1.31634 |
-| `explicit.stat_1671376347@T1` | -1.30888 |
-| `explicit.stat_1263695895@T1` | -1.29962 |
-| `explicit.stat_2923486259@T2` | -1.19050 |
-| `explicit.stat_1050105434@T2` | -1.15772 |
-| `explicit.stat_1050105434@T1` | -1.09347 |
-| `explicit.stat_3962278098@T2` | -1.04172 |
-| `explicit.stat_1573130764@T2` | -1.03876 |
+| `explicit.stat_2923486259@T1` | 1.22787 |
+| `explicit.stat_803737631@T2` | -0.56376 |
+| `explicit.stat_3321629045@T1` | -0.56375 |
+| `explicit.stat_803737631@T1` | -0.56375 |
+| `explicit.stat_3362812763@T2` | -0.56374 |
+| `explicit.stat_328541901@T1` | -0.56374 |
+| `explicit.stat_3362812763@T1` | -0.56373 |
+| `explicit.stat_1062208444@T2` | -0.56373 |
+| `explicit.stat_1263695895@T1` | -0.56373 |
+| `explicit.stat_3325883026@T2` | -0.56373 |
+| `explicit.stat_3261801346@T2` | -0.56373 |
+| `explicit.stat_3484657501@T1` | -0.56373 |
 
-### armour.gloves — n=4992, R²=-1.3218
+### armour.chest — n=5961, R²=-0.2803
 
-intercept: `3.8875`  ·  log_price: True  ·  ilvl: `-0.04919`  ·  n_mods: `0.00402`  ·  n_top_tier: `0.30540`  ·  corrupted: `-0.16332`  ·  n_sockets: `0.07456`  ·  quality: `0.00373`
-
-| stat_id | coef |
-|---|---|
-| `explicit.stat_1671376347@T1` | 1.55272 |
-| `explicit.stat_2339757871@T1` | -1.44723 |
-| `explicit.stat_3556824919@T1` | 1.29078 |
-| `explicit.stat_1573130764@T2` | 1.17443 |
-| `explicit.stat_2451402625@T1` | 1.14873 |
-| `explicit.stat_2557965901@T2` | -0.48155 |
-| `explicit.stat_9187492@T2` | -0.47745 |
-| `explicit.stat_2557965901@T1` | -0.47324 |
-| `explicit.stat_3033371881@T2` | -0.41834 |
-| `explicit.stat_3033371881@T1` | -0.40311 |
-| `explicit.stat_681332047@T2` | -0.40064 |
-| `explicit.stat_4015621042@T2` | 0.39053 |
-
-### armour.boots — n=4956, R²=-1.0515
-
-intercept: `3.4207`  ·  log_price: True  ·  ilvl: `-0.04313`  ·  n_mods: `-0.02236`  ·  n_top_tier: `0.50550`  ·  corrupted: `0.15070`  ·  n_sockets: `0.06969`  ·  quality: `0.04468`
+intercept: `2.3027`  ·  log_price: True  ·  ilvl: `-0.00000`  ·  n_mods: `-0.00001`  ·  n_top_tier: `0.01422`  ·  corrupted: `0.00007`  ·  n_sockets: `-0.00002`  ·  quality: `-0.00001`
 
 | stat_id | coef |
 |---|---|
-| `explicit.stat_2250533757@T1` | 1.72696 |
-| `explicit.stat_2923486259@T1` | 0.99651 |
-| `explicit.stat_2339757871@T1` | -0.73367 |
-| `explicit.stat_3639275092@T1` | -0.62053 |
-| `explicit.stat_3362812763@T1` | -0.61664 |
-| `explicit.stat_3362812763@T2` | -0.60765 |
-| `explicit.stat_1062208444@T1` | -0.59865 |
-| `explicit.stat_3033371881@T2` | -0.59522 |
-| `explicit.stat_3484657501@T2` | -0.59283 |
-| `explicit.stat_3261801346@T2` | -0.58415 |
-| `explicit.stat_3639275092@T2` | -0.57487 |
-| `explicit.stat_3321629045@T1` | -0.57306 |
+| `explicit.stat_2923486259@T1` | 1.77745 |
+| `crafted.stat_4220027924` | 0.03686 |
+| `desecrated.stat_4015621042` | 0.03180 |
+| `desecrated.stat_4220027924` | -0.02529 |
+| `explicit.stat_3523867985` | 0.02347 |
+| `crafted.stat_1671376347` | -0.01903 |
+| `desecrated.stat_3372524247` | -0.01900 |
+| `desecrated.stat_1671376347` | -0.01898 |
+| `implicit.stat_4220027924` | -0.01863 |
+| `explicit.stat_1671376347` | -0.01863 |
+| `pseudo.total_ele_res` | 0.01863 |
+| `explicit.stat_3372524247` | -0.01863 |
 
-### weapon.wand — n=4050, R²=-1.4877
+### accessory.amulet — n=5946, R²=-2.4068
 
-intercept: `3.1611`  ·  log_price: True  ·  ilvl: `-0.03951`  ·  n_mods: `-0.01445`  ·  n_top_tier: `0.06504`  ·  corrupted: `0.02493`  ·  n_sockets: `0.00854`  ·  quality: `0.01624`
-
-| stat_id | coef |
-|---|---|
-| `explicit.stat_591105508@T1` | 2.34042 |
-| `explicit.stat_1600707273@T1` | 2.25432 |
-| `explicit.stat_4226189338@T1` | 2.23459 |
-| `explicit.stat_736967255@T2` | 2.18700 |
-| `explicit.stat_1545858329@T1` | 2.17901 |
-| `explicit.stat_2974417149@T1` | 2.17384 |
-| `explicit.stat_124131830@T1` | 2.07705 |
-| `explicit.stat_1600707273@T2` | 1.69965 |
-| `crafted.stat_124131830` | 0.96181 |
-| `explicit.stat_2254480358@T1` | 0.86894 |
-| `explicit.stat_2968503605@T1` | 0.46801 |
-| `rune.stat_3278136794` | 0.25067 |
-
-### weapon.bow — n=3486, R²=-1.379
-
-intercept: `3.3064`  ·  log_price: True  ·  ilvl: `-0.04093`  ·  n_mods: `-0.02447`  ·  n_top_tier: `0.39710`  ·  corrupted: `0.20032`  ·  n_sockets: `0.01526`  ·  quality: `-0.00792`
+intercept: `5.8895`  ·  log_price: True  ·  ilvl: `-0.06173`  ·  n_mods: `-0.25412`  ·  n_top_tier: `0.21980`  ·  corrupted: `-0.35039`  ·  n_sockets: `-0.89814`
 
 | stat_id | coef |
 |---|---|
-| `desecrated.stat_666077204@T1` | -7.18776 |
-| `explicit.stat_1509134228@T1` | 1.85423 |
-| `explicit.stat_1202301673@T1` | 1.83353 |
-| `explicit.stat_2463230181@T1` | 1.80934 |
-| `desecrated.stat_210067635@T1` | -1.65792 |
-| `explicit.stat_821021828@T1` | -0.70244 |
-| `crafted.stat_3035140377` | 0.63206 |
-| `explicit.stat_821021828@T2` | -0.61185 |
-| `desecrated.stat_666077204` | 0.49808 |
-| `explicit.stat_1940865751@T1` | -0.49688 |
-| `explicit.stat_1263695895@T1` | -0.47372 |
-| `explicit.stat_691932474@T2` | -0.47208 |
+| `explicit.stat_1202301673@T2` | 3.12844 |
+| `explicit.stat_983749596@T1` | -3.04613 |
+| `explicit.stat_2923486259@T1` | -2.77683 |
+| `explicit.stat_2923486259@T2` | -2.04007 |
+| `explicit.stat_9187492@T2` | -1.98432 |
+| `explicit.stat_1444556985@T1` | 1.66112 |
+| `explicit.stat_983749596@T2` | -1.60676 |
+| `explicit.stat_3299347043@T1` | -1.49312 |
+| `explicit.stat_587431675@T2` | -1.39439 |
+| `explicit.stat_803737631@T1` | -1.34142 |
+| `explicit.stat_2162097452@T2` | -1.33163 |
+| `explicit.stat_9187492` | 1.29458 |
 
-### weapon.crossbow — n=3288, R²=-1.3094
+### accessory.ring — n=5866, R²=-2.0551
 
-intercept: `3.3642`  ·  log_price: True  ·  ilvl: `-0.04285`  ·  n_mods: `-0.00013`  ·  n_top_tier: `0.45930`  ·  corrupted: `0.04871`  ·  n_sockets: `0.06319`  ·  quality: `-0.03406`
-
-| stat_id | coef |
-|---|---|
-| `explicit.stat_709508406@T1` | 2.16505 |
-| `explicit.stat_3336890334@T1` | 1.96854 |
-| `explicit.stat_1037193709@T1` | 1.90477 |
-| `explicit.stat_691932474@T1` | -1.86661 |
-| `explicit.stat_1509134228@T1` | 0.92212 |
-| `explicit.stat_1263695895@T2` | -0.80567 |
-| `crafted.stat_3035140377` | 0.73195 |
-| `explicit.stat_1263695895@T1` | 0.66455 |
-| `explicit.stat_2694482655@T1` | -0.60983 |
-| `explicit.stat_518292764@T1` | 0.60547 |
-| `explicit.stat_1509134228@T2` | -0.59802 |
-| `explicit.stat_3695891184@T2` | -0.56532 |
-
-### jewel — n=3016, R²=-0.8203
-
-intercept: `-1.5766`  ·  log_price: True  ·  ilvl: `0.03499`  ·  n_mods: `0.25245`  ·  n_top_tier: `-0.50215`  ·  corrupted: `0.87543`
+intercept: `4.6643`  ·  log_price: True  ·  ilvl: `-0.03580`  ·  n_mods: `-0.23007`  ·  n_top_tier: `0.61273`  ·  corrupted: `0.19527`  ·  n_sockets: `3.20735`  ·  quality: `0.03250`
 
 | stat_id | coef |
 |---|---|
-| `explicit.stat_1569101201@T1` | 6.79647 |
-| `explicit.stat_1594812856@T1` | 6.76572 |
-| `explicit.stat_2527686725@T1` | 6.69534 |
-| `explicit.stat_2301718443@T1` | -6.32414 |
-| `explicit.stat_1569159338@T1` | 5.32449 |
-| `explicit.stat_1459321413@T1` | 5.07031 |
-| `explicit.stat_3787460122@T1` | 4.70778 |
-| `explicit.stat_3851254963@T1` | 4.02667 |
-| `explicit.stat_293638271@T1` | -4.00069 |
-| `explicit.stat_2456523742@T1` | 3.98610 |
-| `explicit.stat_2011656677@T1` | 3.82074 |
-| `explicit.stat_3283482523@T1` | -3.53599 |
+| `explicit.stat_3299347043@T1` | -2.48516 |
+| `explicit.stat_1263695895@T2` | -1.84347 |
+| `explicit.stat_2557965901@T1` | -1.74761 |
+| `explicit.stat_1573130764@T1` | -1.62177 |
+| `explicit.stat_1368271171@T1` | -1.61574 |
+| `explicit.stat_1671376347@T1` | -1.54237 |
+| `explicit.stat_1573130764@T2` | -1.52990 |
+| `explicit.stat_1050105434@T2` | -1.28416 |
+| `explicit.stat_2557965901@T2` | -1.15346 |
+| `explicit.stat_1379411836@T1` | -1.14495 |
+| `explicit.stat_3299347043@T2` | -1.13460 |
+| `explicit.stat_1050105434@T1` | -1.13354 |
 
-### weapon.sceptre — n=1043, R²=0.0
+### armour.gloves — n=5378, R²=-0.2458
+
+intercept: `2.3026`  ·  log_price: True  ·  ilvl: `-0.00000`  ·  n_mods: `-0.00000`  ·  n_top_tier: `0.00008`  ·  corrupted: `0.00002`  ·  n_sockets: `0.00001`  ·  quality: `0.00000`
+
+| stat_id | coef |
+|---|---|
+| `desecrated.stat_3032590688` | 0.20510 |
+| `explicit.stat_2923486259` | -0.11327 |
+| `pseudo.total_chaos_res` | 0.11327 |
+| `explicit.stat_4067062424@T1` | 0.03310 |
+| `explicit.stat_2339757871@T1` | -0.00082 |
+| `desecrated.stat_3299347043` | 0.00041 |
+| `explicit.stat_3556824919@T1` | 0.00016 |
+| `explicit.stat_4052037485@T1` | -0.00013 |
+| `explicit.stat_2451402625@T2` | -0.00013 |
+| `explicit.stat_4015621042@T1` | -0.00013 |
+| `explicit.stat_2557965901@T1` | -0.00012 |
+| `explicit.stat_2797971005@T2` | -0.00011 |
+
+### armour.boots — n=5344, R²=-0.1861
+
+intercept: `2.3027`  ·  log_price: True  ·  ilvl: `-0.00000`  ·  n_mods: `-0.00002`  ·  n_top_tier: `0.34246`  ·  corrupted: `0.00003`  ·  n_sockets: `-0.00001`  ·  quality: `-0.00000`
+
+| stat_id | coef |
+|---|---|
+| `explicit.stat_1062208444@T2` | -0.41779 |
+| `explicit.stat_1062208444@T1` | -0.36694 |
+| `explicit.stat_2339757871@T1` | -0.34269 |
+| `explicit.stat_3484657501@T2` | -0.34253 |
+| `explicit.stat_3261801346@T2` | -0.34253 |
+| `explicit.stat_3639275092@T1` | -0.34252 |
+| `explicit.stat_3362812763@T1` | -0.34252 |
+| `explicit.stat_3321629045@T2` | -0.34252 |
+| `explicit.stat_3362812763@T2` | -0.34251 |
+| `explicit.stat_3484657501@T1` | -0.34250 |
+| `explicit.stat_3261801346@T1` | -0.34248 |
+| `explicit.stat_328541901@T1` | -0.34248 |
+
+### weapon.wand — n=4355, R²=-1.5324
+
+intercept: `3.3624`  ·  log_price: True  ·  ilvl: `-0.04203`  ·  n_mods: `-0.01041`  ·  n_top_tier: `0.06982`  ·  corrupted: `0.03406`  ·  n_sockets: `-0.00292`  ·  quality: `0.01419`
+
+| stat_id | coef |
+|---|---|
+| `explicit.stat_1600707273@T1` | 2.31415 |
+| `explicit.stat_591105508@T1` | 2.30896 |
+| `explicit.stat_1545858329@T1` | 2.22356 |
+| `explicit.stat_736967255@T2` | 2.15836 |
+| `explicit.stat_2974417149@T1` | 2.05098 |
+| `explicit.stat_124131830@T1` | 1.90120 |
+| `explicit.stat_2254480358@T1` | 1.84680 |
+| `explicit.stat_1600707273@T2` | 1.70350 |
+| `crafted.stat_124131830` | 1.08129 |
+| `explicit.stat_4226189338@T1` | 1.07063 |
+| `rune.stat_3990135792` | -0.25502 |
+| `rune.stat_3278136794` | 0.22610 |
+
+### weapon.bow — n=3784, R²=-1.4755
+
+intercept: `3.2214`  ·  log_price: True  ·  ilvl: `-0.03978`  ·  n_mods: `-0.02265`  ·  n_top_tier: `0.46435`  ·  corrupted: `0.01328`  ·  n_sockets: `0.00778`  ·  quality: `-0.00575`
+
+| stat_id | coef |
+|---|---|
+| `desecrated.stat_666077204@T1` | -7.35482 |
+| `desecrated.stat_210067635@T1` | -3.11564 |
+| `explicit.stat_2463230181@T1` | 1.80736 |
+| `explicit.stat_1509134228@T1` | 1.79934 |
+| `crafted.stat_3035140377` | 1.11968 |
+| `rune.stat_3885405204` | -0.79467 |
+| `explicit.stat_1202301673@T1` | 0.76095 |
+| `desecrated.stat_666077204` | 0.59533 |
+| `explicit.stat_821021828@T1` | -0.56812 |
+| `explicit.stat_1263695895@T1` | -0.54490 |
+| `explicit.stat_821021828@T2` | -0.53491 |
+| `explicit.stat_691932474@T2` | -0.53300 |
+
+### weapon.crossbow — n=3559, R²=-1.4419
+
+intercept: `3.2697`  ·  log_price: True  ·  ilvl: `-0.04106`  ·  n_mods: `0.00403`  ·  n_top_tier: `0.41844`  ·  corrupted: `0.03480`  ·  n_sockets: `0.02142`  ·  quality: `-0.02289`
+
+| stat_id | coef |
+|---|---|
+| `desecrated.stat_3131442032@T1` | -2.68215 |
+| `desecrated.stat_1365232741@T1` | -2.68215 |
+| `explicit.stat_3336890334@T1` | 1.89442 |
+| `explicit.stat_709508406@T1` | 1.83382 |
+| `explicit.stat_691932474@T1` | -1.72249 |
+| `explicit.stat_1037193709@T1` | 1.42357 |
+| `explicit.stat_1263695895@T1` | 1.07918 |
+| `explicit.stat_1509134228@T1` | 0.91779 |
+| `crafted.stat_3035140377` | 0.66354 |
+| `explicit.stat_1202301673@T2` | -0.48553 |
+| `explicit.stat_1509134228@T2` | -0.47719 |
+| `explicit.stat_1940865751@T2` | -0.46189 |
+
+### jewel — n=3541, R²=-0.9131
+
+intercept: `-1.4261`  ·  log_price: True  ·  ilvl: `0.03393`  ·  n_mods: `0.23778`  ·  n_top_tier: `-0.50381`  ·  corrupted: `0.55705`
+
+| stat_id | coef |
+|---|---|
+| `explicit.stat_1569101201@T1` | 7.12802 |
+| `explicit.stat_2301718443@T1` | -6.49640 |
+| `explicit.stat_3787460122@T1` | 4.96290 |
+| `explicit.stat_293638271@T1` | -4.68855 |
+| `explicit.stat_1459321413@T1` | 4.58883 |
+| `explicit.stat_3851254963@T1` | 4.47686 |
+| `explicit.stat_3824372849@T1` | -4.17755 |
+| `explicit.stat_2011656677@T1` | 3.98154 |
+| `explicit.stat_1569159338@T1` | 3.76951 |
+| `explicit.stat_3714003708@T1` | -3.75153 |
+| `explicit.stat_429143663@T1` | 3.67191 |
+| `explicit.stat_2527686725@T1` | 3.51890 |
+
+### weapon.sceptre — n=1076, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `0.00000`
 
@@ -297,7 +297,7 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1050105434@T2` | 0.00000 |
 | `explicit.stat_1250712710` | 0.00000 |
 
-### weapon.spear — n=932, R²=0.0
+### weapon.spear — n=972, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `-0.00000`
 
@@ -316,9 +316,9 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1263695895@T2` | -0.00000 |
 | `explicit.stat_1368271171` | 0.00000 |
 
-### armour.focus — n=835, R²=0.0
+### armour.focus — n=860, R²=0.0
 
-intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `0.00000`
+intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `-0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `0.00000`
 
 | stat_id | coef |
 |---|---|
@@ -335,7 +335,7 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1671376347@T2` | 0.00000 |
 | `explicit.stat_2231156303` | 0.00000 |
 
-### weapon.warstaff — n=717, R²=0.0
+### weapon.warstaff — n=789, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `-0.00000`
 
@@ -354,26 +354,7 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1263695895` | 0.00000 |
 | `explicit.stat_1263695895@T1` | -0.00000 |
 
-### armour.shield — n=713, R²=0.0
-
-intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `-0.00000`
-
-| stat_id | coef |
-|---|---|
-| `crafted.stat_1568848828` | 0.00000 |
-| `explicit.stat_1011760251` | 0.00000 |
-| `explicit.stat_1011760251@T1` | -0.00000 |
-| `explicit.stat_1011760251@T2` | 0.00000 |
-| `explicit.stat_1062208444` | 0.00000 |
-| `explicit.stat_1062208444@T1` | 0.00000 |
-| `explicit.stat_1062208444@T2` | 0.00000 |
-| `explicit.stat_1301765461` | 0.00000 |
-| `explicit.stat_1301765461@T2` | 0.00000 |
-| `explicit.stat_1671376347` | 0.00000 |
-| `explicit.stat_1671376347@T1` | 0.00000 |
-| `explicit.stat_1671376347@T2` | 0.00000 |
-
-### weapon.staff — n=693, R²=0.0
+### weapon.staff — n=767, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `0.00000`
 
@@ -392,7 +373,26 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1368271171` | 0.00000 |
 | `explicit.stat_1368271171@T1` | 0.00000 |
 
-### armour.quiver — n=647, R²=0.0
+### armour.shield — n=734, R²=0.0
+
+intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `0.00000`  ·  quality: `-0.00000`
+
+| stat_id | coef |
+|---|---|
+| `crafted.stat_1568848828` | 0.00000 |
+| `explicit.stat_1011760251` | 0.00000 |
+| `explicit.stat_1011760251@T1` | -0.00000 |
+| `explicit.stat_1011760251@T2` | 0.00000 |
+| `explicit.stat_1062208444` | 0.00000 |
+| `explicit.stat_1062208444@T1` | 0.00000 |
+| `explicit.stat_1062208444@T2` | 0.00000 |
+| `explicit.stat_1301765461` | 0.00000 |
+| `explicit.stat_1301765461@T2` | 0.00000 |
+| `explicit.stat_1671376347` | 0.00000 |
+| `explicit.stat_1671376347@T1` | 0.00000 |
+| `explicit.stat_1671376347@T2` | 0.00000 |
+
+### armour.quiver — n=684, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `-0.00000`
 
@@ -411,26 +411,26 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 | `explicit.stat_1573130764@T2` | 0.00000 |
 | `explicit.stat_1754445556` | 0.00000 |
 
-### flask.charm — n=510, R²=-0.6508
+### flask.charm — n=527, R²=-0.6625
 
-intercept: `0.0001`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `-0.00003`  ·  n_top_tier: `-0.00002`  ·  corrupted: `0.19462`  ·  quality: `-0.00000`
+intercept: `0.0002`  ·  log_price: True  ·  ilvl: `-0.00000`  ·  n_mods: `-0.00003`  ·  n_top_tier: `-0.00002`  ·  corrupted: `0.19461`  ·  quality: `-0.00000`
 
 | stat_id | coef |
 |---|---|
-| `explicit.stat_1873752457` | 0.61491 |
-| `explicit.stat_1873752457@T1` | -0.34823 |
-| `explicit.stat_3849649145` | -0.12293 |
-| `explicit.stat_1873752457@T2` | -0.12290 |
-| `explicit.stat_828533480@T2` | -0.06104 |
-| `explicit.stat_2541588185@T2` | -0.04219 |
-| `explicit.stat_3196823591@T2` | -0.00010 |
-| `implicit.stat_3699444296` | -0.00005 |
-| `implicit.stat_4010341289` | -0.00005 |
-| `explicit.stat_2716923832` | 0.00004 |
-| `explicit.stat_3891350097` | -0.00004 |
-| `implicit.stat_3310778564` | -0.00003 |
+| `explicit.stat_1873752457@T1` | -0.20709 |
+| `explicit.stat_828533480@T2` | -0.06102 |
+| `explicit.stat_1873752457` | 0.05040 |
+| `explicit.stat_2541588185@T2` | -0.02091 |
+| `explicit.stat_1873752457@T2` | -0.01003 |
+| `explicit.stat_3849649145` | -0.01001 |
+| `implicit.stat_1412682799` | 0.00104 |
+| `implicit.stat_4010341289` | -0.00015 |
+| `implicit.stat_3699444296` | -0.00014 |
+| `implicit.stat_3310778564` | -0.00013 |
+| `implicit.stat_1810482573` | -0.00011 |
+| `implicit.stat_1691862754` | -0.00011 |
 
-### weapon.twomace — n=463, R²=0.0
+### weapon.twomace — n=492, R²=0.0
 
 intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00000`  ·  n_top_tier: `0.00000`  ·  corrupted: `0.00000`  ·  n_sockets: `-0.00000`  ·  quality: `0.00000`
 
@@ -451,28 +451,28 @@ intercept: `0.0000`  ·  log_price: True  ·  ilvl: `0.00000`  ·  n_mods: `0.00
 
 ## Coverage (listings per base)
 
-- … **Utility Belt** — 1788 listings (1788 priced) [0.3–10711.3 ex]
-- … **Emerald** — 1743 listings (1743 priced) [0.6–802.8 ex]
-- … **Sapphire** — 1648 listings (1648 priced) [0.4–802.8 ex]
-- … **Ruby** — 1385 listings (1385 priced) [0.3–802.8 ex]
-- … **Stellar Amulet** — 1322 listings (1322 priced) [0.3–35704.5 ex]
-- … **Dueling Wand** — 1277 listings (1277 priced) [0.8–802.8 ex]
-- … **Solar Amulet** — 1016 listings (1016 priced) [1.0–802.8 ex]
-- … **Obliterator Bow** — 1002 listings (1002 priced) [0.5–802.8 ex]
-- … **Gold Amulet** — 993 listings (993 priced) [0.3–802.8 ex]
-- … **Prismatic Ring** — 955 listings (955 priced) [0.3–802.8 ex]
-- … **Amethyst Ring** — 933 listings (933 priced) [0.8–802.8 ex]
-- … **Gold Ring** — 873 listings (873 priced) [0.7–802.8 ex]
-- … **Plate Belt** — 873 listings (873 priced) [1.0–802.8 ex]
-- … **Heavy Belt** — 811 listings (811 priced) [0.5–802.8 ex]
-- … **Ancestral Tiara** — 808 listings (808 priced) [1.0–802.8 ex]
-- … **Topaz Ring** — 771 listings (771 priced) [1.0–802.8 ex]
-- … **Sapphire Ring** — 767 listings (767 priced) [0.5–802.8 ex]
-- … **Galvanic Wand** — 741 listings (741 priced) [1.0–802.8 ex]
-- … **Ruby Ring** — 726 listings (726 priced) [0.4–802.8 ex]
-- … **Warmonger Bow** — 725 listings (725 priced) [0.9–802.8 ex]
-- … **Siphoning Wand** — 717 listings (717 priced) [1.0–802.8 ex]
-- … **Lapis Amulet** — 701 listings (701 priced) [0.6–802.8 ex]
-- … **Jade Amulet** — 684 listings (684 priced) [0.3–802.8 ex]
-- … **Attuned Wand** — 672 listings (672 priced) [0.3–802.8 ex]
-- … **Amber Amulet** — 667 listings (667 priced) [0.3–802.8 ex]
+- … **Emerald** — 2020 listings (2020 priced) [0.4–802.8 ex]
+- … **Utility Belt** — 1931 listings (1931 priced) [0.3–11357.0 ex]
+- … **Sapphire** — 1918 listings (1918 priced) [0.4–802.8 ex]
+- … **Ruby** — 1578 listings (1578 priced) [0.3–802.8 ex]
+- … **Stellar Amulet** — 1445 listings (1445 priced) [0.3–37188.0 ex]
+- … **Dueling Wand** — 1369 listings (1369 priced) [0.8–802.8 ex]
+- … **Solar Amulet** — 1108 listings (1108 priced) [1.0–802.8 ex]
+- … **Obliterator Bow** — 1092 listings (1092 priced) [0.4–802.8 ex]
+- … **Gold Amulet** — 1085 listings (1085 priced) [0.3–802.8 ex]
+- … **Prismatic Ring** — 1032 listings (1032 priced) [0.3–802.8 ex]
+- … **Amethyst Ring** — 1013 listings (1013 priced) [0.8–802.8 ex]
+- … **Gold Ring** — 954 listings (954 priced) [0.7–802.8 ex]
+- … **Plate Belt** — 941 listings (941 priced) [1.0–802.8 ex]
+- … **Ancestral Tiara** — 875 listings (875 priced) [1.0–802.8 ex]
+- … **Heavy Belt** — 874 listings (874 priced) [0.5–802.8 ex]
+- … **Topaz Ring** — 823 listings (823 priced) [1.0–802.8 ex]
+- … **Sapphire Ring** — 819 listings (819 priced) [0.5–802.8 ex]
+- … **Galvanic Wand** — 795 listings (795 priced) [0.8–802.8 ex]
+- … **Ruby Ring** — 794 listings (794 priced) [0.4–802.8 ex]
+- … **Warmonger Bow** — 783 listings (783 priced) [0.9–802.8 ex]
+- … **Siphoning Wand** — 771 listings (771 priced) [1.0–802.8 ex]
+- … **Lapis Amulet** — 748 listings (748 priced) [0.6–802.8 ex]
+- … **Jade Amulet** — 731 listings (731 priced) [0.3–802.8 ex]
+- … **Attuned Wand** — 723 listings (723 priced) [0.3–802.8 ex]
+- … **Amber Amulet** — 722 listings (722 priced) [0.3–802.8 ex]
