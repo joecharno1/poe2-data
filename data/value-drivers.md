@@ -1,259 +1,259 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-07-07T00:54:38+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-07-07T02:34:37+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
-_Current backtest: typical error ×14.75, 20% within ±30%, skill +0.03_
+_Current backtest: typical error ×15.63, 20% within ±30%, skill +0.03_
 
-## other — 27307 listings
+## other — 27588 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: #% increased Evasion Rating | — | ×58.54 |  |
-| T1 roll: #% increased Cold Damage | — | ×19.95 |  |
-| #% to all Elemental Resistances | 14 | ×14.09 | universal |
-| T1 roll: #% increased Presence Area of Effect | — | ×10.18 |  |
+| T1 roll: #% increased Evasion Rating | — | ×54.51 |  |
+| T1 roll: #% increased Cold Damage | — | ×25.66 |  |
+| #% to all Elemental Resistances | 14 | ×16.32 | universal |
+| T1 roll: #% increased Presence Area of Effect | — | ×13.90 |  |
 | Adds Irradiated to a Map 
-# use remaining [implicit] | 10 | ×9.68 |  |
+# use remaining [implicit] | 10 | ×9.65 |  |
 | Adds a Mirror of Delirium to a Map 
-# use remaining [implicit] | 10 | ×9.68 |  |
-| #% to Lightning Resistance | 32 | ×6.05 | universal |
-| #% to all Elemental Resistances [implicit] | 9 | ×5.62 | universal |
-| T1 roll: #% increased Cast Speed | — | ×5.46 | 15% of ladder (rising) |
-| Minions deal #% increased Damage | 10 | ×5.20 |  |
-| total life | 90 | ÷14.74 | universal |
-| total ele res | 28 | ÷6.19 | universal |
-| #% of Flask Recovery applied Instantly [implicit] | 20 | ÷5.23 |  |
+# use remaining [implicit] | 10 | ×9.65 |  |
+| T1 roll: Minions deal #% increased Damage | — | ×7.41 |  |
+| #% to Lightning Resistance | 32 | ×7.19 | universal |
+| #% to all Elemental Resistances [implicit] | 9 | ×6.38 | universal |
+| #% to Fire Resistance | 32 | ×6.11 | universal |
+| total life | 90 | ÷15.29 | universal |
+| total ele res | 28 | ÷7.08 | universal |
+| #% of Flask Recovery applied Instantly [implicit] | 20 | ÷5.22 |  |
 
-_Item-level effects: per ilvl ×1.00 · per extra mod ×1.03 · per top-tier roll ×1.56 · corrupted ×7.93 · per socket ÷1.00 · quality ÷1.00_
+_Item-level effects: per ilvl ×1.00 · per extra mod ×1.04 · per top-tier roll ×1.59 · corrupted ×8.47 · per socket ÷1.00 · quality ÷1.00_
 
-## accessory.ring — 21486 listings
-
-| driver | typical roll | price effect | demand |
-|---|---|---|---|
-| T1 roll: Leech #% of Physical Attack Damage as Mana | — | ×154.81 |  |
-| T2 roll: Leech #% of Physical Attack Damage as Mana | — | ×42.43 |  |
-| # to all Attributes | 10 | ×6.72 |  |
-| total chaos res | 11 | ×3.43 | universal |
-| Minions have #% increased Attack and Cast Speed | 7 | ×3.00 |  |
-| T2 roll: #% to Chaos Resistance | — | ×2.66 | universal |
-| Spell Skills have #% increased Area of Effect | 11 | ×2.37 |  |
-| #% increased effect of Arcane Surge on you | 31 | ×2.31 |  |
-| #% increased Light Radius | 15 | ×2.26 |  |
-| #% increased Mana Cost Efficiency of Spells | 20 | ×2.25 |  |
-| Leech #% of Physical Attack Damage as Mana | 6.29 | ÷79.73 |  |
-| T1 roll: # to all Attributes | — | ÷8.32 |  |
-| #% to Chaos Resistance | 18 | ÷7.65 | universal |
-
-_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.21 · per top-tier roll ÷1.15 · corrupted ×2.04 · per socket ×1.80 · quality ×1.05_
-
-## jewel — 21259 listings
+## accessory.ring — 21794 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: Empowered Attacks deal #% increased Damage | — | ×38.25 |  |
-| #% increased Critical Damage Bonus for Attack Damage | 14 | ×20.29 |  |
-| T1 roll: #% increased Pin Buildup | — | ×16.57 |  |
-| T1 roll: #% increased Area of Effect of Curses | — | ×12.90 |  |
-| #% increased Warcry Speed | 15 | ×12.75 |  |
-| #% increased Hazard Damage | 15 | ×10.94 |  |
-| T1 roll: #% increased Glory generation for Banner Skills | — | ×10.58 |  |
-| #% increased Crossbow Reload Speed | 13 | ×7.01 |  |
-| Herald Skills deal #% increased Damage | 19 | ×5.99 |  |
-| #% increased Elemental Ailment Threshold | 15 | ×5.91 |  |
-| Empowered Attacks deal #% increased Damage | 15 | ÷68.06 |  |
-| T1 roll: #% increased Critical Damage Bonus for Attack Damage | — | ÷34.03 |  |
-| T1 roll: #% increased Warcry Speed | — | ÷26.96 |  |
+| T1 roll: Leech #% of Physical Attack Damage as Mana | — | ×278.56 |  |
+| T2 roll: Leech #% of Physical Attack Damage as Mana | — | ×71.43 |  |
+| # to all Attributes | 10 | ×7.43 |  |
+| total chaos res | 11 | ×3.30 | universal |
+| Minions have #% increased Attack and Cast Speed | 7 | ×3.16 |  |
+| T2 roll: #% to Chaos Resistance | — | ×3.05 | universal |
+| T1 roll: #% increased Chaos Damage | — | ×2.46 |  |
+| #% increased Light Radius | 15 | ×2.43 |  |
+| Spell Skills have #% increased Area of Effect | 11 | ×2.40 |  |
+| #% increased effect of Arcane Surge on you | 31 | ×2.38 |  |
+| Leech #% of Physical Attack Damage as Mana | 6.3 | ÷139.64 |  |
+| T1 roll: # to all Attributes | — | ÷8.82 |  |
+| #% to Chaos Resistance | 18 | ÷7.72 | universal |
 
-_Item-level effects: per ilvl ×1.04 · per extra mod ×1.09 · per top-tier roll ÷1.02 · corrupted ×1.37 · quality ×1.23_
+_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.18 · per top-tier roll ÷1.14 · corrupted ×1.93 · per socket ×1.81 · quality ×1.06_
 
-## accessory.amulet — 20539 listings
+## jewel — 21629 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| # to Level of all Spell Skills | 2 | ×5.42 | 15% of ladder (rising) |
-| # to Level of all Projectile Skills | 2 | ×4.23 | 8% of ladder (falling) |
-| total life | 71 | ×3.10 | universal |
-| T2 roll: # to Spirit | — | ×2.13 |  |
-| T1 roll: # to Spirit | — | ×1.94 |  |
-| #% increased maximum Life | 6 | ×1.66 |  |
-| total life above 80 | 31 | ×1.65 | universal |
-| #% to all Elemental Resistances [implicit] | 8 | ×1.63 | universal |
+| T1 roll: Empowered Attacks deal #% increased Damage | — | ×32.78 |  |
+| T1 roll: #% increased Glory generation for Banner Skills | — | ×22.68 |  |
+| #% increased Critical Damage Bonus for Attack Damage | 14 | ×20.67 |  |
+| T1 roll: #% increased Area of Effect of Curses | — | ×16.98 |  |
+| #% increased Hazard Damage | 15 | ×15.63 |  |
+| #% increased Warcry Speed | 15 | ×14.50 |  |
+| #% increased Crossbow Reload Speed | 13 | ×7.00 |  |
+| T1 roll: #% increased Pin Buildup | — | ×6.74 |  |
+| T1 roll: #% increased chance to Shock | — | ×6.67 |  |
+| Herald Skills deal #% increased Damage | 19 | ×6.18 |  |
+| Empowered Attacks deal #% increased Damage | 15 | ÷53.80 |  |
+| #% increased Area of Effect of Curses | 10 | ÷33.46 |  |
+| T1 roll: #% increased Critical Damage Bonus for Attack Damage | — | ÷33.42 |  |
+
+_Item-level effects: per ilvl ×1.04 · per extra mod ×1.09 · per top-tier roll ÷1.02 · corrupted ×1.35 · quality ×1.23_
+
+## accessory.amulet — 20827 listings
+
+| driver | typical roll | price effect | demand |
+|---|---|---|---|
+| # to Level of all Spell Skills | 2 | ×5.24 | 15% of ladder (rising) |
+| # to Level of all Projectile Skills | 2 | ×4.53 | 8% of ladder (falling) |
+| total life | 71 | ×3.05 | universal |
+| #% increased maximum Life | 6 | ×2.09 |  |
+| T1 roll: # to Spirit | — | ×1.83 |  |
+| T2 roll: # to Spirit | — | ×1.79 |  |
+| total life above 80 | 31 | ×1.62 | universal |
+| #% to all Elemental Resistances [implicit] | 8 | ×1.58 | universal |
 | #% to Chaos Resistance | 17 | ×1.42 | universal |
-| T2 roll: #% increased Critical Hit Chance | — | ×1.19 |  |
-| T1 roll: # to maximum Life | — | ÷5.48 | universal |
-| T1 roll: #% increased maximum Life | — | ÷4.97 |  |
-| T2 roll: #% increased maximum Life | — | ÷4.67 |  |
+| T2 roll: #% increased Critical Hit Chance | — | ×1.20 |  |
+| T1 roll: #% increased maximum Life | — | ÷6.77 |  |
+| T2 roll: # to Level of all Projectile Skills | — | ÷6.58 | 8% of ladder (falling) |
+| T2 roll: #% increased maximum Life | — | ÷5.86 |  |
 
-_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.02 · per top-tier roll ×3.02 · corrupted ×1.25 · per socket ×7.83 · quality ÷1.02_
+_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.02 · per top-tier roll ×3.08 · corrupted ×1.40 · per socket ×9.04 · quality ÷1.01_
 
-## accessory.belt — 17200 listings
+## accessory.belt — 17432 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Minions' Strikes have Melee Splash [crafted] | 1 | ×23.98 |  |
+| Minions' Strikes have Melee Splash [crafted] | 1 | ×23.48 |  |
 | #% increased Spell Damage during any Flask Effect | 43 | ×4.78 |  |
-| Minions have #% increased Area of Effect | 20 | ×3.27 |  |
-| Minions have #% increased Movement Speed | 13 | ×2.82 |  |
-| Minions deal #% increased Damage with Command Skills | 42 | ×2.60 |  |
-| total chaos res | 18 | ×2.43 | universal |
-| Offering Skills have #% increased Duration | 45 | ×2.39 |  |
-| #% increased Cast Speed during any Flask Effect | 16 | ×2.31 |  |
-| Minions have #% increased Immobilisation buildup | 48 | ×2.25 |  |
-| Minions have #% increased maximum Life | 22 | ×2.03 |  |
-| #% to Chaos Resistance | 18 | ÷2.24 | universal |
-| T2 roll: # to Armour | — | ÷1.61 |  |
-| T1 roll: #% increased Charm Effect Duration | — | ÷1.59 |  |
+| Minions have #% increased Area of Effect | 20 | ×3.41 |  |
+| Minions have #% increased Movement Speed | 13 | ×2.84 |  |
+| Minions deal #% increased Damage with Command Skills | 42 | ×2.63 |  |
+| Offering Skills have #% increased Duration | 45 | ×2.57 |  |
+| total chaos res | 18 | ×2.53 | universal |
+| Minions have #% increased Immobilisation buildup | 48 | ×2.39 |  |
+| #% increased Cast Speed during any Flask Effect | 15 | ×2.18 |  |
+| total ele res above 80 | 6 | ×2.13 | universal |
+| #% to Chaos Resistance | 18 | ÷2.34 | universal |
+| T2 roll: # to Armour | — | ÷1.87 |  |
+| T1 roll: # to # Physical Thorns damage | — | ÷1.86 |  |
 
-_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.02 · per top-tier roll ×1.53 · corrupted ×1.52 · per socket ÷1.13_
+_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.02 · per top-tier roll ×1.79 · corrupted ×1.99 · per socket ÷1.14_
 
-## armour.chest — 17036 listings
+## armour.chest — 17246 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | # to Spirit [desecrated] | 46 | ×4.88 |  |
 | total ele res | 36 | ×2.93 | universal |
-| total chaos res | 16 | ×1.50 | universal |
-| #% increased Armour, Evasion and Energy Shield [rune] | 36 | ×1.03 |  |
-| #% increased Energy Shield [desecrated] | 42 | ×1.02 |  |
-| #% increased Evasion Rating (Local) [desecrated] | 41 | ×1.02 |  |
+| total chaos res | 16 | ×1.22 | universal |
+| #% increased Armour, Evasion and Energy Shield [rune] | 36 | ×1.05 |  |
+| #% increased Evasion Rating (Local) [desecrated] | 41 | ×1.00 |  |
 | # to Level of all Corrupted Skill Gems [implicit] | 1 | ×1.00 |  |
+| # to maximum Energy Shield (Local) [desecrated] | 30 | ×1.00 | universal |
 | total life above 80 | 93 | ×1.00 | universal |
-| # to maximum Life [implicit] | 71 | ×1.00 | universal |
-| # to maximum Life | 111 | ×1.00 | universal |
-| #% to Cold Resistance [desecrated] | 28 | ÷2.72 | universal |
+| # to maximum Life [desecrated] | 41 | ×1.00 | universal |
+| #% increased Energy Shield Recharge Rate | 21 | ×1.00 |  |
 | #% to Lightning Resistance | 31 | ÷2.53 | universal |
 | #% to Fire Resistance | 31 | ÷2.53 | universal |
+| #% to Cold Resistance | 31 | ÷2.53 | universal |
 
-_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.07 · corrupted ×1.00 · per socket ÷1.00 · quality ÷1.00_
+_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.03 · corrupted ×1.00 · per socket ÷1.00 · quality ×1.00_
 
-## armour.helmet — 16662 listings
+## armour.helmet — 16877 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.67 |  |
-| #% increased Rarity of Items found [desecrated] | 16 | ×1.40 |  |
-| total chaos res | 19 | ×1.01 | universal |
-| total ele res above 80 | 9 | ×1.00 | universal |
+| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.43 |  |
+| T1 roll: #% increased Rarity of Items found [crafted] | — | ×1.20 |  |
+| total chaos res | 19 | ×1.07 | universal |
+| #% increased Rarity of Items found [desecrated] | 16 | ×1.03 |  |
 | #% increased Energy Shield [crafted] | 74 | ×1.00 |  |
 | #% of Armour also applies to Elemental Damage | 36 | ×1.00 |  |
-| #% increased Energy Shield | 60 | ×1.00 |  |
 | # to maximum Life [desecrated] | 43 | ×1.00 | universal |
+| #% increased Energy Shield | 60 | ×1.00 |  |
+| #% to Cold Resistance | 32 | ×1.00 | universal |
 | Gain Deflection Rating equal to #% of Evasion Rating | 20 | ×1.00 |  |
-| # to maximum Energy Shield (Local) | 39 | ×1.00 | universal |
-| # to maximum Mana [desecrated] | 30 | ÷1.26 |  |
-| T2 roll: #% increased Light Radius | — | ÷1.16 |  |
-| T1 roll: #% increased Light Radius | — | ÷1.16 |  |
+| #% increased Rarity of Items found [crafted] | 16 | ÷1.41 |  |
+| # to maximum Energy Shield (Local) [desecrated] | 39 | ÷1.21 | universal |
+| T2 roll: # to Strength | — | ÷1.20 |  |
 
-_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.16 · corrupted ×2.77 · per socket ×1.00 · quality ×1.00_
+_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.20 · corrupted ×2.90 · per socket ×1.00 · quality ×1.00_
 
-## armour.boots — 15696 listings
+## armour.boots — 15877 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| total chaos res | 19 | ×6.00 | universal |
-| #% to Lightning Resistance [desecrated] | 32 | ×1.74 | universal |
-| #% to Cold Resistance [desecrated] | 29 | ×1.01 | universal |
-| #% increased Movement Speed [desecrated] | 25 | ×1.00 |  |
+| total chaos res | 19 | ×4.87 | universal |
+| #% to Lightning Resistance [desecrated] | 32 | ×1.63 | universal |
+| #% to Cold Resistance [desecrated] | 29 | ×1.03 | universal |
 | #% increased Energy Shield Recharge Rate | 17 | ×1.00 |  |
+| #% increased Movement Speed [desecrated] | 25 | ×1.00 |  |
 | Gain Deflection Rating equal to #% of Evasion Rating | 20 | ×1.00 |  |
-| #% of Armour also applies to Elemental Damage | 36 | ×1.00 |  |
 | #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.00 |  |
-| #% increased Energy Shield [desecrated] | 72 | ×1.00 |  |
-| # to Intelligence | 27 | ×1.00 |  |
-| #% to Chaos Resistance | 19 | ÷6.00 | universal |
-| # to Stun Threshold [desecrated] | 66 | ÷1.27 |  |
-| T2 roll: #% increased Armour (Local) | — | ÷1.13 |  |
+| #% increased Evasion and Energy Shield [desecrated] | 58 | ×1.00 |  |
+| #% of Armour also applies to Elemental Damage | 36 | ×1.00 |  |
+| #% increased Rarity of Items found | 16 | ×1.00 |  |
+| #% to Chaos Resistance | 19 | ÷4.87 | universal |
+| # to Stun Threshold [desecrated] | 66 | ÷1.24 |  |
+| T1 roll: #% increased Energy Shield Recharge Rate | — | ÷1.11 |  |
 
-_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.13 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
+_Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.11 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
 
-## armour.gloves — 15442 listings
+## armour.gloves — 15624 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Adds # to # Physical Damage to Attacks [desecrated] | 11 | ×2.89 |  |
-| Adds # to # Cold damage to Attacks [desecrated] | 16 | ×2.42 |  |
-| # to maximum Life | 67 | ×2.03 | universal |
-| # to maximum Life [rune] | 60 | ×1.89 | universal |
-| # to maximum Life [desecrated] | 47 | ×1.65 | universal |
-| #% increased Energy Shield Recharge Rate | 18 | ×1.03 |  |
-| #% increased Attack Speed | 14 | ×1.01 | 46% of ladder (falling) |
-| #% increased Evasion Rating (Local) | 63 | ×1.00 |  |
-| Adds # to # Lightning damage to Attacks | 20 | ×1.00 |  |
+| Adds # to # Physical Damage to Attacks [desecrated] | 11 | ×2.90 |  |
+| Adds # to # Cold damage to Attacks [desecrated] | 16 | ×2.02 |  |
+| # to maximum Life | 67 | ×1.14 | universal |
+| # to maximum Life [rune] | 60 | ×1.13 | universal |
+| # to maximum Life [desecrated] | 47 | ×1.10 | universal |
+| #% increased Energy Shield Recharge Rate | 18 | ×1.02 |  |
 | #% increased Rarity of Items found | 16 | ×1.00 |  |
-| total life | 67 | ÷2.03 | universal |
+| #% increased Attack Speed | 14 | ×1.00 | 46% of ladder (falling) |
+| #% increased Evasion Rating (Local) | 63 | ×1.00 |  |
+| Adds # to # Fire damage to Attacks [desecrated] | 17.5 | ×1.00 |  |
+| total life | 67 | ÷1.14 | universal |
 | #% increased Mana Regeneration Rate [rune] | 18 | ÷1.11 |  |
-| T1 roll: #% increased Energy Shield Recharge Rate | — | ÷1.03 |  |
+| T1 roll: #% increased Energy Shield Recharge Rate | — | ÷1.02 |  |
 
 _Item-level effects: per ilvl ÷1.00 · per extra mod ÷1.00 · per top-tier roll ×1.00 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
 
-## weapon.wand — 10881 listings
+## weapon.wand — 10995 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Gain #% of Damage as Extra Lightning Damage [rune] | 10 | ×41.52 |  |
-| T1 roll: # to Level of all Spell Skills | — | ×13.55 | 15% of ladder (rising) |
-| # to Level of all Spell Skills [crafted] | 3 | ×9.93 | 15% of ladder (rising) |
-| T1 roll: # to Level of all Cold Spell Skills | — | ×7.54 |  |
-| T1 roll: # to Level of all Fire Spell Skills | — | ×7.26 |  |
-| T1 roll: # to Level of all Chaos Spell Skills | — | ×7.07 |  |
-| T1 roll: # to Level of all Physical Spell Skills | — | ×6.08 |  |
-| T1 roll: # to Level of all Lightning Spell Skills | — | ×4.05 |  |
-| T2 roll: #% increased Chaos Damage | — | ×3.68 |  |
-| #% increased Spell Damage [rune] | 30 | ×2.50 | 15% of ladder (rising) |
-| Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ÷11.84 |  |
-| T2 roll: #% increased Fire Damage | — | ÷1.65 |  |
-| T1 roll: #% increased Critical Hit Chance for Spells | — | ÷1.64 | 15% of ladder (rising) |
+| Gain #% of Damage as Extra Lightning Damage [rune] | 10 | ×46.12 |  |
+| # to Level of all Spell Skills [crafted] | 3 | ×10.22 | 15% of ladder (rising) |
+| T1 roll: # to Level of all Spell Skills | — | ×8.71 | 15% of ladder (rising) |
+| T1 roll: # to Level of all Cold Spell Skills | — | ×8.67 |  |
+| T1 roll: # to Level of all Fire Spell Skills | — | ×8.19 |  |
+| T1 roll: # to Level of all Chaos Spell Skills | — | ×8.17 |  |
+| T1 roll: # to Level of all Physical Spell Skills | — | ×6.35 |  |
+| T2 roll: #% increased Chaos Damage | — | ×3.56 |  |
+| #% increased Spell Damage [rune] | 30 | ×3.01 | 15% of ladder (rising) |
+| #% increased Spell Damage [desecrated] | 43 | ×2.26 | 15% of ladder (rising) |
+| Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ÷11.90 |  |
+| T1 roll: #% increased Critical Hit Chance for Spells | — | ÷1.42 | 15% of ladder (rising) |
+| T2 roll: #% increased Fire Damage | — | ÷1.41 |  |
 
-_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.01 · per top-tier roll ×1.53 · corrupted ×1.20 · per socket ×1.00 · quality ×1.02_
+_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.00 · per top-tier roll ×1.34 · corrupted ×1.11 · per socket ×1.00 · quality ×1.01_
 
-## weapon.bow — 8926 listings
-
-| driver | typical roll | price effect | demand |
-|---|---|---|---|
-| #% increased Physical Damage [rune] | 36 | ×220.35 | 38% of ladder (falling) |
-| # to Level of all Attack Skills [crafted] | 2 | ×10.15 |  |
-| T1 roll: #% Surpassing chance to fire an additional Arrow | — | ×6.75 |  |
-| T1 roll: # to Level of all Projectile Skills | — | ×6.41 | 8% of ladder (falling) |
-| T1 roll: #% to Critical Hit Chance | — | ×3.93 |  |
-| Adds # to # Lightning Damage [rune] | 15.5 | ×2.82 |  |
-| Adds # to # Physical Damage [crafted] | 27.5 | ×2.72 |  |
-| Bonded: #% increased Projectile Speed [rune] | 20 | ×2.58 |  |
-| #% increased Attack Speed (Local) [desecrated] | 14 | ×2.55 | 46% of ladder (falling) |
-| Adds # to # Cold Damage [rune] | 12 | ×2.32 |  |
-| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷73.77 |  |
-| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷6.24 | 46% of ladder (falling) |
-| Bonded: #% increased Magnitude of Shock you inflict [rune] | 60 | ÷3.14 |  |
-
-_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.01 · per top-tier roll ×1.47 · corrupted ÷1.04 · per socket ×1.00 · quality ×1.00_
-
-## weapon.crossbow — 8469 listings
+## weapon.bow — 9031 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Physical Damage [rune] | 36 | ×10121.63 | 38% of ladder (falling) |
-| Leeches #% of Physical Damage as Life [rune] | 5 | ×551.26 |  |
-| # to Level of all Attack Skills [crafted] | 3 | ×32.53 |  |
-| T1 roll: Adds # to # Fire Damage | — | ×6.69 |  |
-| T1 roll: # to Level of all Projectile Skills | — | ×6.13 | 8% of ladder (falling) |
-| T1 roll: Adds # to # Cold Damage | — | ×6.10 |  |
-| Adds # to # Physical Damage [crafted] | 38.5 | ×5.92 |  |
-| Bonded: #% increased maximum Mana [rune] | 5 | ×4.94 |  |
-| T1 roll: #% increased Physical Damage | — | ×3.30 | 38% of ladder (falling) |
-| Bonded: Adds # to # Physical Damage to Attacks [rune] | 8 | ×2.94 |  |
-| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷2061.88 |  |
-| Bonded: #% increased maximum Life [rune] | 5 | ÷292.92 |  |
-| Leeches #% of Physical Damage as Mana [rune] | 4 | ÷5.06 |  |
+| #% increased Physical Damage [rune] | 36 | ×259.35 | 38% of ladder (falling) |
+| # to Level of all Attack Skills [crafted] | 2 | ×9.77 |  |
+| T1 roll: #% Surpassing chance to fire an additional Arrow | — | ×5.92 |  |
+| T1 roll: # to Level of all Projectile Skills | — | ×5.59 | 8% of ladder (falling) |
+| T1 roll: #% to Critical Hit Chance | — | ×4.46 |  |
+| Adds # to # Lightning Damage [rune] | 15.5 | ×3.91 |  |
+| Bonded: #% increased Projectile Speed [rune] | 20 | ×3.24 |  |
+| Adds # to # Physical Damage [crafted] | 27.5 | ×2.87 |  |
+| #% increased Attack Speed (Local) [desecrated] | 14 | ×2.36 | 46% of ladder (falling) |
+| Adds # to # Cold Damage [rune] | 12 | ×2.27 |  |
+| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷91.88 |  |
+| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷6.06 | 46% of ladder (falling) |
+| Bonded: #% increased Magnitude of Shock you inflict [rune] | 60 | ÷4.63 |  |
 
-_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.00 · per top-tier roll ×1.47 · corrupted ÷1.05 · per socket ×1.01 · quality ×1.00_
+_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.01 · per top-tier roll ×1.64 · corrupted ÷1.01 · per socket ×1.01 · quality ×1.01_
 
-## flask.charm — 4628 listings
+## weapon.crossbow — 8550 listings
+
+| driver | typical roll | price effect | demand |
+|---|---|---|---|
+| #% increased Physical Damage [rune] | 36 | ×15467.22 | 38% of ladder (falling) |
+| Leeches #% of Physical Damage as Life [rune] | 5 | ×544.23 |  |
+| # to Level of all Attack Skills [crafted] | 3 | ×29.55 |  |
+| T1 roll: Adds # to # Fire Damage | — | ×5.92 |  |
+| T1 roll: Adds # to # Cold Damage | — | ×5.74 |  |
+| T1 roll: # to Level of all Projectile Skills | — | ×5.61 | 8% of ladder (falling) |
+| Adds # to # Physical Damage [crafted] | 38.5 | ×5.47 |  |
+| Bonded: #% increased maximum Mana [rune] | 5 | ×5.03 |  |
+| T1 roll: #% increased Physical Damage | — | ×3.06 | 38% of ladder (falling) |
+| Bonded: Adds # to # Physical Damage to Attacks [rune] | 8 | ×2.92 |  |
+| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷3053.67 |  |
+| Bonded: #% increased maximum Life [rune] | 5 | ÷289.48 |  |
+| Leeches #% of Physical Damage as Mana [rune] | 4 | ÷5.15 |  |
+
+_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.00 · per top-tier roll ×1.60 · corrupted ÷1.05 · per socket ×1.01 · quality ×1.00_
+
+## flask.charm — 4754 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | Grants Onslaught during effect | 1 | ×155.00 |  |
-| Defend with 200% of Armour during effect | 200 | ×52.98 |  |
+| Defend with 200% of Armour during effect | 200 | ×75.48 |  |
 | Energy Shield Recharge starts on use | 1 | ×20.00 |  |
 | #% of Chaos damage you prevent when Hit Recouped as Life and Mana during effect | 50 | ×1.00 |  |
 | Recover Life equal to #% of Mana Flask's Recovery Amount when used | 17 | ×1.00 |  |
@@ -261,172 +261,172 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.00 · per top-tier rol
 | Lightning Damage of Enemies Hitting you is Lucky during effect | 1 | ×1.00 |  |
 | Grants up to your maximum Rage on use | 1 | ×1.00 |  |
 | Used when you become Frozen [implicit] | 1 | ×1.00 |  |
-| Grants a Power Charge on use | 1 | ×1.00 |  |
+| Used when you kill a Rare or Unique enemy [implicit] | 1 | ×1.00 |  |
 | T2 roll: Gains # Charges per Second | — | ÷1.00 |  |
-| T1 roll: Gains # Charges per Second | — | ÷1.00 |  |
-| T2 roll: #% increased Charges gained | — | ÷1.00 |  |
+| T2 roll: #% Chance to gain a Charge when you kill an enemy | — | ÷1.00 |  |
+| T1 roll: #% Chance to gain a Charge when you kill an enemy | — | ÷1.00 |  |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.00 · corrupted ×1.00 · quality ×1.00_
 
-## weapon.warstaff — 3423 listings
+## weapon.warstaff — 3498 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Magnitude of Shock you inflict [desecrated] | 16 | ×70.97 |  |
-| #% increased Lightning Damage [desecrated] | 94 | ×58.86 |  |
-| Adds # to # Lightning Damage [rune] | 15.5 | ×35.31 |  |
-| Bonded: # to Level of all Attack Skills [rune] | 1 | ×27.01 |  |
-| Adds # to # Cold Damage [rune] | 12 | ×25.27 |  |
-| # to Level of all Melee Skills [desecrated] | 3 | ×4.82 | 38% of ladder (falling) |
-| #% increased Physical Damage [rune] | 36 | ×1.08 | 38% of ladder (falling) |
-| Adds # to # Fire Damage [desecrated] | 76 | ×1.00 |  |
-| Adds # to # Cold Damage [desecrated] | 46.5 | ×1.00 |  |
-| #% increased Attack Speed (Local) [crafted] | 23 | ×1.00 | 46% of ladder (falling) |
-| T1 roll: #% increased Magnitude of Shock you inflict [desecrated] | — | ÷47.56 |  |
-| T1 roll: #% increased Lightning Damage [desecrated] | — | ÷47.56 |  |
-| Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ÷35.31 |  |
+| Gain #% of Damage as Extra Damage of all Elements [rune] | 5 | ×3446.61 |  |
+| #% increased Magnitude of Shock you inflict [desecrated] | 16 | ×70.87 |  |
+| #% increased Lightning Damage [desecrated] | 94 | ×57.25 |  |
+| Adds # to # Lightning Damage [rune] | 15.5 | ×34.72 |  |
+| Bonded: # to Level of all Attack Skills [rune] | 1 | ×26.82 |  |
+| Adds # to # Cold Damage [rune] | 12 | ×26.49 |  |
+| # to Level of all Melee Skills [desecrated] | 3 | ×9.45 | 38% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×1.61 | 38% of ladder (falling) |
+| Adds # to # Fire Damage [desecrated] | 76 | ×1.01 |  |
+| Adds # to # Cold Damage [crafted] | 65.5 | ×1.01 |  |
+| Bonded: #% chance to gain an additional random Charge when you gain a Charge [rune] | 8 | ÷32629.04 |  |
+| T1 roll: #% increased Lightning Damage [desecrated] | — | ÷46.93 |  |
+| T1 roll: #% increased Magnitude of Shock you inflict [desecrated] | — | ÷46.93 |  |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.00 · corrupted ÷1.00 · per socket ×1.00 · quality ×1.00_
 
-## weapon.sceptre — 3248 listings
+## weapon.sceptre — 3339 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Bonded: Minions have #% increased Cooldown Recovery Rate for Command Skills [rune] | 30 | ×10.97 |  |
-| #% increased Spirit [rune] | 15 | ×2.46 | 4% of ladder (rising) |
-| T1 roll: # to Level of all Minion Skills | — | ×2.25 | 4% of ladder (rising) |
-| # to maximum Mana [desecrated] | 31 | ×1.42 |  |
+| Bonded: Minions have #% increased Cooldown Recovery Rate for Command Skills [rune] | 30 | ×9.47 |  |
+| T1 roll: # to Level of all Minion Skills | — | ×5.17 | 4% of ladder (rising) |
+| Bonded: #% increased Damage while Shapeshifted [rune] | 40 | ×2.40 |  |
+| Allies in your Presence deal #% increased Damage [rune] | 40 | ×2.40 |  |
+| #% increased Spirit [rune] | 15 | ×2.39 | 4% of ladder (rising) |
+| # to maximum Mana [desecrated] | 32 | ×1.28 |  |
 | T2 roll: Allies in your Presence deal #% increased Damage | — | ×1.00 |  |
 | T1 roll: #% increased Light Radius | — | ×1.00 |  |
-| #% increased Presence Area of Effect | 61 | ×1.00 |  |
-| #% increased Spirit | 36 | ×1.00 | 4% of ladder (rising) |
-| Allies in your Presence deal # to # added Attack Lightning Damage | 20 | ×1.00 |  |
-| Minions have #% increased maximum Life | 41 | ×1.00 |  |
-| #% increased Spirit [desecrated] | 29 | ÷1.03 | 4% of ladder (rising) |
-| #% increased Light Radius | 15 | ÷1.00 |  |
-| T1 roll: Allies in your Presence have #% increased Critical Hit Chance | — | ÷1.00 |  |
+| T2 roll: # to Level of all Minion Skills | — | ×1.00 | 4% of ladder (rising) |
+| T1 roll: Allies in your Presence have #% increased Critical Damage Bonus | — | ×1.00 |  |
+| Allies in your Presence deal #% increased Damage [desecrated] | 55 | ÷1.00 |  |
+| Allies in your Presence deal #% increased Damage [crafted] | 80 | ÷1.00 |  |
+| #% increased Spirit [desecrated] | 29 | ÷1.00 | 4% of ladder (rising) |
 
-_Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier roll ×1.00 · corrupted ×1.00 · per socket ×1.00 · quality ×1.01_
+_Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.00 · corrupted ×1.06 · per socket ×1.00 · quality ×1.04_
 
-## weapon.staff — 3238 listings
+## weapon.staff — 3306 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| # to Level of all Spell Skills [rune] | 1 | ×2091.87 | 15% of ladder (rising) |
-| #% increased Spell Damage [rune] | 35 | ×15.57 | 15% of ladder (rising) |
-| # to Level of all Spell Skills [crafted] | 5 | ×1.04 | 15% of ladder (rising) |
-| T1 roll: # to Level of all Cold Spell Skills | — | ×1.02 |  |
+| # to Level of all Spell Skills [rune] | 1 | ×2091.84 | 15% of ladder (rising) |
+| #% increased Spell Damage [rune] | 60 | ×124.69 | 15% of ladder (rising) |
+| # to Level of all Spell Skills [crafted] | 5 | ×1.22 | 15% of ladder (rising) |
+| T1 roll: # to Level of all Cold Spell Skills | — | ×1.14 |  |
 | T1 roll: #% increased Freeze Buildup | — | ×1.00 |  |
 | T1 roll: # to Level of all Spell Skills | — | ×1.00 | 15% of ladder (rising) |
-| T2 roll: #% increased Fire Damage | — | ×1.00 |  |
 | T1 roll: # to Level of all Physical Spell Skills | — | ×1.00 |  |
+| T2 roll: #% increased Fire Damage | — | ×1.00 |  |
 | T2 roll: # to Level of all Spell Skills | — | ×1.00 | 15% of ladder (rising) |
-| T2 roll: #% increased Cast Speed | — | ×1.00 | 15% of ladder (rising) |
-| Bonded: Archon recovery period expires #% faster [rune] | 30 | ÷31.81 |  |
-| Bonded: Break Armour on Critical Hit with Spells equal to #% of Physical Damage dealt [rune] | 12 | ÷4.80 |  |
+| T2 roll: # to Level of all Cold Spell Skills | — | ×1.00 |  |
+| Bonded: Archon recovery period expires #% faster [rune] | 30 | ÷32.58 |  |
+| Bonded: Break Armour on Critical Hit with Spells equal to #% of Physical Damage dealt [rune] | 24 | ÷30.49 |  |
 | # to Level of all Spell Skills | 4 | ÷1.00 | 15% of ladder (rising) |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ÷1.00 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
 
-## weapon.spear — 2844 listings
+## weapon.spear — 2926 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Bonded: #% increased effect of Fully Broken Armour [rune] | 20 | ×14.51 |  |
+| Bonded: #% increased effect of Fully Broken Armour [rune] | 20 | ×32.42 |  |
+| # to Level of all Attack Skills [crafted] | 2 | ×31.00 |  |
 | T1 roll: #% increased Attack Speed (Local) | — | ×1.07 | 46% of ladder (falling) |
 | #% increased Light Radius | 15 | ×1.00 |  |
 | T1 roll: #% to Critical Damage Bonus | — | ×1.00 |  |
 | T1 roll: Adds # to # Fire Damage | — | ×1.00 |  |
-| #% increased Physical Damage [desecrated] | 74 | ×1.00 | 38% of ladder (falling) |
 | T1 roll: #% increased Attribute Requirements | — | ×1.00 |  |
-| T1 roll: #% increased Physical Damage | — | ×1.00 | 38% of ladder (falling) |
 | T2 roll: #% increased Attribute Requirements | — | ×1.00 |  |
-| T2 roll: #% increased Physical Damage | — | ×1.00 | 38% of ladder (falling) |
-| #% increased Physical Damage [rune] | 18 | ÷11.08 | 38% of ladder (falling) |
+| T1 roll: #% increased Physical Damage | — | ×1.00 | 38% of ladder (falling) |
+| T2 roll: Adds # to # Lightning Damage | — | ×1.00 |  |
+| #% increased Physical Damage [rune] | 18 | ÷22.33 | 38% of ladder (falling) |
 | T2 roll: #% increased Light Radius | — | ÷1.00 |  |
 | # to Accuracy Rating (Local) [desecrated] | 119 | ÷1.00 |  |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ÷1.00 · corrupted ÷1.00 · per socket ×1.00 · quality ×1.00_
 
-## armour.focus — 2278 listings
+## armour.focus — 2316 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Energy Shield [crafted] | 73 | ×130.30 |  |
-| #% increased Spell Damage [crafted] | 82 | ×28.03 | 15% of ladder (rising) |
-| #% increased Energy Shield [desecrated] | 68 | ×4.00 |  |
-| T1 roll: #% chance for Spell Skills to fire 2 additional Projectiles [desecrated] | — | ×2.59 |  |
-| #% to Fire and Chaos Resistances [desecrated] | 15 | ×2.45 |  |
-| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.40 |  |
-| # to maximum Energy Shield (Local) [desecrated] | 76 | ×1.26 | universal |
+| #% increased Energy Shield [crafted] | 73 | ×130.21 |  |
+| #% increased Critical Hit Chance for Spells [crafted] | 52 | ×75.89 | 15% of ladder (rising) |
+| T1 roll: #% increased Spell Damage [crafted] | — | ×8.72 | 15% of ladder (rising) |
+| T1 roll: #% chance for Spell Skills to fire 2 additional Projectiles [desecrated] | — | ×2.50 |  |
+| #% to Fire and Chaos Resistances [desecrated] | 15 | ×2.44 |  |
+| #% increased Spell Damage [crafted] | 82 | ×2.27 | 15% of ladder (rising) |
+| #% increased Energy Shield [desecrated] | 68 | ×1.92 |  |
+| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.44 |  |
 | total ele res | 37 | ×1.19 | universal |
-| #% increased Cast Speed [desecrated] | 23 | ×1.13 | 15% of ladder (rising) |
-| total chaos res | 19 | ×1.11 | universal |
-| #% chance for Spell Skills to fire 2 additional Projectiles [desecrated] | 8 | ÷2.49 |  |
-| T1 roll: #% increased Spell Damage [crafted] | — | ÷1.76 | 15% of ladder (rising) |
+| # to maximum Energy Shield (Local) [desecrated] | 76 | ×1.18 | universal |
+| T2 roll: #% increased Critical Hit Chance for Spells [crafted] | — | ÷4.28 | 15% of ladder (rising) |
+| #% chance for Spell Skills to fire 2 additional Projectiles [desecrated] | 8 | ÷2.37 |  |
 | T1 roll: #% to Fire and Chaos Resistances [desecrated] | — | ÷1.30 |  |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier roll ×1.00 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
 
-## armour.quiver — 2178 listings
+## armour.quiver — 2230 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | — | ×6.71 |  |
-| Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | 11 | ×4.47 |  |
-| #% increased Critical Hit Chance for Attacks [desecrated] | 23 | ×1.49 | 46% of ladder (falling) |
-| #% increased Critical Damage Bonus for Attack Damage [desecrated] | 25 | ×1.00 |  |
+| #% increased Critical Hit Chance for Attacks [desecrated] | 23 | ×71.03 | 46% of ladder (falling) |
+| T1 roll: Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | — | ×6.75 |  |
+| Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | 11 | ×4.45 |  |
+| #% increased Critical Damage Bonus for Attack Damage [desecrated] | 25 | ×1.01 |  |
+| T1 roll: #% increased Projectile Speed | — | ×1.01 |  |
 | Adds # to # Lightning damage to Attacks [desecrated] | 24.5 | ×1.00 |  |
-| T1 roll: #% increased Projectile Speed | — | ×1.00 |  |
 | #% Surpassing chance to fire an additional Arrow | 37 | ×1.00 |  |
 | #% increased Attack Speed | 14 | ×1.00 | 46% of ladder (falling) |
-| # to Dexterity [desecrated] | 27 | ×1.00 |  |
+| #% increased Critical Damage Bonus for Attack Damage | 26 | ×1.00 |  |
 | #% chance to Pierce an Enemy | 22 | ×1.00 |  |
 | T1 roll: #% Surpassing chance to fire an additional Arrow | — | ÷1.00 |  |
-| T1 roll: #% increased Attack Speed | — | ÷1.00 | 46% of ladder (falling) |
+| T2 roll: #% Surpassing chance to fire an additional Arrow | — | ÷1.00 |  |
 | T2 roll: #% increased Attack Speed | — | ÷1.00 | 46% of ladder (falling) |
 
 _Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.00 · corrupted ×1.00_
 
-## armour.shield — 1952 listings
+## armour.shield — 1987 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×8.26 |  |
-| T1 roll: #% to all Maximum Elemental Resistances | — | ×2.33 |  |
-| total life | 121 | ×1.42 | universal |
-| #% to Chaos Resistance | 19 | ×1.24 | universal |
+| #% increased Armour (Local) [desecrated] | 41 | ×8.50 |  |
+| T1 roll: #% to all Maximum Elemental Resistances | — | ×2.36 |  |
+| total life | 121 | ×1.47 | universal |
+| #% increased Armour, Evasion and Energy Shield [rune] | 18 | ×1.26 |  |
+| T1 roll: #% to Maximum Chaos Resistance | — | ×1.22 |  |
+| #% to Chaos Resistance | 19 | ×1.21 | universal |
 | #% to all Maximum Elemental Resistances | 1 | ×1.20 |  |
-| T1 roll: #% to Maximum Chaos Resistance | — | ×1.12 |  |
 | total ele res | 37 | ×1.00 | universal |
 | #% to Maximum Lightning Resistance | 2 | ×1.00 |  |
 | #% increased Block chance (Local) | 26 | ×1.00 |  |
-| #% to Maximum Chaos Resistance | 2 | ×1.00 |  |
-| T2 roll: #% to all Maximum Elemental Resistances | — | ÷1.43 |  |
-| # to maximum Life | 121 | ÷1.42 | universal |
-| total chaos res | 19 | ÷1.24 | universal |
+| # to maximum Life | 121 | ÷1.47 | universal |
+| T2 roll: #% to all Maximum Elemental Resistances | — | ÷1.41 |  |
+| total chaos res | 19 | ÷1.21 | universal |
 
-_Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier roll ×1.20 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
+_Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier roll ×1.17 · corrupted ×1.00 · per socket ×1.00 · quality ×1.00_
 
-## weapon.twomace — 1675 listings
+## weapon.twomace — 1702 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ×198.35 |  |
-| #% increased Physical Damage [desecrated] | 112 | ×9.24 | 38% of ladder (falling) |
-| T1 roll: #% to Critical Hit Chance | — | ×1.55 |  |
-| T1 roll: #% increased Physical Damage | — | ×1.01 | 38% of ladder (falling) |
-| #% increased Elemental Damage with Attacks | 105 | ×1.00 |  |
-| Leeches #% of Physical Damage as Life | 8.51 | ×1.00 |  |
+| Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ×84.62 |  |
+| #% increased Physical Damage [desecrated] | 79 | ×4.49 | 38% of ladder (falling) |
+| T1 roll: #% to Critical Hit Chance | — | ×3.02 |  |
+| # to Accuracy Rating (Local) [desecrated] | 122 | ×3.01 |  |
+| T1 roll: #% increased Physical Damage | — | ×1.05 | 38% of ladder (falling) |
+| #% increased Attack Speed (Local) [crafted] | 23 | ×1.00 | 46% of ladder (falling) |
+| #% increased Elemental Damage with Attacks | 106 | ×1.00 |  |
+| Leeches #% of Physical Damage as Mana | 7.71 | ×1.00 |  |
 | # to Level of all Melee Skills | 4 | ×1.00 | 38% of ladder (falling) |
-| #% increased Physical Damage | 59 | ×1.00 | 38% of ladder (falling) |
-| Causes Enemies to Explode on Critical kill, for #% of their Life as Physical Damage [implicit] | 10 | ×1.00 |  |
-| #% to Critical Hit Chance | 3.44 | ×1.00 |  |
-| #% increased Physical Damage [rune] | 36 | ÷5.58 | 38% of ladder (falling) |
-| T1 roll: Adds # to # Lightning Damage | — | ÷1.01 |  |
-| T1 roll: Adds # to # Cold Damage | — | ÷1.01 |  |
+| Leeches #% of Physical Damage as Life | 8.51 | ×1.00 |  |
+| #% increased Physical Damage [rune] | 36 | ÷4.23 | 38% of ladder (falling) |
+| T1 roll: Adds # to # Cold Damage | — | ÷1.27 |  |
+| T1 roll: Adds # to # Lightning Damage | — | ÷1.27 |  |
 
-_Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.01 · corrupted ÷1.00 · per socket ×1.00 · quality ×1.00_
+_Item-level effects: per ilvl ×1.00 · per extra mod ÷1.00 · per top-tier roll ×1.27 · corrupted ÷1.00 · per socket ×1.00 · quality ×1.00_
 
 ## Current build meta (demand context)
 
