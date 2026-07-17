@@ -9,212 +9,212 @@
   "gbm_benchmark": true,
   "note": "Chronological holdout backtest of equation.json (split never bisects a scan batch; held-out relist duplicates dropped, see n_test_relists). medale is median |log(actual)-log(pred)| (0.69 ~= off by 2x); skill is pinball-loss improvement over a constant baseline given the SAME trim/recency preprocessing (> 0 means the mods carry signal); frac_above should sit near 0.75 when the quantile target is calibrated. `segments` repeats the metrics restricted to test rows asking >= 5ex / >= 60ex (where mispricing actually costs money) and to rows whose listing later SOLD (gone while a higher ask stayed visible) -- the closest thing to clearing-price ground truth asks can give. `residuals` (per group and per segment) are weighted q25/q50/q75/q90 quantiles of the SIGNED holdout errors log(actual)-log(pred): exp(q50) is the measured multiplier from the floor prediction to the typical ask, exp(q90) to the high tail.",
   "overall": {
-    "n_test": 101700,
-    "n_test_relists": 13095,
-    "medale": 3.2845,
-    "skill": 0.0729,
-    "within_30pct": 0.183,
-    "frac_above": 0.796,
+    "n_test": 102183,
+    "n_test_relists": 13197,
+    "medale": 3.2311,
+    "skill": 0.0757,
+    "within_30pct": 0.174,
+    "frac_above": 0.7973,
     "segments": {
       "5ex+": {
-        "n_test": 83995,
-        "medale": 4.3037,
-        "skill": 0.1302,
-        "within_30pct": 0.046
+        "n_test": 84432,
+        "medale": 4.2001,
+        "skill": 0.1363,
+        "within_30pct": 0.0458
       },
       "60ex+": {
-        "n_test": 56815,
-        "medale": 5.8483,
-        "skill": 0.1249,
-        "within_30pct": 0.001
+        "n_test": 57155,
+        "medale": 5.7726,
+        "skill": 0.1297,
+        "within_30pct": 0.0008
       }
     },
     "gbm": {
       "groups": 21,
-      "n_test": 101700,
-      "medale": 3.1912,
-      "skill": 0.0955,
-      "skill_linear": 0.0729,
-      "within_30pct": 0.2158
+      "n_test": 102183,
+      "medale": 3.1617,
+      "skill": 0.0988,
+      "skill_linear": 0.0757,
+      "within_30pct": 0.21
     }
   },
   "groups": {
     "jewel": {
-      "n_train": 54136,
-      "n_test": 11142,
-      "n_test_relists": 2325,
-      "r2_train": -0.8669,
-      "medale": 2.3726,
-      "medale_naive": 3.5509,
-      "pinball": 0.8636,
-      "pinball_naive": 0.9238,
-      "skill": 0.0651,
-      "within_30pct": 0.0433,
-      "frac_above": 0.7813,
+      "n_train": 54692,
+      "n_test": 11269,
+      "n_test_relists": 2346,
+      "r2_train": -0.8806,
+      "medale": 2.4093,
+      "medale_naive": 3.5822,
+      "pinball": 0.8673,
+      "pinball_naive": 0.9297,
+      "skill": 0.0672,
+      "within_30pct": 0.0438,
+      "frac_above": 0.7832,
       "residuals": {
-        "q25": 0.3279,
-        "q50": 2.3172,
-        "q75": 4.6232,
-        "q90": 5.6069
+        "q25": 0.3347,
+        "q50": 2.3592,
+        "q75": 4.6547,
+        "q90": 5.643
       },
       "residuals_premium": {
-        "n": 4557,
-        "n_eff": 3419.6,
-        "q25": 0.1496,
-        "q50": 2.0944,
-        "q75": 4.3665,
-        "q90": 4.8123
+        "n": 4455,
+        "n_eff": 3299.9,
+        "q25": 0.1811,
+        "q50": 2.1169,
+        "q75": 4.3627,
+        "q90": 4.81
       },
       "segments": {
         "5ex+": {
-          "n_test": 8538,
-          "medale": 3.0303,
-          "pinball": 0.8335,
-          "pinball_naive": 1.0612,
-          "skill": 0.2146,
+          "n_test": 8695,
+          "medale": 3.0626,
+          "pinball": 0.8419,
+          "pinball_naive": 1.0735,
+          "skill": 0.2158,
           "within_30pct": 0.0419,
           "residuals": {
-            "q25": 1.5402,
-            "q50": 3.0303,
-            "q75": 4.9288,
-            "q90": 5.847
+            "q25": 1.5691,
+            "q50": 3.0626,
+            "q75": 4.9631,
+            "q90": 5.9083
           }
         },
         "60ex+": {
-          "n_test": 5548,
-          "medale": 4.4449,
-          "pinball": 1.0839,
-          "pinball_naive": 1.3257,
-          "skill": 0.1824,
+          "n_test": 5657,
+          "medale": 4.4612,
+          "pinball": 1.0916,
+          "pinball_naive": 1.3372,
+          "skill": 0.1837,
           "within_30pct": 0.0,
           "residuals": {
-            "q25": 2.8531,
-            "q50": 4.4449,
-            "q75": 5.3079,
-            "q90": 6.2606
+            "q25": 2.8716,
+            "q50": 4.4612,
+            "q75": 5.3349,
+            "q90": 6.3635
           }
         }
       },
       "gbm": {
-        "medale": 2.2936,
-        "pinball": 0.8315,
-        "skill": 0.0999,
-        "within_30pct": 0.1735,
+        "medale": 2.2318,
+        "pinball": 0.8397,
+        "skill": 0.0969,
+        "within_30pct": 0.1539,
         "segments": {
           "5ex+": {
-            "n_test": 8538,
-            "medale": 2.8419,
-            "pinball": 0.7992,
-            "pinball_naive": 1.0612,
-            "skill": 0.247,
-            "within_30pct": 0.1309,
+            "n_test": 8695,
+            "medale": 3.1203,
+            "pinball": 0.8067,
+            "pinball_naive": 1.0735,
+            "skill": 0.2486,
+            "within_30pct": 0.1281,
             "residuals": {
               "q25": 1.7918,
-              "q50": 2.8419,
-              "q75": 4.2727,
-              "q90": 6.398
+              "q50": 3.1203,
+              "q75": 4.2999,
+              "q90": 6.1292
             }
           },
           "60ex+": {
-            "n_test": 5548,
+            "n_test": 5657,
             "medale": 4.167,
-            "pinball": 1.0431,
-            "pinball_naive": 1.3257,
-            "skill": 0.2131,
+            "pinball": 1.0524,
+            "pinball_naive": 1.3372,
+            "skill": 0.213,
             "within_30pct": 0.0,
             "residuals": {
-              "q25": 2.4849,
+              "q25": 2.4838,
               "q50": 4.167,
-              "q75": 4.9941,
+              "q75": 5.1969,
               "q90": 6.4696
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 2.0794,
-          "q75": 4.2444,
-          "q90": 5.7764
+          "q50": 1.9651,
+          "q75": 4.2983,
+          "q90": 5.9025
         },
         "residuals_premium": {
-          "n": 6901,
-          "n_eff": 5112.1,
-          "q25": 0.0,
-          "q50": 1.8691,
+          "n": 6998,
+          "n_eff": 5107.9,
+          "q25": 0.0016,
+          "q50": 1.923,
           "q75": 4.167,
-          "q90": 4.8598
+          "q90": 4.5171
         }
       }
     },
     "other": {
-      "n_train": 49308,
-      "n_test": 6581,
-      "n_test_relists": 5687,
-      "r2_train": -0.6237,
-      "medale": 0.6233,
+      "n_train": 49685,
+      "n_test": 6612,
+      "n_test_relists": 5695,
+      "r2_train": -0.6314,
+      "medale": 0.6517,
       "medale_naive": 0.6931,
-      "pinball": 0.4551,
-      "pinball_naive": 0.5081,
-      "skill": 0.1043,
-      "within_30pct": 0.4398,
-      "frac_above": 0.6466,
+      "pinball": 0.4592,
+      "pinball_naive": 0.5111,
+      "skill": 0.1015,
+      "within_30pct": 0.4336,
+      "frac_above": 0.6833,
       "residuals": {
         "q25": -0.0,
-        "q50": 0.5811,
-        "q75": 4.1629,
-        "q90": 4.5135
+        "q50": 0.6334,
+        "q75": 4.1593,
+        "q90": 4.5131
       },
       "residuals_premium": {
-        "n": 5963,
-        "n_eff": 1191.9,
+        "n": 5935,
+        "n_eff": 1194.3,
         "q25": -0.0,
-        "q50": 0.5863,
-        "q75": 4.1658,
-        "q90": 4.4906
+        "q50": 0.6586,
+        "q75": 4.1662,
+        "q90": 4.5066
       },
       "segments": {
         "5ex+": {
-          "n_test": 6581,
-          "medale": 0.6233,
-          "pinball": 0.4551,
-          "pinball_naive": 0.5081,
-          "skill": 0.1043,
-          "within_30pct": 0.4398,
+          "n_test": 6612,
+          "medale": 0.6517,
+          "pinball": 0.4592,
+          "pinball_naive": 0.5111,
+          "skill": 0.1015,
+          "within_30pct": 0.4336,
           "residuals": {
             "q25": -0.0,
-            "q50": 0.5811,
-            "q75": 4.1629,
-            "q90": 4.5135
+            "q50": 0.6334,
+            "q75": 4.1593,
+            "q90": 4.5131
           }
         },
         "60ex+": {
-          "n_test": 3526,
-          "medale": 4.1671,
-          "pinball": 1.0849,
+          "n_test": 3513,
+          "medale": 4.1668,
+          "pinball": 1.0839,
           "pinball_naive": 1.215,
-          "skill": 0.1071,
+          "skill": 0.1079,
           "within_30pct": 0.0,
           "residuals": {
-            "q25": 4.1628,
-            "q50": 4.1671,
-            "q75": 4.6066,
-            "q90": 4.84
+            "q25": 4.1593,
+            "q50": 4.1668,
+            "q75": 4.6127,
+            "q90": 4.8446
           }
         }
       },
       "gbm": {
-        "medale": 0.0033,
-        "pinball": 0.4186,
-        "skill": 0.1761,
-        "within_30pct": 0.5391,
+        "medale": 0.0014,
+        "pinball": 0.4228,
+        "skill": 0.1728,
+        "within_30pct": 0.5308,
         "segments": {
           "5ex+": {
-            "n_test": 6581,
-            "medale": 0.0033,
-            "pinball": 0.4186,
-            "pinball_naive": 0.5081,
-            "skill": 0.1761,
-            "within_30pct": 0.5391,
+            "n_test": 6612,
+            "medale": 0.0014,
+            "pinball": 0.4228,
+            "pinball_naive": 0.5111,
+            "skill": 0.1728,
+            "within_30pct": 0.5308,
             "residuals": {
               "q25": -0.0,
               "q50": 0.0,
@@ -223,12 +223,12 @@
             }
           },
           "60ex+": {
-            "n_test": 3526,
+            "n_test": 3513,
             "medale": 4.167,
-            "pinball": 1.0452,
+            "pinball": 1.0482,
             "pinball_naive": 1.215,
-            "skill": 0.1398,
-            "within_30pct": 0.0031,
+            "skill": 0.1373,
+            "within_30pct": 0.0,
             "residuals": {
               "q25": 4.167,
               "q50": 4.167,
@@ -244,8 +244,8 @@
           "q90": 4.167
         },
         "residuals_premium": {
-          "n": 6505,
-          "n_eff": 1280.5,
+          "n": 6531,
+          "n_eff": 1261.7,
           "q25": -0.0,
           "q50": 0.0,
           "q75": 4.167,
@@ -254,2040 +254,2040 @@
       }
     },
     "accessory.ring": {
-      "n_train": 48156,
-      "n_test": 11861,
+      "n_train": 48640,
+      "n_test": 11943,
       "n_test_relists": 153,
-      "r2_train": -2.0037,
-      "medale": 3.9914,
+      "r2_train": -1.988,
+      "medale": 4.0282,
       "medale_naive": 4.0943,
-      "pinball": 0.9316,
-      "pinball_naive": 0.9601,
-      "skill": 0.0297,
-      "within_30pct": 0.2185,
-      "frac_above": 0.7939,
+      "pinball": 0.9555,
+      "pinball_naive": 0.9818,
+      "skill": 0.0268,
+      "within_30pct": 0.2163,
+      "frac_above": 0.7957,
       "residuals": {
-        "q25": 0.0369,
-        "q50": 3.9914,
-        "q75": 6.3506,
-        "q90": 6.4792
+        "q25": 0.0421,
+        "q50": 4.0265,
+        "q75": 6.3564,
+        "q90": 6.4802
       },
       "residuals_premium": {
-        "n": 1189,
-        "n_eff": 703.4,
-        "q25": 0.5215,
-        "q50": 3.8946,
-        "q75": 4.6927,
-        "q90": 6.3591
+        "n": 1314,
+        "n_eff": 760.2,
+        "q25": 0.5746,
+        "q50": 3.858,
+        "q75": 4.6556,
+        "q90": 6.2982
       },
       "segments": {
         "5ex+": {
-          "n_test": 9374,
-          "medale": 4.7242,
-          "pinball": 1.1911,
-          "pinball_naive": 1.2973,
-          "skill": 0.0819,
-          "within_30pct": 0.0056,
+          "n_test": 9400,
+          "medale": 4.6741,
+          "pinball": 1.216,
+          "pinball_naive": 1.3246,
+          "skill": 0.082,
+          "within_30pct": 0.0044,
           "residuals": {
-            "q25": 3.1079,
-            "q50": 4.7242,
-            "q75": 6.4257,
-            "q90": 6.5042
+            "q25": 3.6944,
+            "q50": 4.6741,
+            "q75": 6.4283,
+            "q90": 6.5035
           }
         },
         "60ex+": {
-          "n_test": 6123,
-          "medale": 6.1874,
-          "pinball": 1.409,
-          "pinball_naive": 1.5271,
-          "skill": 0.0773,
-          "within_30pct": 0.0002,
+          "n_test": 6203,
+          "medale": 5.9348,
+          "pinball": 1.3807,
+          "pinball_naive": 1.4994,
+          "skill": 0.0792,
+          "within_30pct": 0.0001,
           "residuals": {
-            "q25": 4.1279,
-            "q50": 6.1874,
-            "q75": 6.455,
-            "q90": 6.745
+            "q25": 4.089,
+            "q50": 5.9348,
+            "q75": 6.4504,
+            "q90": 6.6538
           }
         }
       },
       "gbm": {
-        "medale": 3.8678,
-        "pinball": 0.9086,
-        "skill": 0.0536,
+        "medale": 4.0943,
+        "pinball": 0.9346,
+        "skill": 0.048,
         "within_30pct": 0.2193,
         "segments": {
           "5ex+": {
-            "n_test": 9374,
+            "n_test": 9400,
             "medale": 4.167,
-            "pinball": 1.1463,
-            "pinball_naive": 1.2973,
-            "skill": 0.1164,
-            "within_30pct": 0.0233,
+            "pinball": 1.1843,
+            "pinball_naive": 1.3246,
+            "skill": 0.1059,
+            "within_30pct": 0.0174,
             "residuals": {
-              "q25": 2.4029,
+              "q25": 3.3927,
               "q50": 4.167,
               "q75": 6.4696,
               "q90": 6.4696
             }
           },
           "60ex+": {
-            "n_test": 6123,
-            "medale": 5.8527,
-            "pinball": 1.3616,
-            "pinball_naive": 1.5271,
-            "skill": 0.1084,
+            "n_test": 6203,
+            "medale": 5.7655,
+            "pinball": 1.349,
+            "pinball_naive": 1.4994,
+            "skill": 0.1003,
             "within_30pct": 0.0,
             "residuals": {
               "q25": 4.0943,
-              "q50": 5.8527,
+              "q50": 5.7655,
               "q75": 6.4696,
-              "q90": 6.4826
+              "q90": 6.4696
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 3.8038,
-          "q75": 6.3,
+          "q50": 4.0943,
+          "q75": 6.3597,
           "q90": 6.4696
         },
         "residuals_premium": {
-          "n": 2209,
-          "n_eff": 874.7,
-          "q25": 0.2816,
-          "q50": 2.6421,
+          "n": 2147,
+          "n_eff": 662.8,
+          "q25": 0.6931,
+          "q50": 3.7073,
+          "q75": 4.167,
+          "q90": 5.5145
+        }
+      }
+    },
+    "accessory.amulet": {
+      "n_train": 44390,
+      "n_test": 10919,
+      "n_test_relists": 123,
+      "r2_train": -2.1422,
+      "medale": 3.9002,
+      "medale_naive": 4.0943,
+      "pinball": 0.946,
+      "pinball_naive": 0.9777,
+      "skill": 0.0324,
+      "within_30pct": 0.1991,
+      "frac_above": 0.8003,
+      "residuals": {
+        "q25": 0.8224,
+        "q50": 3.8931,
+        "q75": 6.3421,
+        "q90": 6.4883
+      },
+      "residuals_premium": {
+        "n": 596,
+        "n_eff": 346.0,
+        "q25": 0.6741,
+        "q50": 4.0111,
+        "q75": 4.9296,
+        "q90": 7.1103
+      },
+      "segments": {
+        "5ex+": {
+          "n_test": 9013,
+          "medale": 5.0865,
+          "pinball": 1.1924,
+          "pinball_naive": 1.286,
+          "skill": 0.0728,
+          "within_30pct": 0.0056,
+          "residuals": {
+            "q25": 2.563,
+            "q50": 5.0865,
+            "q75": 6.4018,
+            "q90": 6.5418
+          }
+        },
+        "60ex+": {
+          "n_test": 6223,
+          "medale": 6.3151,
+          "pinball": 1.4659,
+          "pinball_naive": 1.5665,
+          "skill": 0.0642,
+          "within_30pct": 0.0,
+          "residuals": {
+            "q25": 4.6677,
+            "q50": 6.3151,
+            "q75": 6.4512,
+            "q90": 7.1344
+          }
+        }
+      },
+      "gbm": {
+        "medale": 3.7245,
+        "pinball": 0.9413,
+        "skill": 0.0372,
+        "within_30pct": 0.1969,
+        "segments": {
+          "5ex+": {
+            "n_test": 9013,
+            "medale": 4.7968,
+            "pinball": 1.1781,
+            "pinball_naive": 1.286,
+            "skill": 0.0839,
+            "within_30pct": 0.0228,
+            "residuals": {
+              "q25": 2.3026,
+              "q50": 4.7968,
+              "q75": 6.4696,
+              "q90": 6.4826
+            }
+          },
+          "60ex+": {
+            "n_test": 6223,
+            "medale": 6.349,
+            "pinball": 1.4571,
+            "pinball_naive": 1.5665,
+            "skill": 0.0698,
+            "within_30pct": 0.0,
+            "residuals": {
+              "q25": 4.4031,
+              "q50": 6.349,
+              "q75": 6.4696,
+              "q90": 7.1682
+            }
+          }
+        },
+        "residuals": {
+          "q25": 0.0,
+          "q50": 3.7245,
+          "q75": 6.4696,
+          "q90": 6.4696
+        },
+        "residuals_premium": {
+          "n": 1149,
+          "n_eff": 619.9,
+          "q25": 0.0,
+          "q50": 2.4174,
+          "q75": 4.4514,
+          "q90": 5.7143
+        }
+      }
+    },
+    "accessory.belt": {
+      "n_train": 33159,
+      "n_test": 8029,
+      "n_test_relists": 158,
+      "r2_train": -1.5778,
+      "medale": 3.2344,
+      "medale_naive": 3.912,
+      "pinball": 0.9333,
+      "pinball_naive": 0.9901,
+      "skill": 0.0573,
+      "within_30pct": 0.1925,
+      "frac_above": 0.7925,
+      "residuals": {
+        "q25": 0.3217,
+        "q50": 3.1578,
+        "q75": 6.2725,
+        "q90": 6.5009
+      },
+      "residuals_premium": {
+        "n": 1574,
+        "n_eff": 1506.3,
+        "q25": 0.5314,
+        "q50": 3.5498,
+        "q75": 4.4007,
+        "q90": 4.8332
+      },
+      "segments": {
+        "5ex+": {
+          "n_test": 6567,
+          "medale": 4.4315,
+          "pinball": 1.1445,
+          "pinball_naive": 1.3112,
+          "skill": 0.1271,
+          "within_30pct": 0.0096,
+          "residuals": {
+            "q25": 2.3237,
+            "q50": 4.4315,
+            "q75": 6.3944,
+            "q90": 6.7081
+          }
+        },
+        "60ex+": {
+          "n_test": 4491,
+          "medale": 6.28,
+          "pinball": 1.4511,
+          "pinball_naive": 1.655,
+          "skill": 0.1232,
+          "within_30pct": 0.0,
+          "residuals": {
+            "q25": 4.4513,
+            "q50": 6.28,
+            "q75": 6.4607,
+            "q90": 7.7657
+          }
+        }
+      },
+      "gbm": {
+        "medale": 3.3029,
+        "pinball": 0.9094,
+        "skill": 0.0815,
+        "within_30pct": 0.2136,
+        "segments": {
+          "5ex+": {
+            "n_test": 6567,
+            "medale": 4.167,
+            "pinball": 1.1092,
+            "pinball_naive": 1.3112,
+            "skill": 0.154,
+            "within_30pct": 0.0519,
+            "residuals": {
+              "q25": 2.3026,
+              "q50": 4.167,
+              "q75": 6.4696,
+              "q90": 6.4696
+            }
+          },
+          "60ex+": {
+            "n_test": 4491,
+            "medale": 6.0126,
+            "pinball": 1.4298,
+            "pinball_naive": 1.655,
+            "skill": 0.1361,
+            "within_30pct": 0.0,
+            "residuals": {
+              "q25": 4.167,
+              "q50": 6.0126,
+              "q75": 6.4696,
+              "q90": 7.6236
+            }
+          }
+        },
+        "residuals": {
+          "q25": 0.0,
+          "q50": 3.2866,
+          "q75": 5.9407,
+          "q90": 6.4696
+        },
+        "residuals_premium": {
+          "n": 2128,
+          "n_eff": 2043.0,
+          "q25": 0.0,
+          "q50": 4.167,
           "q75": 4.167,
           "q90": 4.8602
         }
       }
     },
-    "accessory.amulet": {
-      "n_train": 44018,
-      "n_test": 10871,
-      "n_test_relists": 128,
-      "r2_train": -2.1439,
-      "medale": 3.9056,
-      "medale_naive": 4.0943,
-      "pinball": 0.9528,
-      "pinball_naive": 0.9836,
-      "skill": 0.0314,
-      "within_30pct": 0.1982,
-      "frac_above": 0.8014,
-      "residuals": {
-        "q25": 0.9226,
-        "q50": 3.8981,
-        "q75": 6.3542,
-        "q90": 6.4973
-      },
-      "residuals_premium": {
-        "n": 595,
-        "n_eff": 361.5,
-        "q25": 0.6303,
-        "q50": 4.0456,
-        "q75": 5.1238,
-        "q90": 7.1043
-      },
-      "segments": {
-        "5ex+": {
-          "n_test": 8984,
-          "medale": 5.1762,
-          "pinball": 1.2003,
-          "pinball_naive": 1.2904,
-          "skill": 0.0698,
-          "within_30pct": 0.0049,
-          "residuals": {
-            "q25": 2.3638,
-            "q50": 5.1762,
-            "q75": 6.4096,
-            "q90": 6.5907
-          }
-        },
-        "60ex+": {
-          "n_test": 6220,
-          "medale": 6.3317,
-          "pinball": 1.4852,
-          "pinball_naive": 1.5831,
-          "skill": 0.0618,
-          "within_30pct": 0.0,
-          "residuals": {
-            "q25": 4.8408,
-            "q50": 6.3317,
-            "q75": 6.4588,
-            "q90": 7.384
-          }
-        }
-      },
-      "gbm": {
-        "medale": 3.6889,
-        "pinball": 0.9452,
-        "skill": 0.0391,
-        "within_30pct": 0.1994,
-        "segments": {
-          "5ex+": {
-            "n_test": 8984,
-            "medale": 5.0963,
-            "pinball": 1.1863,
-            "pinball_naive": 1.2904,
-            "skill": 0.0807,
-            "within_30pct": 0.0247,
-            "residuals": {
-              "q25": 2.3026,
-              "q50": 5.0963,
-              "q75": 6.4696,
-              "q90": 6.7057
-            }
-          },
-          "60ex+": {
-            "n_test": 6220,
-            "medale": 6.4696,
-            "pinball": 1.4776,
-            "pinball_naive": 1.5831,
-            "skill": 0.0666,
-            "within_30pct": 0.0,
-            "residuals": {
-              "q25": 4.6052,
-              "q50": 6.4696,
-              "q75": 6.4696,
-              "q90": 7.5682
-            }
-          }
-        },
-        "residuals": {
-          "q25": 0.0001,
-          "q50": 3.6889,
-          "q75": 6.4696,
-          "q90": 6.4696
-        },
-        "residuals_premium": {
-          "n": 904,
-          "n_eff": 427.2,
-          "q25": 0.0,
-          "q50": 1.7918,
-          "q75": 4.167,
-          "q90": 5.7096
-        }
-      }
-    },
-    "accessory.belt": {
-      "n_train": 32864,
-      "n_test": 8026,
-      "n_test_relists": 151,
-      "r2_train": -1.6033,
-      "medale": 3.3445,
-      "medale_naive": 4.2341,
-      "pinball": 0.9389,
-      "pinball_naive": 0.9927,
-      "skill": 0.0542,
-      "within_30pct": 0.2113,
-      "frac_above": 0.7974,
-      "residuals": {
-        "q25": 0.0651,
-        "q50": 3.2729,
-        "q75": 6.3621,
-        "q90": 6.501
-      },
-      "residuals_premium": {
-        "n": 1541,
-        "n_eff": 1473.9,
-        "q25": 0.6204,
-        "q50": 3.4634,
-        "q75": 4.3443,
-        "q90": 4.8473
-      },
-      "segments": {
-        "5ex+": {
-          "n_test": 6543,
-          "medale": 4.4978,
-          "pinball": 1.1675,
-          "pinball_naive": 1.3297,
-          "skill": 0.122,
-          "within_30pct": 0.0104,
-          "residuals": {
-            "q25": 2.3962,
-            "q50": 4.4978,
-            "q75": 6.4275,
-            "q90": 6.7546
-          }
-        },
-        "60ex+": {
-          "n_test": 4486,
-          "medale": 6.3565,
-          "pinball": 1.4511,
-          "pinball_naive": 1.6495,
-          "skill": 0.1203,
-          "within_30pct": 0.0002,
-          "residuals": {
-            "q25": 4.4251,
-            "q50": 6.3565,
-            "q75": 6.4701,
-            "q90": 7.7925
-          }
-        }
-      },
-      "gbm": {
-        "medale": 3.2189,
-        "pinball": 0.9122,
-        "skill": 0.0812,
-        "within_30pct": 0.2162,
-        "segments": {
-          "5ex+": {
-            "n_test": 6543,
-            "medale": 4.167,
-            "pinball": 1.1238,
-            "pinball_naive": 1.3297,
-            "skill": 0.1548,
-            "within_30pct": 0.0415,
-            "residuals": {
-              "q25": 2.3026,
-              "q50": 4.167,
-              "q75": 6.4696,
-              "q90": 6.4826
-            }
-          },
-          "60ex+": {
-            "n_test": 4486,
-            "medale": 5.8972,
-            "pinball": 1.4109,
-            "pinball_naive": 1.6495,
-            "skill": 0.1446,
-            "within_30pct": 0.0007,
-            "residuals": {
-              "q25": 4.167,
-              "q50": 5.8972,
-              "q75": 6.4696,
-              "q90": 7.6441
-            }
-          }
-        },
-        "residuals": {
-          "q25": 0.0,
-          "q50": 3.1355,
-          "q75": 6.0126,
-          "q90": 6.4696
-        },
-        "residuals_premium": {
-          "n": 2052,
-          "n_eff": 1967.8,
-          "q25": 0.0,
-          "q50": 3.2456,
-          "q75": 4.167,
-          "q90": 4.8367
-        }
-      }
-    },
     "armour.chest": {
-      "n_train": 32670,
-      "n_test": 7819,
-      "n_test_relists": 327,
-      "r2_train": -1.7413,
-      "medale": 3.123,
+      "n_train": 32961,
+      "n_test": 7809,
+      "n_test_relists": 330,
+      "r2_train": -1.696,
+      "medale": 2.9848,
       "medale_naive": 3.912,
-      "pinball": 0.897,
-      "pinball_naive": 0.958,
-      "skill": 0.0637,
-      "within_30pct": 0.2425,
-      "frac_above": 0.7992,
+      "pinball": 0.8911,
+      "pinball_naive": 0.9601,
+      "skill": 0.0719,
+      "within_30pct": 0.2221,
+      "frac_above": 0.7931,
       "residuals": {
-        "q25": 0.0575,
-        "q50": 3.0725,
-        "q75": 6.3425,
-        "q90": 6.56
+        "q25": 0.0705,
+        "q50": 2.964,
+        "q75": 6.2291,
+        "q90": 6.5355
       },
       "residuals_premium": {
-        "n": 1028,
-        "n_eff": 982.3,
-        "q25": 1.1274,
-        "q50": 3.7362,
-        "q75": 4.5639,
-        "q90": 5.9825
+        "n": 1085,
+        "n_eff": 1047.0,
+        "q25": 0.9213,
+        "q50": 3.619,
+        "q75": 4.5815,
+        "q90": 6.1281
       },
       "segments": {
         "5ex+": {
-          "n_test": 6344,
-          "medale": 4.9063,
-          "pinball": 1.1938,
-          "pinball_naive": 1.3323,
-          "skill": 0.104,
-          "within_30pct": 0.0091,
+          "n_test": 6351,
+          "medale": 4.6013,
+          "pinball": 1.157,
+          "pinball_naive": 1.3087,
+          "skill": 0.1159,
+          "within_30pct": 0.0111,
           "residuals": {
-            "q25": 2.3766,
-            "q50": 4.9063,
-            "q75": 6.4445,
-            "q90": 7.1791
+            "q25": 2.3131,
+            "q50": 4.6013,
+            "q75": 6.4085,
+            "q90": 7.0866
           }
         },
         "60ex+": {
-          "n_test": 4321,
-          "medale": 6.3509,
-          "pinball": 1.4789,
-          "pinball_naive": 1.6471,
-          "skill": 0.1021,
-          "within_30pct": 0.001,
+          "n_test": 4329,
+          "medale": 6.2649,
+          "pinball": 1.4625,
+          "pinball_naive": 1.6476,
+          "skill": 0.1124,
+          "within_30pct": 0.0009,
           "residuals": {
-            "q25": 4.5952,
-            "q50": 6.3509,
-            "q75": 6.5039,
-            "q90": 7.806
+            "q25": 4.5593,
+            "q50": 6.2649,
+            "q75": 6.4873,
+            "q90": 7.6971
           }
         }
       },
       "gbm": {
         "medale": 2.9957,
-        "pinball": 0.8689,
-        "skill": 0.093,
-        "within_30pct": 0.2601,
+        "pinball": 0.8579,
+        "skill": 0.1065,
+        "within_30pct": 0.266,
         "segments": {
           "5ex+": {
-            "n_test": 6344,
-            "medale": 4.5868,
-            "pinball": 1.1585,
-            "pinball_naive": 1.3323,
-            "skill": 0.1305,
-            "within_30pct": 0.0541,
+            "n_test": 6351,
+            "medale": 4.4031,
+            "pinball": 1.1174,
+            "pinball_naive": 1.3087,
+            "skill": 0.1462,
+            "within_30pct": 0.0659,
             "residuals": {
               "q25": 2.3026,
-              "q50": 4.5868,
+              "q50": 4.4031,
               "q75": 6.4696,
               "q90": 7.1627
             }
           },
           "60ex+": {
-            "n_test": 4321,
-            "medale": 6.2406,
-            "pinball": 1.4616,
-            "pinball_naive": 1.6471,
-            "skill": 0.1126,
+            "n_test": 4329,
+            "medale": 6.2146,
+            "pinball": 1.4425,
+            "pinball_naive": 1.6476,
+            "skill": 0.1245,
             "within_30pct": 0.0,
             "residuals": {
               "q25": 4.4031,
-              "q50": 6.2406,
+              "q50": 6.2146,
               "q75": 6.4696,
-              "q90": 7.7704
+              "q90": 7.5812
             }
           }
         },
         "residuals": {
           "q25": 0.0,
           "q50": 2.9957,
-          "q75": 6.2146,
+          "q75": 6.1129,
           "q90": 6.4696
         },
         "residuals_premium": {
-          "n": 1829,
-          "n_eff": 1746.0,
+          "n": 1763,
+          "n_eff": 1714.2,
           "q25": 0.0,
           "q50": 4.167,
           "q75": 4.167,
-          "q90": 6.3708
-        }
-      }
-    },
-    "armour.helmet": {
-      "n_train": 31741,
-      "n_test": 7632,
-      "n_test_relists": 267,
-      "r2_train": -1.7332,
-      "medale": 3.4585,
-      "medale_naive": 4.2341,
-      "pinball": 0.9303,
-      "pinball_naive": 0.9926,
-      "skill": 0.0628,
-      "within_30pct": 0.1917,
-      "frac_above": 0.8056,
-      "residuals": {
-        "q25": 0.1247,
-        "q50": 3.4384,
-        "q75": 6.1933,
-        "q90": 6.561
-      },
-      "residuals_premium": {
-        "n": 1028,
-        "n_eff": 974.0,
-        "q25": 1.3907,
-        "q50": 3.8545,
-        "q75": 4.8352,
-        "q90": 6.6129
-      },
-      "segments": {
-        "5ex+": {
-          "n_test": 6326,
-          "medale": 4.9609,
-          "pinball": 1.1885,
-          "pinball_naive": 1.3464,
-          "skill": 0.1173,
-          "within_30pct": 0.0072,
-          "residuals": {
-            "q25": 2.6196,
-            "q50": 4.9609,
-            "q75": 6.3992,
-            "q90": 7.1392
-          }
-        },
-        "60ex+": {
-          "n_test": 4381,
-          "medale": 6.1659,
-          "pinball": 1.4698,
-          "pinball_naive": 1.658,
-          "skill": 0.1135,
-          "within_30pct": 0.0008,
-          "residuals": {
-            "q25": 4.6535,
-            "q50": 6.1659,
-            "q75": 6.4878,
-            "q90": 7.7556
-          }
-        }
-      },
-      "gbm": {
-        "medale": 3.6651,
-        "pinball": 0.9109,
-        "skill": 0.0823,
-        "within_30pct": 0.2372,
-        "segments": {
-          "5ex+": {
-            "n_test": 6326,
-            "medale": 4.6052,
-            "pinball": 1.1812,
-            "pinball_naive": 1.3464,
-            "skill": 0.1227,
-            "within_30pct": 0.0475,
-            "residuals": {
-              "q25": 2.7081,
-              "q50": 4.6052,
-              "q75": 6.4696,
-              "q90": 7.1627
-            }
-          },
-          "60ex+": {
-            "n_test": 4381,
-            "medale": 6.3029,
-            "pinball": 1.4776,
-            "pinball_naive": 1.658,
-            "skill": 0.1088,
-            "within_30pct": 0.0,
-            "residuals": {
-              "q25": 4.4031,
-              "q50": 6.3029,
-              "q75": 6.4696,
-              "q90": 7.8043
-            }
-          }
-        },
-        "residuals": {
-          "q25": 0.0,
-          "q50": 3.6651,
-          "q75": 6.3386,
-          "q90": 6.4696
-        },
-        "residuals_premium": {
-          "n": 1571,
-          "n_eff": 1482.1,
-          "q25": 0.0,
-          "q50": 3.998,
-          "q75": 4.3798,
           "q90": 6.2464
         }
       }
     },
-    "armour.boots": {
-      "n_train": 29698,
-      "n_test": 7117,
-      "n_test_relists": 271,
-      "r2_train": -1.7546,
-      "medale": 3.7183,
-      "medale_naive": 4.4031,
-      "pinball": 0.9523,
-      "pinball_naive": 1.0326,
-      "skill": 0.0777,
-      "within_30pct": 0.2133,
-      "frac_above": 0.8087,
+    "armour.helmet": {
+      "n_train": 32029,
+      "n_test": 7630,
+      "n_test_relists": 268,
+      "r2_train": -1.4987,
+      "medale": 3.189,
+      "medale_naive": 4.2485,
+      "pinball": 0.9179,
+      "pinball_naive": 1.0121,
+      "skill": 0.0931,
+      "within_30pct": 0.1232,
+      "frac_above": 0.7983,
       "residuals": {
-        "q25": 0.0985,
-        "q50": 3.713,
-        "q75": 6.345,
-        "q90": 6.6381
+        "q25": 0.4968,
+        "q50": 3.1573,
+        "q75": 5.7865,
+        "q90": 6.4922
       },
       "residuals_premium": {
-        "n": 1474,
-        "n_eff": 1350.4,
-        "q25": 1.3731,
-        "q50": 4.1851,
-        "q75": 4.7793,
-        "q90": 6.5431
+        "n": 1363,
+        "n_eff": 1312.7,
+        "q25": 0.8023,
+        "q50": 3.699,
+        "q75": 4.676,
+        "q90": 6.1156
       },
       "segments": {
         "5ex+": {
-          "n_test": 6062,
-          "medale": 4.8768,
-          "pinball": 1.2224,
-          "pinball_naive": 1.3929,
-          "skill": 0.1224,
-          "within_30pct": 0.0083,
+          "n_test": 6342,
+          "medale": 4.4619,
+          "pinball": 1.0956,
+          "pinball_naive": 1.3214,
+          "skill": 0.1709,
+          "within_30pct": 0.0116,
           "residuals": {
-            "q25": 2.7724,
-            "q50": 4.8747,
-            "q75": 6.4423,
-            "q90": 7.2707
+            "q25": 2.2558,
+            "q50": 4.4619,
+            "q75": 6.1347,
+            "q90": 6.7684
           }
         },
         "60ex+": {
-          "n_test": 4286,
-          "medale": 6.2739,
-          "pinball": 1.4942,
-          "pinball_naive": 1.6988,
-          "skill": 0.1204,
-          "within_30pct": 0.0005,
+          "n_test": 4382,
+          "medale": 5.7515,
+          "pinball": 1.3965,
+          "pinball_naive": 1.6608,
+          "skill": 0.1591,
+          "within_30pct": 0.0015,
           "residuals": {
-            "q25": 4.6916,
-            "q50": 6.2739,
-            "q75": 6.5059,
-            "q90": 7.9468
+            "q25": 4.4448,
+            "q50": 5.7515,
+            "q75": 6.3846,
+            "q90": 7.4075
           }
         }
       },
       "gbm": {
-        "medale": 3.8815,
-        "pinball": 0.9307,
-        "skill": 0.0987,
-        "within_30pct": 0.2297,
+        "medale": 3.3673,
+        "pinball": 0.902,
+        "skill": 0.1087,
+        "within_30pct": 0.1784,
         "segments": {
           "5ex+": {
-            "n_test": 6062,
-            "medale": 4.845,
-            "pinball": 1.1949,
-            "pinball_naive": 1.3929,
-            "skill": 0.1422,
-            "within_30pct": 0.0514,
+            "n_test": 6342,
+            "medale": 4.4031,
+            "pinball": 1.0896,
+            "pinball_naive": 1.3214,
+            "skill": 0.1755,
+            "within_30pct": 0.0569,
             "residuals": {
-              "q25": 2.9444,
-              "q50": 4.845,
-              "q75": 6.4696,
-              "q90": 7.2259
+              "q25": 2.3026,
+              "q50": 4.4031,
+              "q75": 6.1616,
+              "q90": 6.7286
             }
           },
           "60ex+": {
-            "n_test": 4286,
-            "medale": 6.0748,
-            "pinball": 1.4874,
-            "pinball_naive": 1.6988,
-            "skill": 0.1244,
+            "n_test": 4382,
+            "medale": 5.6411,
+            "pinball": 1.409,
+            "pinball_naive": 1.6608,
+            "skill": 0.1516,
             "within_30pct": 0.0,
             "residuals": {
-              "q25": 4.5746,
-              "q50": 6.0748,
+              "q25": 4.4031,
+              "q50": 5.6411,
               "q75": 6.4696,
-              "q90": 7.8559
+              "q90": 7.4036
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 3.8815,
-          "q75": 6.2462,
-          "q90": 6.6813
+          "q50": 3.3664,
+          "q75": 5.6969,
+          "q90": 6.4696
         },
         "residuals_premium": {
-          "n": 1733,
-          "n_eff": 1621.1,
-          "q25": 0.6124,
+          "n": 1661,
+          "n_eff": 1606.4,
+          "q25": 0.0,
+          "q50": 3.9384,
+          "q75": 4.3493,
+          "q90": 6.0472
+        }
+      }
+    },
+    "armour.boots": {
+      "n_train": 29872,
+      "n_test": 7187,
+      "n_test_relists": 272,
+      "r2_train": -1.7183,
+      "medale": 3.5801,
+      "medale_naive": 4.4031,
+      "pinball": 0.9479,
+      "pinball_naive": 1.036,
+      "skill": 0.0851,
+      "within_30pct": 0.1992,
+      "frac_above": 0.8073,
+      "residuals": {
+        "q25": 0.2777,
+        "q50": 3.5628,
+        "q75": 6.2837,
+        "q90": 6.603
+      },
+      "residuals_premium": {
+        "n": 1512,
+        "n_eff": 1402.3,
+        "q25": 0.9979,
+        "q50": 4.0189,
+        "q75": 4.6862,
+        "q90": 6.3873
+      },
+      "segments": {
+        "5ex+": {
+          "n_test": 6118,
+          "medale": 4.7124,
+          "pinball": 1.1944,
+          "pinball_naive": 1.3769,
+          "skill": 0.1326,
+          "within_30pct": 0.0084,
+          "residuals": {
+            "q25": 2.4799,
+            "q50": 4.7124,
+            "q75": 6.4179,
+            "q90": 7.2023
+          }
+        },
+        "60ex+": {
+          "n_test": 4365,
+          "medale": 6.2082,
+          "pinball": 1.4798,
+          "pinball_naive": 1.6988,
+          "skill": 0.1289,
+          "within_30pct": 0.0005,
+          "residuals": {
+            "q25": 4.5638,
+            "q50": 6.2082,
+            "q75": 6.4942,
+            "q90": 7.8932
+          }
+        }
+      },
+      "gbm": {
+        "medale": 3.6889,
+        "pinball": 0.9231,
+        "skill": 0.109,
+        "within_30pct": 0.2218,
+        "segments": {
+          "5ex+": {
+            "n_test": 6118,
+            "medale": 4.639,
+            "pinball": 1.1514,
+            "pinball_naive": 1.3769,
+            "skill": 0.1637,
+            "within_30pct": 0.061,
+            "residuals": {
+              "q25": 2.46,
+              "q50": 4.639,
+              "q75": 6.4696,
+              "q90": 7.1623
+            }
+          },
+          "60ex+": {
+            "n_test": 4365,
+            "medale": 5.9151,
+            "pinball": 1.4589,
+            "pinball_naive": 1.6988,
+            "skill": 0.1412,
+            "within_30pct": 0.0,
+            "residuals": {
+              "q25": 4.4507,
+              "q50": 5.9151,
+              "q75": 6.4696,
+              "q90": 7.7096
+            }
+          }
+        },
+        "residuals": {
+          "q25": 0.0,
+          "q50": 3.6889,
+          "q75": 6.0126,
+          "q90": 6.4858
+        },
+        "residuals_premium": {
+          "n": 2126,
+          "n_eff": 1999.3,
+          "q25": 0.2034,
           "q50": 4.167,
-          "q75": 4.845,
-          "q90": 6.8751
+          "q75": 4.7795,
+          "q90": 6.7056
         }
       }
     },
     "armour.gloves": {
-      "n_train": 28852,
-      "n_test": 6969,
-      "n_test_relists": 229,
-      "r2_train": -1.7776,
-      "medale": 3.7537,
+      "n_train": 29121,
+      "n_test": 6950,
+      "n_test_relists": 225,
+      "r2_train": -1.7455,
+      "medale": 3.657,
       "medale_naive": 4.4031,
-      "pinball": 0.973,
-      "pinball_naive": 1.0625,
-      "skill": 0.0842,
-      "within_30pct": 0.145,
-      "frac_above": 0.8136,
+      "pinball": 0.9689,
+      "pinball_naive": 1.0601,
+      "skill": 0.086,
+      "within_30pct": 0.1369,
+      "frac_above": 0.8132,
       "residuals": {
-        "q25": 0.6998,
-        "q50": 3.751,
-        "q75": 6.1532,
-        "q90": 6.7685
+        "q25": 0.7064,
+        "q50": 3.644,
+        "q75": 6.0654,
+        "q90": 6.7407
       },
       "residuals_premium": {
-        "n": 1177,
-        "n_eff": 1105.3,
-        "q25": 1.6784,
-        "q50": 4.1347,
-        "q75": 5.1008,
-        "q90": 6.822
+        "n": 1218,
+        "n_eff": 1140.9,
+        "q25": 1.58,
+        "q50": 4.1335,
+        "q75": 5.0114,
+        "q90": 6.7407
       },
       "segments": {
         "5ex+": {
-          "n_test": 5982,
-          "medale": 5.0545,
-          "pinball": 1.188,
-          "pinball_naive": 1.3814,
-          "skill": 0.14,
-          "within_30pct": 0.0087,
+          "n_test": 5967,
+          "medale": 4.9602,
+          "pinball": 1.1712,
+          "pinball_naive": 1.3742,
+          "skill": 0.1477,
+          "within_30pct": 0.009,
           "residuals": {
-            "q25": 2.6976,
-            "q50": 5.0545,
-            "q75": 6.3592,
-            "q90": 7.343
+            "q25": 2.5316,
+            "q50": 4.9602,
+            "q75": 6.3355,
+            "q90": 7.3276
           }
         },
         "60ex+": {
-          "n_test": 4299,
-          "medale": 6.0064,
-          "pinball": 1.4604,
-          "pinball_naive": 1.6865,
-          "skill": 0.1341,
+          "n_test": 4290,
+          "medale": 5.9335,
+          "pinball": 1.4541,
+          "pinball_naive": 1.6912,
+          "skill": 0.1402,
           "within_30pct": 0.0003,
           "residuals": {
-            "q25": 4.643,
-            "q50": 6.0064,
-            "q75": 6.4829,
-            "q90": 7.8359
+            "q25": 4.6863,
+            "q50": 5.9335,
+            "q75": 6.4757,
+            "q90": 7.8024
           }
         }
       },
       "gbm": {
-        "medale": 3.8918,
-        "pinball": 0.9456,
-        "skill": 0.1101,
-        "within_30pct": 0.1875,
+        "medale": 3.7722,
+        "pinball": 0.9363,
+        "skill": 0.1168,
+        "within_30pct": 0.2013,
         "segments": {
           "5ex+": {
-            "n_test": 5982,
-            "medale": 4.6433,
-            "pinball": 1.1493,
-            "pinball_naive": 1.3814,
-            "skill": 0.168,
-            "within_30pct": 0.05,
+            "n_test": 5967,
+            "medale": 4.6052,
+            "pinball": 1.1371,
+            "pinball_naive": 1.3742,
+            "skill": 0.1726,
+            "within_30pct": 0.0554,
             "residuals": {
-              "q25": 2.5257,
-              "q50": 4.6433,
+              "q25": 2.3026,
+              "q50": 4.6052,
               "q75": 6.4696,
-              "q90": 7.3859
+              "q90": 7.4423
             }
           },
           "60ex+": {
-            "n_test": 4299,
-            "medale": 5.7764,
-            "pinball": 1.4397,
-            "pinball_naive": 1.6865,
-            "skill": 0.1463,
+            "n_test": 4290,
+            "medale": 5.6777,
+            "pinball": 1.4388,
+            "pinball_naive": 1.6912,
+            "skill": 0.1493,
             "within_30pct": 0.0,
             "residuals": {
               "q25": 4.4031,
-              "q50": 5.7764,
+              "q50": 5.6777,
               "q75": 6.4696,
-              "q90": 7.8996
+              "q90": 7.9585
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 3.8918,
-          "q75": 5.994,
-          "q90": 6.8367
+          "q50": 3.7722,
+          "q75": 6.0265,
+          "q90": 6.806
         },
         "residuals_premium": {
-          "n": 2027,
-          "n_eff": 1888.1,
-          "q25": 0.3683,
-          "q50": 4.1396,
-          "q75": 4.7564,
-          "q90": 6.5395
+          "n": 2016,
+          "n_eff": 1878.4,
+          "q25": 0.1506,
+          "q50": 4.1104,
+          "q75": 4.6661,
+          "q90": 6.4268
         }
       }
     },
     "weapon.wand": {
-      "n_train": 17904,
-      "n_test": 4306,
-      "n_test_relists": 168,
-      "r2_train": -2.1119,
-      "medale": 3.8189,
-      "medale_naive": 4.6052,
-      "pinball": 1.0154,
-      "pinball_naive": 1.1073,
-      "skill": 0.083,
-      "within_30pct": 0.1518,
-      "frac_above": 0.82,
+      "n_train": 17976,
+      "n_test": 4323,
+      "n_test_relists": 169,
+      "r2_train": -2.2579,
+      "medale": 3.8707,
+      "medale_naive": 4.4031,
+      "pinball": 1.0065,
+      "pinball_naive": 1.0831,
+      "skill": 0.0707,
+      "within_30pct": 0.1747,
+      "frac_above": 0.8219,
       "residuals": {
-        "q25": 0.8382,
-        "q50": 3.8082,
-        "q75": 6.3195,
-        "q90": 7.4867
+        "q25": 0.9021,
+        "q50": 3.8627,
+        "q75": 6.37,
+        "q90": 7.6254
       },
       "residuals_premium": {
-        "n": 784,
-        "n_eff": 731.5,
-        "q25": 0.5224,
-        "q50": 3.3747,
-        "q75": 4.8276,
-        "q90": 7.437
+        "n": 687,
+        "n_eff": 632.5,
+        "q25": 0.6302,
+        "q50": 3.8103,
+        "q75": 5.0865,
+        "q90": 7.929
       },
       "segments": {
         "5ex+": {
-          "n_test": 3762,
-          "medale": 5.025,
-          "pinball": 1.2291,
-          "pinball_naive": 1.4135,
-          "skill": 0.1304,
-          "within_30pct": 0.0122,
+          "n_test": 3763,
+          "medale": 5.0407,
+          "pinball": 1.2455,
+          "pinball_naive": 1.3967,
+          "skill": 0.1082,
+          "within_30pct": 0.0129,
           "residuals": {
-            "q25": 2.5897,
-            "q50": 5.025,
-            "q75": 6.4312,
-            "q90": 7.8934
+            "q25": 2.5594,
+            "q50": 5.0407,
+            "q75": 6.4468,
+            "q90": 8.0125
           }
         },
         "60ex+": {
           "n_test": 2709,
-          "medale": 6.2391,
-          "pinball": 1.5172,
-          "pinball_naive": 1.7436,
-          "skill": 0.1298,
-          "within_30pct": 0.0029,
+          "medale": 6.3411,
+          "pinball": 1.5653,
+          "pinball_naive": 1.746,
+          "skill": 0.1035,
+          "within_30pct": 0.0007,
           "residuals": {
-            "q25": 4.6325,
-            "q50": 6.2391,
-            "q75": 6.6156,
-            "q90": 8.348
+            "q25": 4.8405,
+            "q50": 6.3411,
+            "q75": 7.0144,
+            "q90": 8.4977
           }
         }
       },
       "gbm": {
-        "medale": 3.9483,
-        "pinball": 0.9909,
-        "skill": 0.1051,
-        "within_30pct": 0.1684,
+        "medale": 3.7975,
+        "pinball": 0.9784,
+        "skill": 0.0967,
+        "within_30pct": 0.1802,
         "segments": {
           "5ex+": {
-            "n_test": 3762,
-            "medale": 4.5951,
-            "pinball": 1.1698,
-            "pinball_naive": 1.4135,
-            "skill": 0.1724,
-            "within_30pct": 0.0604,
+            "n_test": 3763,
+            "medale": 4.6052,
+            "pinball": 1.1748,
+            "pinball_naive": 1.3967,
+            "skill": 0.1589,
+            "within_30pct": 0.0635,
             "residuals": {
-              "q25": 2.3679,
-              "q50": 4.5951,
+              "q25": 2.3026,
+              "q50": 4.6052,
               "q75": 6.4696,
-              "q90": 7.7883
+              "q90": 7.8559
             }
           },
           "60ex+": {
             "n_test": 2709,
-            "medale": 5.8212,
-            "pinball": 1.4867,
-            "pinball_naive": 1.7436,
-            "skill": 0.1474,
+            "medale": 5.9863,
+            "pinball": 1.5141,
+            "pinball_naive": 1.746,
+            "skill": 0.1328,
             "within_30pct": 0.0,
             "residuals": {
-              "q25": 4.4031,
-              "q50": 5.8212,
-              "q75": 6.4696,
-              "q90": 8.2614
+              "q25": 4.5521,
+              "q50": 5.9863,
+              "q75": 6.5517,
+              "q90": 8.4795
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 3.9483,
-          "q75": 6.0651,
-          "q90": 7.2888
+          "q50": 3.7975,
+          "q75": 6.1564,
+          "q90": 7.4056
         },
         "residuals_premium": {
-          "n": 1307,
-          "n_eff": 1196.7,
+          "n": 1247,
+          "n_eff": 1120.6,
           "q25": 0.0,
-          "q50": 4.167,
-          "q75": 4.7274,
-          "q90": 7.1407
+          "q50": 4.062,
+          "q75": 4.7746,
+          "q90": 7.3959
         }
       }
     },
     "weapon.bow": {
-      "n_train": 14367,
-      "n_test": 3384,
-      "n_test_relists": 194,
-      "r2_train": -2.013,
-      "medale": 3.4937,
-      "medale_naive": 4.6052,
-      "pinball": 0.9506,
-      "pinball_naive": 1.1006,
-      "skill": 0.1363,
-      "within_30pct": 0.143,
-      "frac_above": 0.839,
-      "residuals": {
-        "q25": 0.9763,
-        "q50": 3.4509,
-        "q75": 5.9468,
-        "q90": 6.7474
-      },
-      "residuals_premium": {
-        "n": 814,
-        "n_eff": 750.1,
-        "q25": 1.0543,
-        "q50": 3.3242,
-        "q75": 4.6134,
-        "q90": 6.0325
-      },
-      "segments": {
-        "5ex+": {
-          "n_test": 2936,
-          "medale": 4.434,
-          "pinball": 1.1351,
-          "pinball_naive": 1.3811,
-          "skill": 0.1782,
-          "within_30pct": 0.0164,
-          "residuals": {
-            "q25": 2.3263,
-            "q50": 4.434,
-            "q75": 6.3616,
-            "q90": 7.3604
-          }
-        },
-        "60ex+": {
-          "n_test": 2102,
-          "medale": 5.7338,
-          "pinball": 1.4056,
-          "pinball_naive": 1.7096,
-          "skill": 0.1778,
-          "within_30pct": 0.0017,
-          "residuals": {
-            "q25": 4.3639,
-            "q50": 5.7338,
-            "q75": 6.4768,
-            "q90": 7.9517
-          }
-        }
-      },
-      "gbm": {
-        "medale": 3.4209,
-        "pinball": 0.9321,
-        "skill": 0.1531,
-        "within_30pct": 0.1441,
-        "segments": {
-          "5ex+": {
-            "n_test": 2936,
-            "medale": 4.167,
-            "pinball": 1.0616,
-            "pinball_naive": 1.3811,
-            "skill": 0.2314,
-            "within_30pct": 0.0646,
-            "residuals": {
-              "q25": 2.3026,
-              "q50": 4.167,
-              "q75": 5.9787,
-              "q90": 7.0711
-            }
-          },
-          "60ex+": {
-            "n_test": 2102,
-            "medale": 5.2618,
-            "pinball": 1.3523,
-            "pinball_naive": 1.7096,
-            "skill": 0.209,
-            "within_30pct": 0.0001,
-            "residuals": {
-              "q25": 4.167,
-              "q50": 5.2618,
-              "q75": 6.4578,
-              "q90": 7.5734
-            }
-          }
-        },
-        "residuals": {
-          "q25": 0.2201,
-          "q50": 3.4012,
-          "q75": 5.5061,
-          "q90": 6.6351
-        },
-        "residuals_premium": {
-          "n": 1227,
-          "n_eff": 1118.3,
-          "q25": 0.0013,
-          "q50": 3.6398,
-          "q75": 4.4945,
-          "q90": 6.099
-        }
-      }
-    },
-    "flask.charm": {
-      "n_train": 13741,
-      "n_test": 1050,
-      "n_test_relists": 2313,
-      "r2_train": -0.5332,
-      "medale": 3.091,
-      "medale_naive": 3.912,
-      "pinball": 0.9259,
-      "pinball_naive": 0.9759,
-      "skill": 0.0512,
-      "within_30pct": 0.3095,
-      "frac_above": 0.6886,
-      "residuals": {
-        "q25": -0.0,
-        "q50": 3.091,
-        "q75": 6.0125,
-        "q90": 8.079
-      },
-      "residuals_premium": {
-        "n": 100,
-        "n_eff": 100.0,
-        "q25": 0.8602,
-        "q50": 2.7631,
-        "q75": 4.1676,
-        "q90": 6.1846
-      },
-      "segments": {
-        "5ex+": {
-          "n_test": 675,
-          "medale": 5.7364,
-          "pinball": 1.3868,
-          "pinball_naive": 1.5009,
-          "skill": 0.076,
-          "within_30pct": 0.0104,
-          "residuals": {
-            "q25": 3.5461,
-            "q50": 5.7364,
-            "q75": 6.6619,
-            "q90": 8.7721
-          }
-        },
-        "60ex+": {
-          "n_test": 521,
-          "medale": 6.0418,
-          "pinball": 1.6055,
-          "pinball_naive": 1.738,
-          "skill": 0.0762,
-          "within_30pct": 0.0038,
-          "residuals": {
-            "q25": 5.0962,
-            "q50": 6.0418,
-            "q75": 7.5682,
-            "q90": 9.3936
-          }
-        }
-      },
-      "gbm": {
-        "medale": 3.091,
-        "pinball": 0.904,
-        "skill": 0.0738,
-        "within_30pct": 0.301,
-        "segments": {
-          "5ex+": {
-            "n_test": 675,
-            "medale": 5.115,
-            "pinball": 1.3414,
-            "pinball_naive": 1.5009,
-            "skill": 0.1062,
-            "within_30pct": 0.0119,
-            "residuals": {
-              "q25": 3.4012,
-              "q50": 5.115,
-              "q75": 6.4696,
-              "q90": 8.7722
-            }
-          },
-          "60ex+": {
-            "n_test": 521,
-            "medale": 5.9915,
-            "pinball": 1.559,
-            "pinball_naive": 1.738,
-            "skill": 0.103,
-            "within_30pct": 0.0019,
-            "residuals": {
-              "q25": 4.4031,
-              "q50": 5.9915,
-              "q75": 7.2792,
-              "q90": 8.7722
-            }
-          }
-        },
-        "residuals": {
-          "q25": 0.0,
-          "q50": 3.091,
-          "q75": 5.9423,
-          "q90": 7.9099
-        },
-        "residuals_premium": {
-          "n": 128,
-          "n_eff": 128.0,
-          "q25": 0.6743,
-          "q50": 2.9667,
-          "q75": 4.1987,
-          "q90": 6.2301
-        }
-      }
-    },
-    "weapon.crossbow": {
-      "n_train": 13457,
-      "n_test": 3188,
-      "n_test_relists": 171,
-      "r2_train": -1.886,
-      "medale": 3.6896,
+      "n_train": 14428,
+      "n_test": 3414,
+      "n_test_relists": 193,
+      "r2_train": -2.0636,
+      "medale": 3.455,
       "medale_naive": 4.4031,
-      "pinball": 0.9721,
-      "pinball_naive": 1.0687,
-      "skill": 0.0904,
-      "within_30pct": 0.1642,
-      "frac_above": 0.8215,
+      "pinball": 0.9455,
+      "pinball_naive": 1.0859,
+      "skill": 0.1293,
+      "within_30pct": 0.153,
+      "frac_above": 0.8417,
       "residuals": {
-        "q25": 0.6612,
-        "q50": 3.6711,
-        "q75": 6.3256,
-        "q90": 7.0643
+        "q25": 0.9973,
+        "q50": 3.4387,
+        "q75": 5.9679,
+        "q90": 6.8868
       },
       "residuals_premium": {
-        "n": 591,
-        "n_eff": 548.8,
-        "q25": 0.2502,
-        "q50": 2.9162,
-        "q75": 4.2123,
-        "q90": 5.9863
+        "n": 775,
+        "n_eff": 713.3,
+        "q25": 1.0684,
+        "q50": 3.4387,
+        "q75": 4.6347,
+        "q90": 6.1987
       },
       "segments": {
         "5ex+": {
-          "n_test": 2672,
-          "medale": 4.6535,
-          "pinball": 1.2029,
-          "pinball_naive": 1.3794,
-          "skill": 0.128,
-          "within_30pct": 0.0159,
+          "n_test": 2962,
+          "medale": 4.4421,
+          "pinball": 1.1384,
+          "pinball_naive": 1.3699,
+          "skill": 0.169,
+          "within_30pct": 0.0148,
           "residuals": {
-            "q25": 2.4326,
-            "q50": 4.6535,
-            "q75": 6.4161,
-            "q90": 7.6077
+            "q25": 2.3261,
+            "q50": 4.4421,
+            "q75": 6.3698,
+            "q90": 7.3983
           }
         },
         "60ex+": {
-          "n_test": 1881,
-          "medale": 6.2686,
-          "pinball": 1.4786,
-          "pinball_naive": 1.6962,
-          "skill": 0.1283,
-          "within_30pct": 0.0026,
+          "n_test": 2119,
+          "medale": 5.8692,
+          "pinball": 1.4232,
+          "pinball_naive": 1.7107,
+          "skill": 0.168,
+          "within_30pct": 0.0019,
           "residuals": {
-            "q25": 4.4481,
-            "q50": 6.2686,
-            "q75": 6.5233,
-            "q90": 8.0689
+            "q25": 4.4012,
+            "q50": 5.8692,
+            "q75": 6.489,
+            "q90": 8.005
           }
         }
       },
       "gbm": {
-        "medale": 3.4012,
-        "pinball": 0.9295,
-        "skill": 0.1302,
-        "within_30pct": 0.1744,
+        "medale": 3.3811,
+        "pinball": 0.9226,
+        "skill": 0.1503,
+        "within_30pct": 0.1448,
         "segments": {
           "5ex+": {
-            "n_test": 2672,
-            "medale": 4.167,
-            "pinball": 1.0838,
-            "pinball_naive": 1.3794,
-            "skill": 0.2143,
-            "within_30pct": 0.081,
+            "n_test": 2962,
+            "medale": 4.1838,
+            "pinball": 1.0671,
+            "pinball_naive": 1.3699,
+            "skill": 0.2211,
+            "within_30pct": 0.069,
             "residuals": {
               "q25": 2.3026,
-              "q50": 4.167,
-              "q75": 6.1706,
+              "q50": 4.1838,
+              "q75": 6.1014,
               "q90": 7.1627
             }
           },
           "60ex+": {
-            "n_test": 1881,
-            "medale": 5.3967,
-            "pinball": 1.3694,
-            "pinball_naive": 1.6962,
-            "skill": 0.1927,
-            "within_30pct": 0.003,
+            "n_test": 2119,
+            "medale": 5.4636,
+            "pinball": 1.3775,
+            "pinball_naive": 1.7107,
+            "skill": 0.1948,
+            "within_30pct": 0.0005,
             "residuals": {
               "q25": 4.167,
-              "q50": 5.3967,
-              "q75": 6.4696,
-              "q90": 7.807
+              "q50": 5.4636,
+              "q75": 6.4508,
+              "q90": 7.6671
+            }
+          }
+        },
+        "residuals": {
+          "q25": 0.2192,
+          "q50": 3.3609,
+          "q75": 5.6524,
+          "q90": 6.683
+        },
+        "residuals_premium": {
+          "n": 1166,
+          "n_eff": 1068.3,
+          "q25": 0.0665,
+          "q50": 3.5571,
+          "q75": 4.5456,
+          "q90": 6.1139
+        }
+      }
+    },
+    "flask.charm": {
+      "n_train": 13855,
+      "n_test": 1045,
+      "n_test_relists": 2383,
+      "r2_train": -0.5339,
+      "medale": 2.877,
+      "medale_naive": 3.912,
+      "pinball": 0.9063,
+      "pinball_naive": 0.9553,
+      "skill": 0.0513,
+      "within_30pct": 0.3187,
+      "frac_above": 0.6746,
+      "residuals": {
+        "q25": -0.0,
+        "q50": 2.8608,
+        "q75": 6.0125,
+        "q90": 8.079
+      },
+      "residuals_premium": {
+        "n": 104,
+        "n_eff": 104.0,
+        "q25": 0.6839,
+        "q50": 2.6317,
+        "q75": 4.242,
+        "q90": 6.9149
+      },
+      "segments": {
+        "5ex+": {
+          "n_test": 654,
+          "medale": 5.5533,
+          "pinball": 1.3858,
+          "pinball_naive": 1.5079,
+          "skill": 0.081,
+          "within_30pct": 0.0076,
+          "residuals": {
+            "q25": 3.3906,
+            "q50": 5.5533,
+            "q75": 6.591,
+            "q90": 8.7722
+          }
+        },
+        "60ex+": {
+          "n_test": 500,
+          "medale": 6.1114,
+          "pinball": 1.6144,
+          "pinball_naive": 1.7582,
+          "skill": 0.0818,
+          "within_30pct": 0.004,
+          "residuals": {
+            "q25": 4.9436,
+            "q50": 6.1114,
+            "q75": 7.8474,
+            "q90": 9.4653
+          }
+        }
+      },
+      "gbm": {
+        "medale": 2.7264,
+        "pinball": 0.8792,
+        "skill": 0.0796,
+        "within_30pct": 0.2995,
+        "segments": {
+          "5ex+": {
+            "n_test": 654,
+            "medale": 5.0963,
+            "pinball": 1.3249,
+            "pinball_naive": 1.5079,
+            "skill": 0.1213,
+            "within_30pct": 0.0092,
+            "residuals": {
+              "q25": 3.1533,
+              "q50": 5.0963,
+              "q75": 6.511,
+              "q90": 8.7722
+            }
+          },
+          "60ex+": {
+            "n_test": 500,
+            "medale": 5.9915,
+            "pinball": 1.5505,
+            "pinball_naive": 1.7582,
+            "skill": 0.1182,
+            "within_30pct": 0.0,
+            "residuals": {
+              "q25": 4.4031,
+              "q50": 5.9915,
+              "q75": 7.4683,
+              "q90": 9.1006
             }
           }
         },
         "residuals": {
           "q25": 0.0,
-          "q50": 3.2997,
-          "q75": 5.653,
-          "q90": 6.5237
+          "q50": 2.7081,
+          "q75": 5.8081,
+          "q90": 7.8685
         },
         "residuals_premium": {
-          "n": 1112,
-          "n_eff": 1023.9,
-          "q25": 0.0,
-          "q50": 2.7888,
-          "q75": 4.167,
-          "q90": 5.0212
+          "n": 150,
+          "n_eff": 150.0,
+          "q25": 0.5989,
+          "q50": 2.5296,
+          "q75": 4.2116,
+          "q90": 6.0769
         }
       }
     },
-    "weapon.warstaff": {
-      "n_train": 8713,
-      "n_test": 2051,
-      "n_test_relists": 114,
-      "r2_train": -0.5291,
-      "medale": 3.4364,
+    "weapon.crossbow": {
+      "n_train": 13543,
+      "n_test": 3186,
+      "n_test_relists": 172,
+      "r2_train": -1.9133,
+      "medale": 3.533,
       "medale_naive": 4.4031,
-      "pinball": 0.9982,
-      "pinball_naive": 1.1784,
-      "skill": 0.153,
-      "within_30pct": 0.0873,
-      "frac_above": 0.8615,
+      "pinball": 0.9578,
+      "pinball_naive": 1.0505,
+      "skill": 0.0883,
+      "within_30pct": 0.1695,
+      "frac_above": 0.8233,
       "residuals": {
-        "q25": 1.1883,
-        "q50": 3.3643,
-        "q75": 5.9958,
-        "q90": 7.4763
+        "q25": 0.6394,
+        "q50": 3.4879,
+        "q75": 6.3236,
+        "q90": 7.0942
       },
       "residuals_premium": {
-        "n": 463,
-        "n_eff": 463.0,
-        "q25": 0.8769,
-        "q50": 2.8539,
-        "q75": 4.5887,
-        "q90": 6.2211
+        "n": 572,
+        "n_eff": 531.3,
+        "q25": 0.2718,
+        "q50": 2.9703,
+        "q75": 4.2838,
+        "q90": 6.2966
       },
       "segments": {
         "5ex+": {
-          "n_test": 1684,
-          "medale": 4.2435,
-          "pinball": 1.1326,
-          "pinball_naive": 1.4228,
-          "skill": 0.2039,
-          "within_30pct": 0.0131,
+          "n_test": 2682,
+          "medale": 4.4932,
+          "pinball": 1.1843,
+          "pinball_naive": 1.3546,
+          "skill": 0.1257,
+          "within_30pct": 0.0157,
           "residuals": {
-            "q25": 2.3137,
-            "q50": 4.2382,
-            "q75": 6.2703,
-            "q90": 7.7253
+            "q25": 2.3277,
+            "q50": 4.4932,
+            "q75": 6.4198,
+            "q90": 7.6422
           }
         },
         "60ex+": {
-          "n_test": 1127,
-          "medale": 5.7694,
-          "pinball": 1.4254,
-          "pinball_naive": 1.7973,
-          "skill": 0.2069,
-          "within_30pct": 0.0018,
+          "n_test": 1886,
+          "medale": 6.2956,
+          "pinball": 1.4946,
+          "pinball_naive": 1.7001,
+          "skill": 0.1209,
+          "within_30pct": 0.0013,
           "residuals": {
-            "q25": 4.2178,
-            "q50": 5.7694,
-            "q75": 6.8414,
-            "q90": 8.0988
+            "q25": 4.4633,
+            "q50": 6.2956,
+            "q75": 6.5364,
+            "q90": 8.1235
           }
         }
       },
       "gbm": {
-        "medale": 3.5719,
-        "pinball": 1.0298,
-        "skill": 0.1261,
-        "within_30pct": 0.0931,
+        "medale": 3.3897,
+        "pinball": 0.9254,
+        "skill": 0.119,
+        "within_30pct": 0.1918,
         "segments": {
           "5ex+": {
-            "n_test": 1684,
-            "medale": 4.4031,
-            "pinball": 1.1738,
-            "pinball_naive": 1.4228,
-            "skill": 0.175,
-            "within_30pct": 0.0065,
+            "n_test": 2682,
+            "medale": 4.167,
+            "pinball": 1.0954,
+            "pinball_naive": 1.3546,
+            "skill": 0.1913,
+            "within_30pct": 0.0867,
             "residuals": {
-              "q25": 2.6192,
-              "q50": 4.4031,
-              "q75": 6.4696,
-              "q90": 7.7703
+              "q25": 2.3026,
+              "q50": 4.167,
+              "q75": 6.2667,
+              "q90": 7.3846
             }
           },
           "60ex+": {
-            "n_test": 1127,
-            "medale": 5.9381,
-            "pinball": 1.4651,
-            "pinball_naive": 1.7973,
-            "skill": 0.1849,
+            "n_test": 1886,
+            "medale": 5.7408,
+            "pinball": 1.4273,
+            "pinball_naive": 1.7001,
+            "skill": 0.1604,
             "within_30pct": 0.0,
             "residuals": {
+              "q25": 4.167,
+              "q50": 5.7408,
+              "q75": 6.4696,
+              "q90": 8.0157
+            }
+          }
+        },
+        "residuals": {
+          "q25": 0.0,
+          "q50": 3.3284,
+          "q75": 5.843,
+          "q90": 6.8152
+        },
+        "residuals_premium": {
+          "n": 952,
+          "n_eff": 872.7,
+          "q25": 0.0,
+          "q50": 2.7081,
+          "q75": 4.167,
+          "q90": 5.4629
+        }
+      }
+    },
+    "weapon.warstaff": {
+      "n_train": 8768,
+      "n_test": 2069,
+      "n_test_relists": 114,
+      "r2_train": -0.5343,
+      "medale": 3.4079,
+      "medale_naive": 4.4031,
+      "pinball": 1.0,
+      "pinball_naive": 1.1801,
+      "skill": 0.1527,
+      "within_30pct": 0.0836,
+      "frac_above": 0.8608,
+      "residuals": {
+        "q25": 1.1903,
+        "q50": 3.357,
+        "q75": 5.996,
+        "q90": 7.5206
+      },
+      "residuals_premium": {
+        "n": 469,
+        "n_eff": 469.0,
+        "q25": 0.9184,
+        "q50": 2.8364,
+        "q75": 4.5654,
+        "q90": 6.3087
+      },
+      "segments": {
+        "5ex+": {
+          "n_test": 1697,
+          "medale": 4.2481,
+          "pinball": 1.1356,
+          "pinball_naive": 1.4255,
+          "skill": 0.2033,
+          "within_30pct": 0.0136,
+          "residuals": {
+            "q25": 2.3089,
+            "q50": 4.2451,
+            "q75": 6.2629,
+            "q90": 7.7312
+          }
+        },
+        "60ex+": {
+          "n_test": 1137,
+          "medale": 5.7746,
+          "pinball": 1.4262,
+          "pinball_naive": 1.8,
+          "skill": 0.2077,
+          "within_30pct": 0.0018,
+          "residuals": {
+            "q25": 4.2281,
+            "q50": 5.7746,
+            "q75": 6.9059,
+            "q90": 8.1615
+          }
+        }
+      },
+      "gbm": {
+        "medale": 3.5835,
+        "pinball": 1.0255,
+        "skill": 0.1311,
+        "within_30pct": 0.0904,
+        "segments": {
+          "5ex+": {
+            "n_test": 1697,
+            "medale": 4.4031,
+            "pinball": 1.1725,
+            "pinball_naive": 1.4255,
+            "skill": 0.1775,
+            "within_30pct": 0.0053,
+            "residuals": {
+              "q25": 2.6088,
+              "q50": 4.4031,
+              "q75": 6.4696,
+              "q90": 7.8043
+            }
+          },
+          "60ex+": {
+            "n_test": 1137,
+            "medale": 5.9255,
+            "pinball": 1.4635,
+            "pinball_naive": 1.8,
+            "skill": 0.1869,
+            "within_30pct": 0.0018,
+            "residuals": {
               "q25": 4.4031,
-              "q50": 5.9381,
-              "q75": 7.0885,
+              "q50": 5.9255,
+              "q75": 7.0322,
               "q90": 8.079
             }
           }
         },
         "residuals": {
-          "q25": 1.3863,
-          "q50": 3.5553,
-          "q75": 6.093,
-          "q90": 7.5682
+          "q25": 1.4149,
+          "q50": 3.578,
+          "q75": 6.0662,
+          "q90": 7.5618
         },
         "residuals_premium": {
-          "n": 489,
-          "n_eff": 489.0,
-          "q25": 1.15,
-          "q50": 3.596,
-          "q75": 5.2844,
-          "q90": 7.1395
+          "n": 479,
+          "n_eff": 479.0,
+          "q25": 1.364,
+          "q50": 3.6752,
+          "q75": 5.2404,
+          "q90": 7.1735
         }
       }
     },
     "weapon.staff": {
-      "n_train": 8130,
-      "n_test": 1927,
+      "n_train": 8196,
+      "n_test": 1947,
       "n_test_relists": 101,
-      "r2_train": -0.5362,
-      "medale": 3.9351,
+      "r2_train": -0.5326,
+      "medale": 3.9143,
       "medale_naive": 5.0963,
-      "pinball": 1.0543,
-      "pinball_naive": 1.1943,
-      "skill": 0.1172,
-      "within_30pct": 0.068,
-      "frac_above": 0.8557,
+      "pinball": 1.0512,
+      "pinball_naive": 1.1976,
+      "skill": 0.1223,
+      "within_30pct": 0.0678,
+      "frac_above": 0.8567,
       "residuals": {
-        "q25": 1.469,
-        "q50": 3.9182,
-        "q75": 6.0128,
-        "q90": 7.2663
+        "q25": 1.4748,
+        "q50": 3.9004,
+        "q75": 6.0121,
+        "q90": 7.222
       },
       "residuals_premium": {
-        "n": 377,
-        "n_eff": 377.0,
-        "q25": 1.6811,
-        "q50": 3.9654,
-        "q75": 5.2571,
-        "q90": 6.7884
+        "n": 385,
+        "n_eff": 385.0,
+        "q25": 1.6756,
+        "q50": 3.8807,
+        "q75": 5.3566,
+        "q90": 6.8681
       },
       "segments": {
         "5ex+": {
-          "n_test": 1561,
-          "medale": 4.9103,
-          "pinball": 1.2064,
-          "pinball_naive": 1.4616,
-          "skill": 0.1746,
-          "within_30pct": 0.0058,
+          "n_test": 1584,
+          "medale": 4.897,
+          "pinball": 1.2006,
+          "pinball_naive": 1.4591,
+          "skill": 0.1772,
+          "within_30pct": 0.0057,
           "residuals": {
-            "q25": 2.8842,
-            "q50": 4.9103,
-            "q75": 6.2677,
-            "q90": 7.5382
+            "q25": 2.8928,
+            "q50": 4.897,
+            "q75": 6.2375,
+            "q90": 7.5132
           }
         },
         "60ex+": {
-          "n_test": 1129,
-          "medale": 5.8114,
-          "pinball": 1.4533,
-          "pinball_naive": 1.7601,
-          "skill": 0.1743,
-          "within_30pct": 0.0027,
+          "n_test": 1147,
+          "medale": 5.7873,
+          "pinball": 1.4428,
+          "pinball_naive": 1.7564,
+          "skill": 0.1786,
+          "within_30pct": 0.0026,
           "residuals": {
-            "q25": 4.462,
-            "q50": 5.8114,
-            "q75": 6.6309,
-            "q90": 8.0154
+            "q25": 4.4328,
+            "q50": 5.7873,
+            "q75": 6.6143,
+            "q90": 7.9419
           }
         }
       },
       "gbm": {
-        "medale": 3.912,
-        "pinball": 1.0478,
-        "skill": 0.1227,
-        "within_30pct": 0.0882,
+        "medale": 3.8962,
+        "pinball": 1.0349,
+        "skill": 0.1359,
+        "within_30pct": 0.0894,
         "segments": {
           "5ex+": {
-            "n_test": 1561,
-            "medale": 4.8318,
-            "pinball": 1.1957,
-            "pinball_naive": 1.4616,
-            "skill": 0.182,
-            "within_30pct": 0.0115,
+            "n_test": 1584,
+            "medale": 4.7216,
+            "pinball": 1.1708,
+            "pinball_naive": 1.4591,
+            "skill": 0.1976,
+            "within_30pct": 0.0126,
             "residuals": {
-              "q25": 2.8342,
-              "q50": 4.8318,
-              "q75": 6.3817,
-              "q90": 7.6144
+              "q25": 2.7213,
+              "q50": 4.7216,
+              "q75": 6.2503,
+              "q90": 7.5466
             }
           },
           "60ex+": {
-            "n_test": 1129,
-            "medale": 5.7941,
-            "pinball": 1.4507,
-            "pinball_naive": 1.7601,
-            "skill": 0.1758,
-            "within_30pct": 0.0035,
+            "n_test": 1147,
+            "medale": 5.7573,
+            "pinball": 1.4201,
+            "pinball_naive": 1.7564,
+            "skill": 0.1915,
+            "within_30pct": 0.0026,
             "residuals": {
-              "q25": 4.4844,
-              "q50": 5.7941,
-              "q75": 6.5929,
-              "q90": 8.0114
+              "q25": 4.4528,
+              "q50": 5.7573,
+              "q75": 6.4812,
+              "q90": 7.8711
             }
           }
         },
         "residuals": {
-          "q25": 1.3527,
-          "q50": 3.9098,
-          "q75": 6.0819,
-          "q90": 7.2491
+          "q25": 1.2623,
+          "q50": 3.8667,
+          "q75": 5.9339,
+          "q90": 7.1674
         },
         "residuals_premium": {
-          "n": 431,
-          "n_eff": 431.0,
-          "q25": 1.2493,
-          "q50": 3.6998,
-          "q75": 5.4687,
-          "q90": 6.8878
+          "n": 488,
+          "n_eff": 488.0,
+          "q25": 1.0973,
+          "q50": 3.7162,
+          "q75": 5.2331,
+          "q90": 6.7225
         }
       }
     },
     "weapon.sceptre": {
-      "n_train": 8034,
-      "n_test": 1888,
+      "n_train": 8131,
+      "n_test": 1897,
       "n_test_relists": 99,
-      "r2_train": -0.4704,
-      "medale": 3.6904,
-      "medale_naive": 5.5017,
-      "pinball": 1.0159,
-      "pinball_naive": 1.2496,
-      "skill": 0.187,
-      "within_30pct": 0.0413,
-      "frac_above": 0.8517,
+      "r2_train": -0.451,
+      "medale": 3.6446,
+      "medale_naive": 5.0963,
+      "pinball": 1.004,
+      "pinball_naive": 1.231,
+      "skill": 0.1844,
+      "within_30pct": 0.0406,
+      "frac_above": 0.8503,
       "residuals": {
-        "q25": 1.2405,
-        "q50": 3.6501,
-        "q75": 5.5726,
-        "q90": 6.7529
+        "q25": 1.193,
+        "q50": 3.636,
+        "q75": 5.4822,
+        "q90": 6.6891
       },
       "residuals_premium": {
-        "n": 620,
-        "n_eff": 620.0,
-        "q25": 1.2035,
-        "q50": 3.0478,
-        "q75": 4.6875,
-        "q90": 6.2339
+        "n": 633,
+        "n_eff": 633.0,
+        "q25": 0.964,
+        "q50": 2.9091,
+        "q75": 4.6611,
+        "q90": 6.3292
       },
       "segments": {
         "5ex+": {
-          "n_test": 1582,
-          "medale": 4.3175,
-          "pinball": 1.091,
-          "pinball_naive": 1.483,
-          "skill": 0.2643,
-          "within_30pct": 0.0158,
+          "n_test": 1590,
+          "medale": 4.2101,
+          "pinball": 1.076,
+          "pinball_naive": 1.4602,
+          "skill": 0.2631,
+          "within_30pct": 0.0151,
           "residuals": {
-            "q25": 2.4004,
-            "q50": 4.3026,
-            "q75": 5.7934,
-            "q90": 6.9841
+            "q25": 2.4052,
+            "q50": 4.2087,
+            "q75": 5.7142,
+            "q90": 6.9092
           }
         },
         "60ex+": {
-          "n_test": 1175,
-          "medale": 5.2005,
-          "pinball": 1.2968,
-          "pinball_naive": 1.7562,
-          "skill": 0.2616,
-          "within_30pct": 0.0051,
+          "n_test": 1190,
+          "medale": 5.0684,
+          "pinball": 1.2727,
+          "pinball_naive": 1.7167,
+          "skill": 0.2587,
+          "within_30pct": 0.0034,
           "residuals": {
-            "q25": 3.8723,
-            "q50": 5.2005,
-            "q75": 6.2344,
-            "q90": 7.4586
+            "q25": 3.8065,
+            "q50": 5.0684,
+            "q75": 6.1688,
+            "q90": 7.4369
           }
         }
       },
       "gbm": {
-        "medale": 3.4012,
-        "pinball": 0.9949,
-        "skill": 0.2039,
-        "within_30pct": 0.0779,
+        "medale": 3.3474,
+        "pinball": 0.9787,
+        "skill": 0.205,
+        "within_30pct": 0.0759,
         "segments": {
           "5ex+": {
-            "n_test": 1582,
-            "medale": 4.0448,
-            "pinball": 1.0641,
-            "pinball_naive": 1.483,
-            "skill": 0.2824,
-            "within_30pct": 0.0209,
+            "n_test": 1590,
+            "medale": 4.0094,
+            "pinball": 1.0433,
+            "pinball_naive": 1.4602,
+            "skill": 0.2855,
+            "within_30pct": 0.0245,
             "residuals": {
-              "q25": 2.3126,
-              "q50": 4.0364,
-              "q75": 5.7916,
-              "q90": 6.9794
+              "q25": 2.2412,
+              "q50": 3.9975,
+              "q75": 5.6445,
+              "q90": 6.7438
             }
           },
           "60ex+": {
-            "n_test": 1175,
-            "medale": 4.8512,
-            "pinball": 1.2444,
-            "pinball_naive": 1.7562,
-            "skill": 0.2914,
-            "within_30pct": 0.0034,
+            "n_test": 1190,
+            "medale": 4.7377,
+            "pinball": 1.2204,
+            "pinball_naive": 1.7167,
+            "skill": 0.2891,
+            "within_30pct": 0.0076,
             "residuals": {
-              "q25": 3.4718,
-              "q50": 4.8512,
-              "q75": 6.197,
-              "q90": 7.3174
+              "q25": 3.4495,
+              "q50": 4.7377,
+              "q75": 6.1308,
+              "q90": 7.2125
             }
           }
         },
         "residuals": {
-          "q25": 1.0324,
-          "q50": 3.3296,
-          "q75": 5.354,
-          "q90": 6.7082
+          "q25": 1.0008,
+          "q50": 3.2721,
+          "q75": 5.2559,
+          "q90": 6.5212
         },
         "residuals_premium": {
-          "n": 779,
-          "n_eff": 779.0,
-          "q25": 0.7813,
-          "q50": 2.7501,
-          "q75": 4.4547,
-          "q90": 5.8099
+          "n": 759,
+          "n_eff": 759.0,
+          "q25": 0.9521,
+          "q50": 2.7157,
+          "q75": 4.4518,
+          "q90": 5.8178
         }
       }
     },
     "weapon.spear": {
-      "n_train": 6574,
-      "n_test": 1496,
-      "n_test_relists": 119,
-      "r2_train": -0.6466,
-      "medale": 3.6956,
+      "n_train": 6603,
+      "n_test": 1535,
+      "n_test_relists": 115,
+      "r2_train": -0.6528,
+      "medale": 3.6578,
       "medale_naive": 4.4031,
-      "pinball": 1.0062,
-      "pinball_naive": 1.103,
-      "skill": 0.0878,
-      "within_30pct": 0.1277,
-      "frac_above": 0.8436,
+      "pinball": 1.0063,
+      "pinball_naive": 1.0964,
+      "skill": 0.0822,
+      "within_30pct": 0.1283,
+      "frac_above": 0.845,
       "residuals": {
-        "q25": 1.1392,
-        "q50": 3.6172,
-        "q75": 6.2037,
-        "q90": 7.4257
+        "q25": 1.1489,
+        "q50": 3.6275,
+        "q75": 6.2123,
+        "q90": 7.3543
       },
       "residuals_premium": {
-        "n": 209,
-        "n_eff": 209.0,
-        "q25": 0.4241,
-        "q50": 2.3885,
-        "q75": 4.4083,
-        "q90": 6.3055
+        "n": 215,
+        "n_eff": 215.0,
+        "q25": 0.2395,
+        "q50": 2.6159,
+        "q75": 4.3831,
+        "q90": 6.3892
       },
       "segments": {
         "5ex+": {
-          "n_test": 1156,
-          "medale": 4.6099,
-          "pinball": 1.2148,
-          "pinball_naive": 1.4076,
-          "skill": 0.137,
-          "within_30pct": 0.0069,
+          "n_test": 1180,
+          "medale": 4.6336,
+          "pinball": 1.2173,
+          "pinball_naive": 1.405,
+          "skill": 0.1336,
+          "within_30pct": 0.0059,
           "residuals": {
-            "q25": 2.8448,
-            "q50": 4.6099,
-            "q75": 6.3646,
-            "q90": 7.7761
+            "q25": 2.8369,
+            "q50": 4.6336,
+            "q75": 6.369,
+            "q90": 7.7484
           }
         },
         "60ex+": {
-          "n_test": 801,
-          "medale": 6.1191,
-          "pinball": 1.4842,
-          "pinball_naive": 1.7293,
-          "skill": 0.1417,
-          "within_30pct": 0.005,
+          "n_test": 814,
+          "medale": 6.1494,
+          "pinball": 1.4898,
+          "pinball_naive": 1.7299,
+          "skill": 0.1388,
+          "within_30pct": 0.0037,
           "residuals": {
-            "q25": 4.4646,
-            "q50": 6.1191,
-            "q75": 6.8406,
-            "q90": 8.1553
+            "q25": 4.4807,
+            "q50": 6.1494,
+            "q75": 6.8612,
+            "q90": 8.1554
           }
         }
       },
       "gbm": {
-        "medale": 3.4394,
-        "pinball": 1.0004,
-        "skill": 0.0931,
-        "within_30pct": 0.1076,
+        "medale": 3.2567,
+        "pinball": 0.9702,
+        "skill": 0.1152,
+        "within_30pct": 0.1042,
         "segments": {
           "5ex+": {
-            "n_test": 1156,
-            "medale": 4.5276,
-            "pinball": 1.1772,
-            "pinball_naive": 1.4076,
-            "skill": 0.1637,
-            "within_30pct": 0.0104,
+            "n_test": 1180,
+            "medale": 4.3817,
+            "pinball": 1.1321,
+            "pinball_naive": 1.405,
+            "skill": 0.1942,
+            "within_30pct": 0.0153,
             "residuals": {
-              "q25": 2.6942,
-              "q50": 4.4907,
-              "q75": 6.4388,
-              "q90": 7.6236
+              "q25": 2.3537,
+              "q50": 4.3817,
+              "q75": 6.224,
+              "q90": 7.393
             }
           },
           "60ex+": {
-            "n_test": 801,
-            "medale": 5.7992,
-            "pinball": 1.4479,
-            "pinball_naive": 1.7293,
-            "skill": 0.1627,
-            "within_30pct": 0.0012,
+            "n_test": 814,
+            "medale": 5.5854,
+            "pinball": 1.3994,
+            "pinball_naive": 1.7299,
+            "skill": 0.191,
+            "within_30pct": 0.0074,
             "residuals": {
-              "q25": 4.4031,
-              "q50": 5.7992,
-              "q75": 6.5013,
-              "q90": 8.151
+              "q25": 4.2259,
+              "q50": 5.5854,
+              "q75": 6.5023,
+              "q90": 8.0071
             }
           }
         },
         "residuals": {
-          "q25": 1.0679,
-          "q50": 3.4086,
-          "q75": 5.9352,
-          "q90": 7.1841
+          "q25": 0.8122,
+          "q50": 3.2189,
+          "q75": 5.7279,
+          "q90": 7.0534
         },
         "residuals_premium": {
-          "n": 239,
-          "n_eff": 239.0,
-          "q25": 0.6358,
-          "q50": 2.993,
-          "q75": 4.7459,
-          "q90": 6.2593
+          "n": 327,
+          "n_eff": 327.0,
+          "q25": 0.6043,
+          "q50": 2.7838,
+          "q75": 4.7408,
+          "q90": 6.1416
         }
       }
     },
     "armour.focus": {
-      "n_train": 5383,
-      "n_test": 1269,
-      "n_test_relists": 65,
-      "r2_train": -0.4555,
-      "medale": 3.1339,
+      "n_train": 5424,
+      "n_test": 1282,
+      "n_test_relists": 64,
+      "r2_train": -0.4613,
+      "medale": 3.2388,
       "medale_naive": 4.4031,
-      "pinball": 0.9423,
-      "pinball_naive": 1.1102,
-      "skill": 0.1512,
-      "within_30pct": 0.0646,
-      "frac_above": 0.844,
+      "pinball": 0.9394,
+      "pinball_naive": 1.1118,
+      "skill": 0.1551,
+      "within_30pct": 0.0577,
+      "frac_above": 0.851,
       "residuals": {
-        "q25": 0.7875,
-        "q50": 3.0842,
-        "q75": 5.4263,
-        "q90": 6.7136
+        "q25": 0.8036,
+        "q50": 3.1554,
+        "q75": 5.4617,
+        "q90": 6.6061
       },
       "residuals_premium": {
-        "n": 313,
-        "n_eff": 313.0,
-        "q25": 0.8425,
-        "q50": 3.0842,
-        "q75": 4.6998,
-        "q90": 6.1175
+        "n": 320,
+        "n_eff": 320.0,
+        "q25": 0.9634,
+        "q50": 3.1735,
+        "q75": 4.6812,
+        "q90": 6.1922
       },
       "segments": {
         "5ex+": {
-          "n_test": 976,
-          "medale": 4.168,
-          "pinball": 1.0856,
-          "pinball_naive": 1.4133,
-          "skill": 0.2319,
-          "within_30pct": 0.0174,
+          "n_test": 988,
+          "medale": 4.2174,
+          "pinball": 1.0836,
+          "pinball_naive": 1.4124,
+          "skill": 0.2328,
+          "within_30pct": 0.0111,
           "residuals": {
-            "q25": 2.1899,
-            "q50": 4.1582,
-            "q75": 5.8461,
-            "q90": 7.1663
+            "q25": 2.2207,
+            "q50": 4.2119,
+            "q75": 5.8552,
+            "q90": 7.1098
           }
         },
         "60ex+": {
-          "n_test": 679,
-          "medale": 5.2781,
-          "pinball": 1.3348,
-          "pinball_naive": 1.7417,
-          "skill": 0.2336,
-          "within_30pct": 0.0103,
+          "n_test": 690,
+          "medale": 5.2762,
+          "pinball": 1.3285,
+          "pinball_naive": 1.7329,
+          "skill": 0.2334,
+          "within_30pct": 0.0043,
           "residuals": {
-            "q25": 3.9567,
-            "q50": 5.2781,
-            "q75": 6.3034,
-            "q90": 7.889
+            "q25": 4.0233,
+            "q50": 5.2762,
+            "q75": 6.2954,
+            "q90": 7.7166
           }
         }
       },
       "gbm": {
-        "medale": 2.8169,
-        "pinball": 0.9222,
-        "skill": 0.1694,
-        "within_30pct": 0.0725,
+        "medale": 2.896,
+        "pinball": 0.9149,
+        "skill": 0.1771,
+        "within_30pct": 0.0881,
         "segments": {
           "5ex+": {
-            "n_test": 976,
-            "medale": 3.8591,
-            "pinball": 1.0472,
-            "pinball_naive": 1.4133,
-            "skill": 0.2591,
-            "within_30pct": 0.0236,
+            "n_test": 988,
+            "medale": 3.8425,
+            "pinball": 1.0386,
+            "pinball_naive": 1.4124,
+            "skill": 0.2646,
+            "within_30pct": 0.0253,
             "residuals": {
-              "q25": 2.0826,
-              "q50": 3.8492,
-              "q75": 5.7762,
-              "q90": 7.0254
+              "q25": 1.9728,
+              "q50": 3.8423,
+              "q75": 5.7582,
+              "q90": 6.9262
             }
           },
           "60ex+": {
-            "n_test": 679,
-            "medale": 5.1,
-            "pinball": 1.2801,
-            "pinball_naive": 1.7417,
-            "skill": 0.265,
-            "within_30pct": 0.0103,
+            "n_test": 690,
+            "medale": 4.9856,
+            "pinball": 1.2698,
+            "pinball_naive": 1.7329,
+            "skill": 0.2672,
+            "within_30pct": 0.0029,
             "residuals": {
-              "q25": 3.6136,
-              "q50": 5.1,
-              "q75": 6.3767,
-              "q90": 7.6978
+              "q25": 3.5983,
+              "q50": 4.9856,
+              "q75": 6.2895,
+              "q90": 7.5245
             }
           }
         },
         "residuals": {
-          "q25": 0.5785,
-          "q50": 2.7202,
-          "q75": 5.2497,
-          "q90": 6.6241
+          "q25": 0.6135,
+          "q50": 2.7567,
+          "q75": 5.2558,
+          "q90": 6.5243
         },
         "residuals_premium": {
-          "n": 440,
-          "n_eff": 440.0,
-          "q25": 0.5096,
-          "q50": 2.6751,
-          "q75": 4.3436,
-          "q90": 6.0492
+          "n": 449,
+          "n_eff": 449.0,
+          "q25": 0.5095,
+          "q50": 2.5836,
+          "q75": 4.3932,
+          "q90": 5.9727
         }
       }
     },
     "armour.quiver": {
-      "n_train": 5039,
-      "n_test": 1215,
-      "n_test_relists": 43,
-      "r2_train": -0.4455,
-      "medale": 3.3066,
+      "n_train": 5081,
+      "n_test": 1226,
+      "n_test_relists": 44,
+      "r2_train": -0.4519,
+      "medale": 3.3056,
       "medale_naive": 4.4031,
-      "pinball": 0.9551,
-      "pinball_naive": 1.1084,
-      "skill": 0.1383,
-      "within_30pct": 0.0716,
-      "frac_above": 0.842,
+      "pinball": 0.951,
+      "pinball_naive": 1.1083,
+      "skill": 0.1419,
+      "within_30pct": 0.0693,
+      "frac_above": 0.8434,
       "residuals": {
-        "q25": 0.8007,
-        "q50": 3.2828,
-        "q75": 5.3938,
-        "q90": 6.8889
+        "q25": 0.813,
+        "q50": 3.3011,
+        "q75": 5.3966,
+        "q90": 6.9274
       },
       "residuals_premium": {
-        "n": 309,
-        "n_eff": 309.0,
-        "q25": 1.4368,
-        "q50": 3.9815,
-        "q75": 5.1143,
-        "q90": 6.6175
+        "n": 315,
+        "n_eff": 315.0,
+        "q25": 1.5281,
+        "q50": 3.904,
+        "q75": 5.2478,
+        "q90": 6.5921
       },
       "segments": {
         "5ex+": {
-          "n_test": 942,
-          "medale": 4.22,
-          "pinball": 1.1034,
-          "pinball_naive": 1.4092,
-          "skill": 0.217,
-          "within_30pct": 0.0138,
+          "n_test": 955,
+          "medale": 4.2064,
+          "pinball": 1.0969,
+          "pinball_naive": 1.4027,
+          "skill": 0.218,
+          "within_30pct": 0.0136,
           "residuals": {
-            "q25": 2.4131,
-            "q50": 4.22,
-            "q75": 5.8848,
-            "q90": 7.2148
+            "q25": 2.3848,
+            "q50": 4.2064,
+            "q75": 5.9022,
+            "q90": 7.2867
           }
         },
         "60ex+": {
-          "n_test": 640,
-          "medale": 5.2989,
-          "pinball": 1.3895,
-          "pinball_naive": 1.7436,
-          "skill": 0.2031,
-          "within_30pct": 0.0016,
+          "n_test": 646,
+          "medale": 5.3152,
+          "pinball": 1.387,
+          "pinball_naive": 1.7394,
+          "skill": 0.2026,
+          "within_30pct": 0.0015,
           "residuals": {
-            "q25": 4.1866,
-            "q50": 5.2989,
-            "q75": 6.3784,
-            "q90": 7.8482
+            "q25": 4.1929,
+            "q50": 5.3152,
+            "q75": 6.4445,
+            "q90": 7.8755
           }
         }
       },
       "gbm": {
-        "medale": 3.0477,
-        "pinball": 0.9322,
-        "skill": 0.1589,
-        "within_30pct": 0.1103,
+        "medale": 3.0032,
+        "pinball": 0.9271,
+        "skill": 0.1635,
+        "within_30pct": 0.1011,
         "segments": {
           "5ex+": {
-            "n_test": 942,
-            "medale": 3.9436,
-            "pinball": 1.0621,
-            "pinball_naive": 1.4092,
-            "skill": 0.2463,
-            "within_30pct": 0.0265,
+            "n_test": 955,
+            "medale": 3.9086,
+            "pinball": 1.0411,
+            "pinball_naive": 1.4027,
+            "skill": 0.2578,
+            "within_30pct": 0.022,
             "residuals": {
-              "q25": 2.3026,
-              "q50": 3.9436,
-              "q75": 5.8051,
-              "q90": 7.1985
+              "q25": 2.1218,
+              "q50": 3.9086,
+              "q75": 5.6755,
+              "q90": 7.1618
             }
           },
           "60ex+": {
-            "n_test": 640,
-            "medale": 4.9957,
-            "pinball": 1.3324,
-            "pinball_naive": 1.7436,
-            "skill": 0.2359,
-            "within_30pct": 0.0047,
+            "n_test": 646,
+            "medale": 4.9894,
+            "pinball": 1.3019,
+            "pinball_naive": 1.7394,
+            "skill": 0.2516,
+            "within_30pct": 0.0046,
             "residuals": {
-              "q25": 3.8418,
-              "q50": 4.9957,
-              "q75": 6.4066,
-              "q90": 7.7957
+              "q25": 3.767,
+              "q50": 4.9894,
+              "q75": 6.332,
+              "q90": 7.6781
             }
           }
         },
         "residuals": {
-          "q25": 0.5569,
-          "q50": 2.9957,
-          "q75": 5.1991,
-          "q90": 6.7399
+          "q25": 0.4714,
+          "q50": 2.846,
+          "q75": 5.1174,
+          "q90": 6.6013
         },
         "residuals_premium": {
-          "n": 439,
-          "n_eff": 439.0,
-          "q25": 0.4405,
-          "q50": 2.9082,
-          "q75": 4.6677,
-          "q90": 6.1067
+          "n": 466,
+          "n_eff": 466.0,
+          "q25": 0.4103,
+          "q50": 2.7346,
+          "q75": 4.537,
+          "q90": 5.841
         }
       }
     },
     "armour.shield": {
-      "n_train": 4374,
-      "n_test": 1010,
-      "n_test_relists": 81,
-      "r2_train": -0.5511,
-      "medale": 2.9872,
+      "n_train": 4409,
+      "n_test": 995,
+      "n_test_relists": 84,
+      "r2_train": -0.5355,
+      "medale": 2.9464,
       "medale_naive": 3.912,
-      "pinball": 0.919,
-      "pinball_naive": 0.9631,
-      "skill": 0.0458,
-      "within_30pct": 0.0723,
-      "frac_above": 0.8386,
+      "pinball": 0.9074,
+      "pinball_naive": 0.948,
+      "skill": 0.0428,
+      "within_30pct": 0.0673,
+      "frac_above": 0.8322,
       "residuals": {
-        "q25": 0.6654,
-        "q50": 2.9743,
-        "q75": 5.9592,
-        "q90": 7.2213
+        "q25": 0.5954,
+        "q50": 2.9422,
+        "q75": 5.8692,
+        "q90": 7.0142
       },
       "residuals_premium": {
         "n": 67,
         "n_eff": 67.0,
-        "q25": 1.2194,
-        "q50": 3.1026,
-        "q75": 4.7825,
-        "q90": 6.0264
+        "q25": 0.8952,
+        "q50": 3.178,
+        "q75": 4.8359,
+        "q90": 6.0588
       },
       "segments": {
         "5ex+": {
-          "n_test": 711,
-          "medale": 4.5215,
-          "pinball": 1.1787,
-          "pinball_naive": 1.324,
-          "skill": 0.1098,
+          "n_test": 692,
+          "medale": 4.5211,
+          "pinball": 1.1665,
+          "pinball_naive": 1.3181,
+          "skill": 0.115,
           "within_30pct": 0.0,
           "residuals": {
-            "q25": 2.7278,
-            "q50": 4.5215,
-            "q75": 6.2932,
-            "q90": 7.5813
+            "q25": 2.7453,
+            "q50": 4.5211,
+            "q75": 6.249,
+            "q90": 7.4853
           }
         },
         "60ex+": {
-          "n_test": 470,
-          "medale": 6.0339,
-          "pinball": 1.4932,
-          "pinball_naive": 1.6562,
-          "skill": 0.0984,
+          "n_test": 459,
+          "medale": 5.9645,
+          "pinball": 1.476,
+          "pinball_naive": 1.6456,
+          "skill": 0.1031,
           "within_30pct": 0.0,
           "residuals": {
-            "q25": 4.5425,
-            "q50": 6.0339,
-            "q75": 6.9215,
-            "q90": 7.8716
+            "q25": 4.5296,
+            "q50": 5.9645,
+            "q75": 6.7594,
+            "q90": 7.7902
           }
         }
       },
       "gbm": {
-        "medale": 2.7519,
-        "pinball": 0.9109,
-        "skill": 0.0542,
-        "within_30pct": 0.096,
+        "medale": 2.6476,
+        "pinball": 0.8836,
+        "skill": 0.0679,
+        "within_30pct": 0.0915,
         "segments": {
           "5ex+": {
-            "n_test": 711,
-            "medale": 4.3021,
-            "pinball": 1.1241,
-            "pinball_naive": 1.324,
-            "skill": 0.151,
-            "within_30pct": 0.0056,
+            "n_test": 692,
+            "medale": 4.17,
+            "pinball": 1.0922,
+            "pinball_naive": 1.3181,
+            "skill": 0.1714,
+            "within_30pct": 0.0145,
             "residuals": {
-              "q25": 2.4355,
-              "q50": 4.3021,
-              "q75": 6.2685,
-              "q90": 7.4149
+              "q25": 2.3103,
+              "q50": 4.17,
+              "q75": 6.0942,
+              "q90": 7.1631
             }
           },
           "60ex+": {
-            "n_test": 470,
-            "medale": 5.8463,
-            "pinball": 1.4259,
-            "pinball_naive": 1.6562,
-            "skill": 0.139,
-            "within_30pct": 0.0021,
+            "n_test": 459,
+            "medale": 5.6777,
+            "pinball": 1.3797,
+            "pinball_naive": 1.6456,
+            "skill": 0.1616,
+            "within_30pct": 0.0044,
             "residuals": {
-              "q25": 4.3224,
-              "q50": 5.8463,
-              "q75": 6.8191,
-              "q90": 7.7715
+              "q25": 4.1744,
+              "q50": 5.6777,
+              "q75": 6.4707,
+              "q90": 7.4831
             }
           }
         },
         "residuals": {
-          "q25": 0.6,
-          "q50": 2.7081,
-          "q75": 5.6406,
-          "q90": 6.975
+          "q25": 0.2798,
+          "q50": 2.6311,
+          "q75": 5.4414,
+          "q90": 6.7106
         },
         "residuals_premium": {
-          "n": 154,
-          "n_eff": 154.0,
-          "q25": -0.7692,
-          "q50": 1.8574,
-          "q75": 4.1252,
-          "q90": 5.6406
+          "n": 160,
+          "n_eff": 160.0,
+          "q25": -0.7846,
+          "q50": 1.7451,
+          "q75": 4.0723,
+          "q90": 5.6614
         }
       }
     },
     "weapon.twomace": {
       "n_train": 4028,
-      "n_test": 898,
+      "n_test": 916,
       "n_test_relists": 89,
-      "r2_train": -0.5046,
-      "medale": 2.2312,
+      "r2_train": -0.5026,
+      "medale": 2.3174,
       "medale_naive": 2.9957,
-      "pinball": 0.8355,
-      "pinball_naive": 0.9046,
-      "skill": 0.0764,
-      "within_30pct": 0.1114,
-      "frac_above": 0.7806,
+      "pinball": 0.8454,
+      "pinball_naive": 0.92,
+      "skill": 0.0811,
+      "within_30pct": 0.1081,
+      "frac_above": 0.7849,
       "residuals": {
-        "q25": 0.2603,
-        "q50": 2.2086,
-        "q75": 5.1585,
-        "q90": 6.784
+        "q25": 0.2722,
+        "q50": 2.2636,
+        "q75": 5.2309,
+        "q90": 6.7959
       },
       "residuals_premium": {
-        "n": 80,
-        "n_eff": 80.0,
-        "q25": 0.7498,
-        "q50": 2.8131,
-        "q75": 4.6794,
-        "q90": 6.0048
+        "n": 83,
+        "n_eff": 83.0,
+        "q25": 1.2427,
+        "q50": 2.8704,
+        "q75": 4.7401,
+        "q90": 6.1794
       },
       "segments": {
         "5ex+": {
-          "n_test": 604,
-          "medale": 4.1906,
-          "pinball": 1.1004,
-          "pinball_naive": 1.3057,
-          "skill": 0.1572,
-          "within_30pct": 0.0132,
+          "n_test": 620,
+          "medale": 4.2048,
+          "pinball": 1.11,
+          "pinball_naive": 1.3207,
+          "skill": 0.1595,
+          "within_30pct": 0.0113,
           "residuals": {
-            "q25": 2.1445,
-            "q50": 4.1906,
-            "q75": 6.0754,
-            "q90": 7.4092
+            "q25": 2.1594,
+            "q50": 4.2048,
+            "q75": 6.0956,
+            "q90": 7.4172
           }
         },
         "60ex+": {
-          "n_test": 391,
-          "medale": 5.5906,
-          "pinball": 1.4367,
-          "pinball_naive": 1.6874,
-          "skill": 0.1486,
-          "within_30pct": 0.0051,
+          "n_test": 405,
+          "medale": 5.6015,
+          "pinball": 1.4417,
+          "pinball_naive": 1.6998,
+          "skill": 0.1518,
+          "within_30pct": 0.0049,
           "residuals": {
-            "q25": 4.2555,
-            "q50": 5.5906,
-            "q75": 6.5692,
-            "q90": 8.2251
+            "q25": 4.2564,
+            "q50": 5.6015,
+            "q75": 6.5656,
+            "q90": 8.2466
           }
         }
       },
       "gbm": {
-        "medale": 2.0751,
-        "pinball": 0.8448,
-        "skill": 0.0662,
-        "within_30pct": 0.1158,
+        "medale": 2.2095,
+        "pinball": 0.8537,
+        "skill": 0.0721,
+        "within_30pct": 0.1223,
         "segments": {
           "5ex+": {
-            "n_test": 604,
-            "medale": 3.7043,
-            "pinball": 1.0284,
-            "pinball_naive": 1.3057,
-            "skill": 0.2124,
-            "within_30pct": 0.0166,
+            "n_test": 620,
+            "medale": 3.8694,
+            "pinball": 1.0476,
+            "pinball_naive": 1.3207,
+            "skill": 0.2067,
+            "within_30pct": 0.0242,
             "residuals": {
-              "q25": 1.7027,
-              "q50": 3.7043,
-              "q75": 5.7888,
-              "q90": 7.2456
+              "q25": 1.7691,
+              "q50": 3.8694,
+              "q75": 5.9185,
+              "q90": 7.1927
             }
           },
           "60ex+": {
-            "n_test": 391,
-            "medale": 5.103,
-            "pinball": 1.3199,
-            "pinball_naive": 1.6874,
-            "skill": 0.2178,
-            "within_30pct": 0.0077,
+            "n_test": 405,
+            "medale": 5.2096,
+            "pinball": 1.3408,
+            "pinball_naive": 1.6998,
+            "skill": 0.2112,
+            "within_30pct": 0.0049,
             "residuals": {
-              "q25": 3.8654,
-              "q50": 5.103,
-              "q75": 6.4143,
-              "q90": 7.7253
+              "q25": 3.9385,
+              "q50": 5.2096,
+              "q75": 6.4289,
+              "q90": 7.7363
             }
           }
         },
         "residuals": {
-          "q25": -0.0177,
-          "q50": 1.7452,
-          "q75": 4.7093,
-          "q90": 6.5145
+          "q25": 0.0,
+          "q50": 1.9032,
+          "q75": 4.7462,
+          "q90": 6.4936
         },
         "residuals_premium": {
-          "n": 195,
-          "n_eff": 195.0,
-          "q25": -1.1607,
-          "q50": 1.7213,
-          "q75": 3.974,
-          "q90": 5.8149
+          "n": 205,
+          "n_eff": 205.0,
+          "q25": -1.2594,
+          "q50": 1.7113,
+          "q75": 4.2587,
+          "q90": 6.1599
         }
       }
     }
   },
   "skipped": [],
-  "generated_at": "2026-07-17T10:48:36+00:00",
+  "generated_at": "2026-07-17T13:45:40+00:00",
   "scanner_version": "0.1.0"
 }
