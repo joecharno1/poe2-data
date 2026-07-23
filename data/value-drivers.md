@@ -1,6 +1,6 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-07-23T21:28:34+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-07-23T23:11:28+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
@@ -74,7 +74,7 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.13 · per top-tier rol
 |---|---|---|---|
 | # to Level of all Projectile Skills | 2 | ×4.10 | 7% of ladder (rising) |
 | #% to all Elemental Resistances [implicit] | 9 | ×2.58 | universal |
-| # to Level of all Melee Skills | 2 | ×2.44 | 37% of ladder (falling) |
+| # to Level of all Melee Skills | 2 | ×2.44 | 36% of ladder (falling) |
 | # to Level of all Spell Skills | 2 | ×2.42 | 14% of ladder (falling) |
 | # to maximum Life | 84 | ×2.41 | universal |
 | total life above 80 | 32 | ×2.35 | universal |
@@ -233,7 +233,7 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier rol
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | T1 roll: Companions have #% increased Attack Speed [desecrated] | — | ×638.71 |  |
-| #% increased Physical Damage [rune] | 36 | ×18.16 | 37% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×18.16 | 36% of ladder (falling) |
 | # to Level of all Attack Skills [crafted] | 2 | ×10.92 |  |
 | Bonded: Adds # to # Physical Damage to Attacks [rune] | 8 | ×4.26 |  |
 | Adds # to # Lightning Damage [rune] | 15.5 | ×4.00 |  |
@@ -252,7 +252,7 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.10 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Physical Damage [rune] | 36 | ×375.17 | 37% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×375.17 | 36% of ladder (falling) |
 | Gain #% of Damage as Extra Damage of all Elements [rune] | 5 | ×19.80 |  |
 | # to Level of all Attack Skills [crafted] | 3 | ×11.93 |  |
 | Grenade Skills Fire an additional Projectile | 1 | ×4.41 |  |
@@ -260,7 +260,7 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.10 · per top-tier rol
 | Adds # to # Fire Damage [rune] | 14.5 | ×3.06 |  |
 | #% increased Attack Speed (Local) [crafted] | 15 | ×2.85 | 44% of ladder (steady) |
 | Grenade Skills have +# Cooldown Use | 1 | ×2.83 |  |
-| T1 roll: #% increased Physical Damage | — | ×2.61 | 37% of ladder (falling) |
+| T1 roll: #% increased Physical Damage | — | ×2.61 | 36% of ladder (falling) |
 | T1 roll: Adds # to # Fire Damage | — | ×2.53 |  |
 | Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷147.78 |  |
 | T2 roll: Grenade Skills Fire an additional Projectile | — | ÷5.65 |  |
@@ -273,14 +273,14 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.15 · per top-tier rol
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | Adds # to # Cold Damage [rune] | 12 | ×38.17 |  |
-| # to Level of all Melee Skills [desecrated] | 3 | ×10.90 | 37% of ladder (falling) |
+| # to Level of all Melee Skills [desecrated] | 3 | ×10.90 | 36% of ladder (falling) |
 | #% increased Magnitude of Shock you inflict [desecrated] | 18 | ×6.07 |  |
 | Adds # to # Physical Damage [crafted] | 39 | ×5.82 |  |
 | #% increased Freeze Buildup [desecrated] | 18 | ×5.71 |  |
 | # to Level of all Attack Skills [crafted] | 3 | ×5.52 |  |
-| #% increased Physical Damage [rune] | 36 | ×3.33 | 37% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×3.33 | 36% of ladder (falling) |
 | Adds # to # Lightning Damage [rune] | 31 | ×3.32 |  |
-| # to Level of all Melee Skills | 4 | ×3.31 | 37% of ladder (falling) |
+| # to Level of all Melee Skills | 4 | ×3.31 | 36% of ladder (falling) |
 | #% increased Elemental Damage with Attacks [rune] | 30 | ×2.85 |  |
 | Bonded: #% increased Freeze Buildup [rune] | 30 | ÷23.35 |  |
 | #% to Critical Damage Bonus [desecrated] | 15 | ÷3.31 |  |
@@ -337,11 +337,11 @@ _Item-level effects: per ilvl ×1.32 · per extra mod ÷1.03 · per top-tier rol
 | Companions have #% increased Attack Speed [desecrated] | 15 | ×10.30 |  |
 | # to Level of all Attack Skills [crafted] | 2 | ×9.86 |  |
 | Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ×3.94 |  |
-| #% increased Physical Damage [rune] | 18 | ×3.43 | 37% of ladder (falling) |
+| #% increased Physical Damage [rune] | 18 | ×3.43 | 36% of ladder (falling) |
 | T1 roll: # to Level of all Projectile Skills | — | ×2.52 | 7% of ladder (rising) |
 | # to Accuracy Rating (Local) [desecrated] | 101 | ×1.94 |  |
 | T1 roll: Adds # to # Fire Damage | — | ×1.80 |  |
-| # to Level of all Melee Skills | 3 | ×1.73 | 37% of ladder (falling) |
+| # to Level of all Melee Skills | 3 | ×1.73 | 36% of ladder (falling) |
 | T2 roll: #% increased Attack Speed (Local) [crafted] | — | ÷30.12 | 44% of ladder (steady) |
 | T1 roll: Companions have #% increased Attack Speed [desecrated] | — | ÷5.81 |  |
 | T1 roll: Adds # to # Cold Damage | — | ÷3.93 |  |
@@ -412,14 +412,14 @@ _Item-level effects: per ilvl ×1.19 · per extra mod ÷1.19 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: #% increased Physical Damage [desecrated] | — | ×24.39 | 37% of ladder (falling) |
-| #% increased Physical Damage [desecrated] | 112 | ×10.43 | 37% of ladder (falling) |
-| #% increased Physical Damage [rune] | 36 | ×5.46 | 37% of ladder (falling) |
+| T1 roll: #% increased Physical Damage [desecrated] | — | ×24.39 | 36% of ladder (falling) |
+| #% increased Physical Damage [desecrated] | 112 | ×10.43 | 36% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×5.46 | 36% of ladder (falling) |
 | #% increased Attack Speed (Local) [desecrated] | 15 | ×4.08 | 44% of ladder (steady) |
 | # to Level of all Attack Skills [crafted] | 3 | ×2.46 |  |
 | T1 roll: #% to Critical Damage Bonus | — | ×2.36 |  |
 | #% increased Attack Speed (Local) [crafted] | 23 | ×2.04 | 44% of ladder (steady) |
-| # to Level of all Melee Skills | 4 | ×1.81 | 37% of ladder (falling) |
+| # to Level of all Melee Skills | 4 | ×1.81 | 36% of ladder (falling) |
 | T1 roll: Adds # to # Fire Damage | — | ×1.61 |  |
 | T1 roll: Gain # Mana per enemy killed | — | ×1.58 |  |
 | T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷412.17 | 44% of ladder (steady) |
@@ -430,14 +430,14 @@ _Item-level effects: per ilvl ×1.16 · per extra mod ÷1.24 · per top-tier rol
 
 ## Current build meta (demand context)
 
-- Martial Artist: 19.0% ↑
-- Gemling Legionnaire: 16.7% ↑
-- Spirit Walker: 14.4% ↓
-- Deadeye: 7.0% ↑
-- Stormweaver: 5.1% ↓
+- Martial Artist: 19.3% ↑
+- Gemling Legionnaire: 16.8% ↑
+- Spirit Walker: 13.9% ↓
+- Deadeye: 7.1% ↑
 - Oracle: 5.1% ↑
+- Stormweaver: 5.1% ↓
 - Infernalist: 4.8% ↓
-- Blood Mage: 4.0% ↓
+- Blood Mage: 3.9% ↓
 - Titan: 3.3% ↓
 - Disciple of Varashta: 2.6% ↑
 
