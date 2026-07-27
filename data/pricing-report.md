@@ -1,11 +1,11 @@
 # POE2 Rare Pricing — Runes of Aldur
 
-_Generated 2026-07-27T15:51:14+00:00 by POE2-Scanner 0.1.0._
+_Generated 2026-07-27T17:47:26+00:00 by POE2-Scanner 0.1.0._
 
 ## Dataset
 - Rare listings: **755147** (752721 priced in exalted)
 - Distinct bases: 1004 · distinct mods: 3357 · mod rows: 3567265
-- Sold signals: **23967** sold · 432532 censored (left the sample window, fate unknown)
+- Sold signals: **23967** sold · 432642 censored (left the sample window, fate unknown)
 - Observed: 2026-07-01T20:49:02+00:00 → 2026-07-23T04:08:28+00:00
 
 ## Prediction accuracy (holdout backtest)
@@ -31,16 +31,16 @@ Newest ~20% of each group held out (split at scan boundaries, relist duplicates 
 | armour.gloves | 8826 | ×33.67 | 13% | +0.09 | +0.11 |
 | other | 8770 | ×1.84 | 42% | +0.18 | +0.25 |
 | weapon.wand | 5136 | ×35.96 | 13% | +0.13 | +0.13 |
-| weapon.bow | 4042 | ×24.39 | 11% | +0.17 | +0.20 |
+| weapon.bow | 4042 | ×24.39 | 11% | +0.17 | +0.17 |
 | weapon.crossbow | 3798 | ×23.56 | 10% | +0.14 | +0.19 |
 | weapon.warstaff | 2646 | ×13.27 | 7% | +0.15 | +0.15 |
-| weapon.staff | 2549 | ×16.09 | 6% | +0.13 | +0.14 |
+| weapon.staff | 2549 | ×16.09 | 6% | +0.13 | +0.13 |
 | weapon.sceptre | 2524 | ×16.95 | 5% | +0.07 | +0.07 |
-| weapon.spear | 2014 | ×12.96 | 6% | +0.12 | +0.16 |
+| weapon.spear | 2014 | ×12.96 | 6% | +0.12 | +0.15 |
 | armour.focus | 1674 | ×13.49 | 6% | +0.10 | +0.11 |
-| armour.quiver | 1568 | ×17.43 | 7% | +0.12 | +0.12 |
-| armour.shield | 1290 | ×7.73 | 7% | +0.11 | +0.11 |
-| flask.charm | 1279 | ×10.00 | 27% | +0.03 | +0.03 |
+| armour.quiver | 1568 | ×17.43 | 7% | +0.12 | +0.13 |
+| armour.shield | 1290 | ×7.73 | 7% | +0.11 | +0.12 |
+| flask.charm | 1279 | ×10.00 | 27% | +0.03 | +0.04 |
 | weapon.twomace | 1181 | ×8.91 | 7% | +0.09 | +0.10 |
 
 ## Fitted price equations
