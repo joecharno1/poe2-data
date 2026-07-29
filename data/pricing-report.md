@@ -1,11 +1,11 @@
 # POE2 Rare Pricing — Runes of Aldur
 
-_Generated 2026-07-29T03:17:46+00:00 by POE2-Scanner 0.1.0._
+_Generated 2026-07-29T05:07:49+00:00 by POE2-Scanner 0.1.0._
 
 ## Dataset
 - Rare listings: **755147** (752721 priced in exalted)
 - Distinct bases: 1004 · distinct mods: 3357 · mod rows: 3567265
-- Sold signals: **23967** sold · 434298 censored (left the sample window, fate unknown)
+- Sold signals: **23967** sold · 434474 censored (left the sample window, fate unknown)
 - Observed: 2026-07-01T20:49:02+00:00 → 2026-07-23T04:08:28+00:00
 
 ## Prediction accuracy (holdout backtest)
