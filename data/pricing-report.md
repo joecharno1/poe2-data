@@ -1,30 +1,30 @@
 # POE2 Rare Pricing — Runes of Aldur
 
-_Generated 2026-08-05T23:44:36+00:00 by POE2-Scanner 0.1.0._
+_Generated 2026-08-06T01:39:40+00:00 by POE2-Scanner 0.1.0._
 
 ## Dataset
-- Rare listings: **755147** (752721 priced in exalted)
-- Distinct bases: 1004 · distinct mods: 3357 · mod rows: 3567265
-- Sold signals: **23967** sold · 438605 censored (left the sample window, fate unknown)
-- Observed: 2026-07-01T20:49:02+00:00 → 2026-07-23T04:08:28+00:00
+- Rare listings: **755220** (752794 priced in exalted)
+- Distinct bases: 1004 · distinct mods: 3357 · mod rows: 3567767
+- Sold signals: **23967** sold · 438598 censored (left the sample window, fate unknown)
+- Observed: 2026-07-01T20:49:02+00:00 → 2026-08-06T00:11:30+00:00
 
 ## Prediction accuracy (holdout backtest)
 
 Newest ~20% of each group held out (split at scan boundaries, relist duplicates dropped); equation fitted on the rest predicts them.
 
-- Typical error: **×22.52** (median |log error| 3.1146)
+- Typical error: **×22.51** (median |log error| 3.1138)
 - Within ±30% of asking price: **18%**
 - Skill vs constant-price guess: **+0.08** (> 0 = the mods carry signal)
 - Calibration: 80% of actuals above prediction (target ≈ 75%)
-- Premium segment (5ex+): skill **+0.13** · typical error ×65.96 · ±30% 4% · n=110005
-- Premium segment (60ex+): skill **+0.12** · typical error ×343.13 · ±30% 0% · n=72967
+- Premium segment (5ex+): skill **+0.13** · typical error ×65.84 · ±30% 4% · n=109960
+- Premium segment (60ex+): skill **+0.12** · typical error ×341.76 · ±30% 0% · n=72895
 
 | group | n_test | ×err | ±30% | skill | gbm |
 |---|---|---|---|---|---|
 | accessory.ring | 16355 | ×40.56 | 21% | +0.04 | +0.06 |
 | jewel | 15900 | ×48.89 | 20% | +0.02 | +0.04 |
 | accessory.amulet | 14678 | ×25.21 | 16% | +0.04 | +0.04 |
-| accessory.belt | 10274 | ×24.95 | 21% | +0.04 | +0.06 |
+| accessory.belt | 10208 | ×24.69 | 21% | +0.04 | +0.06 |
 | armour.chest | 9980 | ×18.07 | 21% | +0.08 | +0.11 |
 | armour.helmet | 9733 | ×26.25 | 18% | +0.08 | +0.11 |
 | armour.boots | 8968 | ×23.78 | 18% | +0.11 | +0.13 |
@@ -125,24 +125,24 @@ intercept: `2.9784`  ·  log_price: True  ·  ilvl: `-0.03982`  ·  n_mods: `0.0
 | `explicit.stat_1050105434@T2` | -1.02388 |
 | `explicit.stat_1202301673@T2` | -1.02199 |
 
-### accessory.belt — n=47001, R²=-1.8548
+### accessory.belt — n=47068, R²=-1.82
 
-intercept: `3.1304`  ·  log_price: True  ·  ilvl: `-0.03802`  ·  n_mods: `-0.01513`  ·  n_top_tier: `0.83262`  ·  corrupted: `1.11693`  ·  n_sockets: `1.52864`
+intercept: `3.9059`  ·  log_price: True  ·  ilvl: `-0.04753`  ·  n_mods: `-0.01782`  ·  n_top_tier: `0.44680`  ·  corrupted: `1.34031`  ·  n_sockets: `1.43711`
 
 | stat_id | coef |
 |---|---|
-| `explicit.stat_915769802@T1` | -0.85875 |
-| `explicit.stat_3299347043@T2` | -0.85350 |
-| `explicit.stat_2881298780@T1` | -0.85206 |
-| `explicit.stat_809229260@T2` | -0.84772 |
-| `explicit.stat_51994685@T1` | -0.84739 |
-| `explicit.stat_1570770415@T2` | -0.84622 |
-| `explicit.stat_3372524247@T2` | -0.84350 |
-| `explicit.stat_3325883026@T1` | -0.83886 |
-| `explicit.stat_915769802@T2` | -0.83784 |
-| `explicit.stat_2881298780@T2` | -0.83641 |
-| `explicit.stat_3299347043@T1` | -0.83573 |
-| `explicit.stat_1570770415@T1` | -0.83301 |
+| `explicit.stat_2923486259@T1` | 1.16200 |
+| `explicit.stat_915769802@T1` | -0.47281 |
+| `explicit.stat_3299347043@T2` | -0.47229 |
+| `explicit.stat_51994685@T1` | -0.46674 |
+| `explicit.stat_809229260@T2` | -0.46628 |
+| `explicit.stat_2881298780@T1` | -0.46342 |
+| `explicit.stat_1570770415@T2` | -0.46177 |
+| `explicit.stat_3372524247@T2` | -0.45704 |
+| `explicit.stat_3325883026@T1` | -0.45287 |
+| `explicit.stat_1570770415@T1` | -0.45002 |
+| `explicit.stat_2881298780@T2` | -0.44935 |
+| `explicit.stat_3325883026@T2` | -0.44904 |
 
 ### armour.chest — n=46647, R²=-1.7792
 
@@ -453,7 +453,7 @@ intercept: `-11.0632`  ·  log_price: True  ·  ilvl: `0.15140`  ·  n_mods: `-0
 - … **Sapphire** — 40148 listings (40081 priced) [0.3–39887666593.4 ex]
 - … **Emerald** — 39029 listings (38976 priced) [0.3–39887666593.4 ex]
 - … **Ruby** — 29908 listings (29876 priced) [0.3–3985176410.3 ex]
-- … **Utility Belt** — 13426 listings (13406 priced) [0.2–398916549611043.2 ex]
+- … **Utility Belt** — 13437 listings (13417 priced) [0.2–398916549611043.2 ex]
 - … **Prismatic Ring** — 12479 listings (12452 priced) [0.2–398916549611043.2 ex]
 - … **Solar Amulet** — 12121 listings (12095 priced) [0.3–3985176410.3 ex]
 - … **Amethyst Ring** — 11979 listings (11964 priced) [0.2–398916545621877.7 ex]
@@ -469,9 +469,9 @@ intercept: `-11.0632`  ·  log_price: True  ·  ilvl: `0.15140`  ·  n_mods: `-0
 - … **Jade Amulet** — 7589 listings (7573 priced) [0.3–398916545621877.7 ex]
 - … **Amber Amulet** — 7524 listings (7515 priced) [0.3–3985176410.3 ex]
 - … **Pearl Ring** — 7419 listings (7410 priced) [0.2–398916549611043.2 ex]
-- … **Plate Belt** — 7360 listings (7328 priced) [0.3–398916553600208.8 ex]
+- … **Plate Belt** — 7369 listings (7337 priced) [0.3–398916553600208.8 ex]
 - … **Ancestral Tiara** — 7301 listings (7268 priced) [0.3–398912568423.8 ex]
 - … **Bloodstone Amulet** — 7268 listings (7256 priced) [0.3–4275054.0 ex]
 - … **Azure Amulet** — 6939 listings (6935 priced) [0.3–3985176410.3 ex]
 - … **Lunar Amulet** — 6871 listings (6856 priced) [0.3–398916549611043.2 ex]
-- … **Heavy Belt** — 6472 listings (6456 priced) [0.3–398916553600208.8 ex]
+- … **Heavy Belt** — 6483 listings (6467 priced) [0.3–398916553600208.8 ex]
