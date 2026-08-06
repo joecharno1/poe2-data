@@ -1,10 +1,10 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-08-05T23:44:31+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-08-06T01:39:36+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
-_Current backtest: typical error ×22.52, 18% within ±30%, skill +0.08_
+_Current backtest: typical error ×22.51, 18% within ±30%, skill +0.08_
 
 ## jewel — 87455 listings
 
@@ -88,25 +88,25 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.13 · per top-tier rol
 
 _Item-level effects: per ilvl ÷1.04 · per extra mod ×1.00 · per top-tier roll ×2.57 · corrupted ×1.11 · per socket ÷1.08 · quality ×1.07_
 
-## accessory.belt — 47001 listings
+## accessory.belt — 47068 listings
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| Minions have #% increased maximum Life | 22 | ×2.84 |  |
-| Minions have #% increased Movement Speed | 13 | ×2.81 |  |
-| Minions have #% increased Area of Effect | 20 | ×2.79 |  |
-| total ele res above 80 | 9 | ×2.47 | universal |
-| Offering Skills have #% increased Duration | 45 | ×2.41 |  |
-| Minions deal #% increased Damage with Command Skills | 42 | ×2.20 |  |
-| T1 roll: #% to Chaos Resistance | — | ×2.15 | universal |
-| total ele res | 35 | ×1.98 | universal |
-| Minions have #% increased Immobilisation buildup | 48 | ×1.90 |  |
-| total chaos res | 18 | ×1.74 | universal |
-| T1 roll: # to Stun Threshold | — | ÷2.36 |  |
-| T2 roll: # to maximum Life | — | ÷2.35 | universal |
-| T1 roll: # to # Physical Thorns damage | — | ÷2.34 |  |
+| T1 roll: #% to Chaos Resistance | — | ×3.20 | universal |
+| Minions have #% increased Movement Speed | 13 | ×2.80 |  |
+| Minions have #% increased maximum Life | 22 | ×2.79 |  |
+| Minions have #% increased Area of Effect | 20 | ×2.78 |  |
+| Offering Skills have #% increased Duration | 45 | ×2.53 |  |
+| total chaos res | 18 | ×2.35 | universal |
+| Minions deal #% increased Damage with Command Skills | 42 | ×2.14 |  |
+| total ele res | 35 | ×2.12 | universal |
+| total ele res above 80 | 8 | ×1.99 | universal |
+| Minions have #% increased Immobilisation buildup | 48 | ×1.95 |  |
+| #% to Chaos Resistance | 18 | ÷2.31 | universal |
+| #% to Lightning Resistance | 31 | ÷1.96 | universal |
+| #% to Fire Resistance | 31 | ÷1.96 | universal |
 
-_Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.02 · per top-tier roll ×2.30 · corrupted ×3.06 · per socket ×4.61_
+_Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.02 · per top-tier roll ×1.56 · corrupted ×3.82 · per socket ×4.21_
 
 ## armour.chest — 46647 listings
 
