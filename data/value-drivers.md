@@ -1,6 +1,6 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-08-11T22:10:46+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-08-11T23:55:01+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
@@ -430,14 +430,14 @@ _Item-level effects: per ilvl ×1.16 · per extra mod ÷1.24 · per top-tier rol
 
 ## Current build meta (demand context)
 
-- Martial Artist: 20.7% ↓
-- Gemling Legionnaire: 15.7% ↑
-- Spirit Walker: 11.5% ↑
-- Deadeye: 8.6% ↓
-- Oracle: 5.5% ↑
-- Stormweaver: 4.6% ↑
-- Infernalist: 4.4% ↑
+- Martial Artist: 20.5% ↓
+- Gemling Legionnaire: 15.8% ↑
+- Spirit Walker: 11.6% ↑
+- Deadeye: 8.5% ↓
+- Oracle: 5.6% ↑
+- Stormweaver: 4.7% ↑
+- Infernalist: 4.5% ↑
 - Titan: 3.6% ↓
-- Blood Mage: 3.5% →
+- Blood Mage: 3.5% ↑
 - Disciple of Varashta: 3.3% ↓
 
