@@ -1,6 +1,6 @@
 # POE2 Rare Pricing — Runes of Aldur
 
-_Generated 2026-08-17T04:23:59+00:00 by POE2-Scanner 0.1.0._
+_Generated 2026-08-17T06:17:19+00:00 by POE2-Scanner 0.1.0._
 
 ## Dataset
 - Rare listings: **755220** (752794 priced in exalted)
