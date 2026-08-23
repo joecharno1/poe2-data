@@ -1,6 +1,6 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-08-23T20:28:35+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-08-23T22:15:53+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
@@ -72,7 +72,7 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.13 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| # to Level of all Projectile Skills | 2 | ×4.10 | 8% of ladder (rising) |
+| # to Level of all Projectile Skills | 2 | ×4.10 | 8% of ladder (falling) |
 | #% to all Elemental Resistances [implicit] | 9 | ×2.58 | universal |
 | # to Level of all Melee Skills | 2 | ×2.44 | 35% of ladder (falling) |
 | # to Level of all Spell Skills | 2 | ×2.42 | 14% of ladder (rising) |
@@ -256,7 +256,7 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.10 · per top-tier rol
 | Gain #% of Damage as Extra Damage of all Elements [rune] | 5 | ×19.80 |  |
 | # to Level of all Attack Skills [crafted] | 3 | ×11.93 |  |
 | Grenade Skills Fire an additional Projectile | 1 | ×4.41 |  |
-| T1 roll: # to Level of all Projectile Skills | — | ×3.69 | 8% of ladder (rising) |
+| T1 roll: # to Level of all Projectile Skills | — | ×3.69 | 8% of ladder (falling) |
 | Adds # to # Fire Damage [rune] | 14.5 | ×3.06 |  |
 | #% increased Attack Speed (Local) [crafted] | 15 | ×2.85 | 43% of ladder (falling) |
 | Grenade Skills have +# Cooldown Use | 1 | ×2.83 |  |
@@ -338,7 +338,7 @@ _Item-level effects: per ilvl ×1.32 · per extra mod ÷1.03 · per top-tier rol
 | # to Level of all Attack Skills [crafted] | 2 | ×9.86 |  |
 | Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ×3.94 |  |
 | #% increased Physical Damage [rune] | 18 | ×3.43 | 35% of ladder (falling) |
-| T1 roll: # to Level of all Projectile Skills | — | ×2.52 | 8% of ladder (rising) |
+| T1 roll: # to Level of all Projectile Skills | — | ×2.52 | 8% of ladder (falling) |
 | # to Accuracy Rating (Local) [desecrated] | 101 | ×1.94 |  |
 | T1 roll: Adds # to # Fire Damage | — | ×1.80 |  |
 | # to Level of all Melee Skills | 3 | ×1.73 | 35% of ladder (falling) |
@@ -432,12 +432,12 @@ _Item-level effects: per ilvl ×1.16 · per extra mod ÷1.24 · per top-tier rol
 
 - Martial Artist: 19.8% ↓
 - Gemling Legionnaire: 16.4% ↑
-- Spirit Walker: 11.5% ↓
-- Deadeye: 8.5% ↑
-- Oracle: 5.7% ↑
+- Spirit Walker: 11.4% ↓
+- Deadeye: 8.4% ↓
+- Oracle: 5.8% ↑
 - Infernalist: 4.9% ↑
 - Stormweaver: 4.7% ↑
 - Blood Mage: 3.5% ↓
-- Titan: 3.4% ↓
-- Disciple of Varashta: 3.1% ↓
+- Titan: 3.4% ↑
+- Disciple of Varashta: 3.0% ↓
 
