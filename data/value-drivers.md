@@ -1,6 +1,6 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-08-28T20:43:44+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-08-28T22:30:45+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
@@ -78,7 +78,7 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.13 · per top-tier rol
 | # to Level of all Spell Skills | 2 | ×2.42 | 14% of ladder (falling) |
 | # to maximum Life | 84 | ×2.41 | universal |
 | total life above 80 | 32 | ×2.35 | universal |
-| # to Level of all Minion Skills | 2 | ×2.22 | 5% of ladder (rising) |
+| # to Level of all Minion Skills | 2 | ×2.22 | 5% of ladder (falling) |
 | # to Spirit | 43 | ×1.66 |  |
 | #% increased Spell Damage | 22 | ×1.51 | 14% of ladder (falling) |
 | T1 roll: #% increased Critical Damage Bonus | — | ×1.47 |  |
@@ -140,7 +140,7 @@ _Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.02 · per top-tier rol
 | total life | 88 | ×2.07 | universal |
 | total chaos res | 19 | ×1.77 | universal |
 | #% increased Rarity of Items found [desecrated] | 16 | ×1.70 |  |
-| T1 roll: # to Level of all Minion Skills | — | ×1.52 | 5% of ladder (rising) |
+| T1 roll: # to Level of all Minion Skills | — | ×1.52 | 5% of ladder (falling) |
 | T1 roll: #% increased Critical Hit Chance | — | ×1.46 |  |
 | T1 roll: #% increased Energy Shield Recharge Rate | — | ÷46.84 |  |
 | #% to Fire Resistance [desecrated] | 31 | ÷3.82 | universal |
@@ -312,16 +312,16 @@ _Item-level effects: per ilvl ×1.24 · per extra mod ÷1.13 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: # to Level of all Minion Skills | — | ×11.93 | 5% of ladder (rising) |
-| #% increased Spirit [rune] | 15 | ×5.04 | 5% of ladder (rising) |
+| T1 roll: # to Level of all Minion Skills | — | ×11.93 | 5% of ladder (falling) |
+| #% increased Spirit [rune] | 15 | ×5.04 | 5% of ladder (falling) |
 | Allies in your Presence deal #% increased Damage [crafted] | 82 | ×4.23 |  |
 | Allies in your Presence deal #% increased Damage [desecrated] | 54 | ×2.82 |  |
-| T2 roll: # to Level of all Minion Skills | — | ×2.76 | 5% of ladder (rising) |
+| T2 roll: # to Level of all Minion Skills | — | ×2.76 | 5% of ladder (falling) |
 | T1 roll: Allies in your Presence have #% increased Critical Damage Bonus | — | ×2.50 |  |
 | # to Strength | 27 | ×2.36 |  |
 | T2 roll: Allies in your Presence deal #% increased Damage | — | ×2.35 |  |
 | Bonded: Minions have #% increased Cooldown Recovery Rate for Command Skills [rune] | 30 | ×2.32 |  |
-| #% increased Spirit [desecrated] | 32 | ×2.19 | 5% of ladder (rising) |
+| #% increased Spirit [desecrated] | 32 | ×2.19 | 5% of ladder (falling) |
 | T2 roll: # to Strength | — | ÷2.58 |  |
 | T1 roll: # to Strength | — | ÷1.67 |  |
 | T2 roll: Allies in your Presence deal # to # added Attack Lightning Damage | — | ÷1.66 |  |
@@ -430,14 +430,14 @@ _Item-level effects: per ilvl ×1.16 · per extra mod ÷1.24 · per top-tier rol
 
 ## Current build meta (demand context)
 
-- Martial Artist: 19.8% ↓
-- Gemling Legionnaire: 16.6% ↑
-- Spirit Walker: 11.3% ↓
-- Deadeye: 8.4% ↓
-- Oracle: 5.8% ↑
-- Infernalist: 4.9% ↑
-- Stormweaver: 4.8% ↓
+- Martial Artist: 20.3% ↑
+- Gemling Legionnaire: 16.5% ↓
+- Spirit Walker: 11.2% ↓
+- Deadeye: 8.2% ↓
+- Oracle: 5.7% ↓
+- Infernalist: 4.9% ↓
+- Stormweaver: 4.7% ↓
 - Blood Mage: 3.5% ↓
-- Titan: 3.5% ↑
-- Disciple of Varashta: 3.1% ↑
+- Titan: 3.4% ↓
+- Disciple of Varashta: 3.0% ↓
 
