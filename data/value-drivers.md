@@ -1,6 +1,6 @@
 # POE2 Value Drivers — Runes of Aldur
 
-_Generated 2026-09-04T19:51:18+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
+_Generated 2026-09-04T21:41:29+00:00 by POE2-Scanner 0.1.0. What makes items expensive, per slot: each mod's price effect at its typical roll, with the build-meta demand behind it._
 
 > **Read honestly:** effects come from ASKING prices fitted at a low quantile (quick-sale level, τ=0.25), and are associations, not causes. Correlated mods split credit; thin categories are noisy.
 
@@ -15,12 +15,12 @@ _Current backtest: typical error ×22.51, 18% within ±30%, skill +0.08_
 | #% increased Critical Spell Damage Bonus | 15 | ×9.57 |  |
 | #% increased Critical Hit Chance | 10 | ×6.70 |  |
 | Recover #% of maximum Mana on Kill (Jewel) | 1 | ×5.31 |  |
-| #% increased Critical Hit Chance for Attacks | 11 | ×3.83 | 43% of ladder (falling) |
+| #% increased Critical Hit Chance for Attacks | 11 | ×3.83 | 44% of ladder (steady) |
 | T1 roll: #% increased Critical Damage Bonus | — | ×3.39 |  |
-| #% increased Attack Speed | 3 | ×2.37 | 43% of ladder (falling) |
+| #% increased Attack Speed | 3 | ×2.37 | 44% of ladder (steady) |
 | T1 roll: #% increased Critical Damage Bonus for Attack Damage | — | ×1.75 |  |
 | Recover #% of maximum Life on Kill | 1 | ×1.45 |  |
-| #% increased Spell Damage | 10 | ÷14.62 | 14% of ladder (rising) |
+| #% increased Spell Damage | 10 | ÷14.62 | 13% of ladder (falling) |
 | #% increased Chill Duration on Enemies | 20 | ÷8.95 |  |
 | T1 roll: Recover #% of maximum Mana on Kill (Jewel) | — | ÷5.80 |  |
 
@@ -32,12 +32,12 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×2.34 · per top-tier rol
 |---|---|---|---|
 | #% to Maximum Quality [implicit] | 20 | ×3.75 |  |
 | #% increased Mana Cost Efficiency of Spells | 20 | ×3.33 |  |
-| #% increased Critical Hit Chance for Spells | 17 | ×2.44 | 14% of ladder (rising) |
+| #% increased Critical Hit Chance for Spells | 17 | ×2.44 | 13% of ladder (falling) |
 | #% increased Critical Spell Damage Bonus | 20 | ×2.27 |  |
 | #% increased effect of Arcane Surge on you | 31 | ×2.24 |  |
 | Spell Skills have #% increased Area of Effect | 11 | ×2.19 |  |
 | #% increased maximum Mana [implicit] | 5 | ×2.08 |  |
-| #% increased Spell Damage | 27 | ×1.94 | 14% of ladder (rising) |
+| #% increased Spell Damage | 27 | ×1.94 | 13% of ladder (falling) |
 | #% increased Curse Magnitudes | 9 | ×1.84 |  |
 | total ele res above 80 | 13 | ×1.80 | universal |
 | T1 roll: Adds # to # Fire damage to Attacks | — | ÷2.62 |  |
@@ -72,15 +72,15 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.13 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| # to Level of all Projectile Skills | 2 | ×4.10 | 8% of ladder (falling) |
+| # to Level of all Projectile Skills | 2 | ×4.10 | 8% of ladder (rising) |
 | #% to all Elemental Resistances [implicit] | 9 | ×2.58 | universal |
-| # to Level of all Melee Skills | 2 | ×2.44 | 35% of ladder (falling) |
-| # to Level of all Spell Skills | 2 | ×2.42 | 14% of ladder (rising) |
+| # to Level of all Melee Skills | 2 | ×2.44 | 36% of ladder (falling) |
+| # to Level of all Spell Skills | 2 | ×2.42 | 13% of ladder (falling) |
 | # to maximum Life | 84 | ×2.41 | universal |
 | total life above 80 | 32 | ×2.35 | universal |
-| # to Level of all Minion Skills | 2 | ×2.22 | 5% of ladder (rising) |
+| # to Level of all Minion Skills | 2 | ×2.22 | 4% of ladder (falling) |
 | # to Spirit | 43 | ×1.66 |  |
-| #% increased Spell Damage | 22 | ×1.51 | 14% of ladder (rising) |
+| #% increased Spell Damage | 22 | ×1.51 | 13% of ladder (falling) |
 | T1 roll: #% increased Critical Damage Bonus | — | ×1.47 |  |
 | T2 roll: # to maximum Life | — | ÷4.85 | universal |
 | T1 roll: # to maximum Life | — | ÷4.69 | universal |
@@ -140,7 +140,7 @@ _Item-level effects: per ilvl ÷1.04 · per extra mod ÷1.02 · per top-tier rol
 | total life | 88 | ×2.07 | universal |
 | total chaos res | 19 | ×1.77 | universal |
 | #% increased Rarity of Items found [desecrated] | 16 | ×1.70 |  |
-| T1 roll: # to Level of all Minion Skills | — | ×1.52 | 5% of ladder (rising) |
+| T1 roll: # to Level of all Minion Skills | — | ×1.52 | 4% of ladder (falling) |
 | T1 roll: #% increased Critical Hit Chance | — | ×1.46 |  |
 | T1 roll: #% increased Energy Shield Recharge Rate | — | ÷46.84 |  |
 | #% to Fire Resistance [desecrated] | 31 | ÷3.82 | universal |
@@ -193,16 +193,16 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.01 · per top-tier rol
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | Bonded: Archon recovery period expires #% faster [rune] | 30 | ×136.95 |  |
-| # to Level of all Spell Skills [crafted] | 3 | ×38.53 | 14% of ladder (rising) |
+| # to Level of all Spell Skills [crafted] | 3 | ×38.53 | 13% of ladder (falling) |
 | T1 roll: # to Level of all Cold Spell Skills | — | ×14.02 |  |
 | T1 roll: # to Level of all Lightning Spell Skills | — | ×13.39 |  |
 | T1 roll: # to Level of all Fire Spell Skills | — | ×7.65 |  |
 | T1 roll: # to Level of all Chaos Spell Skills | — | ×7.05 |  |
-| T1 roll: # to Level of all Spell Skills | — | ×6.63 | 14% of ladder (rising) |
+| T1 roll: # to Level of all Spell Skills | — | ×6.63 | 13% of ladder (falling) |
 | Gain #% of Damage as Extra Cold Damage [desecrated] | 24 | ×4.22 |  |
 | T2 roll: # to Level of all Cold Spell Skills | — | ×3.42 |  |
 | T1 roll: # to Level of all Physical Spell Skills | — | ×2.66 |  |
-| # to Level of all Spell Skills [rune] | 1 | ÷66.48 | 14% of ladder (rising) |
+| # to Level of all Spell Skills [rune] | 1 | ÷66.48 | 13% of ladder (falling) |
 | T2 roll: #% increased Light Radius | — | ÷3.00 |  |
 | T1 roll: #% increased Freeze Buildup | — | ÷2.70 |  |
 
@@ -233,18 +233,18 @@ _Item-level effects: per ilvl ×1.00 · per extra mod ×1.00 · per top-tier rol
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | T1 roll: Companions have #% increased Attack Speed [desecrated] | — | ×638.71 |  |
-| #% increased Physical Damage [rune] | 36 | ×18.16 | 35% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×18.16 | 36% of ladder (falling) |
 | # to Level of all Attack Skills [crafted] | 2 | ×10.92 |  |
 | Bonded: Adds # to # Physical Damage to Attacks [rune] | 8 | ×4.26 |  |
 | Adds # to # Lightning Damage [rune] | 15.5 | ×4.00 |  |
 | #% to Critical Damage Bonus [desecrated] | 14 | ×3.31 |  |
 | Adds # to # Cold Damage [rune] | 12 | ×3.27 |  |
 | #% to Critical Hit Chance [crafted] | 3.48 | ×2.89 |  |
-| #% increased Attack Speed (Local) [crafted] | 14 | ×2.84 | 43% of ladder (falling) |
+| #% increased Attack Speed (Local) [crafted] | 14 | ×2.84 | 44% of ladder (steady) |
 | Bonded: #% increased Projectile Speed [rune] | 20 | ×2.55 |  |
 | Companions have #% increased Attack Speed [desecrated] | 15 | ÷279.19 |  |
 | Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷9.36 |  |
-| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷5.51 | 43% of ladder (falling) |
+| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷5.51 | 44% of ladder (steady) |
 
 _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.10 · per top-tier roll ×2.10 · corrupted ×1.75 · per socket ×1.04 · quality ×1.04_
 
@@ -252,15 +252,15 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.10 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Physical Damage [rune] | 36 | ×375.17 | 35% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×375.17 | 36% of ladder (falling) |
 | Gain #% of Damage as Extra Damage of all Elements [rune] | 5 | ×19.80 |  |
 | # to Level of all Attack Skills [crafted] | 3 | ×11.93 |  |
 | Grenade Skills Fire an additional Projectile | 1 | ×4.41 |  |
-| T1 roll: # to Level of all Projectile Skills | — | ×3.69 | 8% of ladder (falling) |
+| T1 roll: # to Level of all Projectile Skills | — | ×3.69 | 8% of ladder (rising) |
 | Adds # to # Fire Damage [rune] | 14.5 | ×3.06 |  |
-| #% increased Attack Speed (Local) [crafted] | 15 | ×2.85 | 43% of ladder (falling) |
+| #% increased Attack Speed (Local) [crafted] | 15 | ×2.85 | 44% of ladder (steady) |
 | Grenade Skills have +# Cooldown Use | 1 | ×2.83 |  |
-| T1 roll: #% increased Physical Damage | — | ×2.61 | 35% of ladder (falling) |
+| T1 roll: #% increased Physical Damage | — | ×2.61 | 36% of ladder (falling) |
 | T1 roll: Adds # to # Fire Damage | — | ×2.53 |  |
 | Bonded: #% increased effect of Fully Broken Armour [rune] | 40 | ÷147.78 |  |
 | T2 roll: Grenade Skills Fire an additional Projectile | — | ÷5.65 |  |
@@ -273,14 +273,14 @@ _Item-level effects: per ilvl ÷1.05 · per extra mod ÷1.15 · per top-tier rol
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
 | Adds # to # Cold Damage [rune] | 12 | ×38.17 |  |
-| # to Level of all Melee Skills [desecrated] | 3 | ×10.90 | 35% of ladder (falling) |
+| # to Level of all Melee Skills [desecrated] | 3 | ×10.90 | 36% of ladder (falling) |
 | #% increased Magnitude of Shock you inflict [desecrated] | 18 | ×6.07 |  |
 | Adds # to # Physical Damage [crafted] | 39 | ×5.82 |  |
 | #% increased Freeze Buildup [desecrated] | 18 | ×5.71 |  |
 | # to Level of all Attack Skills [crafted] | 3 | ×5.52 |  |
-| #% increased Physical Damage [rune] | 36 | ×3.33 | 35% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×3.33 | 36% of ladder (falling) |
 | Adds # to # Lightning Damage [rune] | 31 | ×3.32 |  |
-| # to Level of all Melee Skills | 4 | ×3.31 | 35% of ladder (falling) |
+| # to Level of all Melee Skills | 4 | ×3.31 | 36% of ladder (falling) |
 | #% increased Elemental Damage with Attacks [rune] | 30 | ×2.85 |  |
 | Bonded: #% increased Freeze Buildup [rune] | 30 | ÷23.35 |  |
 | #% to Critical Damage Bonus [desecrated] | 15 | ÷3.31 |  |
@@ -292,16 +292,16 @@ _Item-level effects: per ilvl ×1.15 · per extra mod ÷1.27 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| # to Level of all Spell Skills [crafted] | 5 | ×12.32 | 14% of ladder (rising) |
+| # to Level of all Spell Skills [crafted] | 5 | ×12.32 | 13% of ladder (falling) |
 | T1 roll: # to Level of all Fire Spell Skills | — | ×6.83 |  |
-| #% increased Critical Hit Chance for Spells [rune] | 28 | ×6.60 | 14% of ladder (rising) |
-| #% increased Cast Speed [crafted] | 42 | ×6.25 | 14% of ladder (rising) |
-| T1 roll: # to Level of all Spell Skills | — | ×5.35 | 14% of ladder (rising) |
+| #% increased Critical Hit Chance for Spells [rune] | 28 | ×6.60 | 13% of ladder (falling) |
+| #% increased Cast Speed [crafted] | 42 | ×6.25 | 13% of ladder (falling) |
+| T1 roll: # to Level of all Spell Skills | — | ×5.35 | 13% of ladder (falling) |
 | T1 roll: # to Level of all Chaos Spell Skills | — | ×5.19 |  |
-| #% increased Spell Damage [rune] | 60 | ×4.68 | 14% of ladder (rising) |
+| #% increased Spell Damage [rune] | 60 | ×4.68 | 13% of ladder (falling) |
 | T1 roll: # to Level of all Physical Spell Skills | — | ×4.60 |  |
 | # to Level of all Cold Spell Skills | 5 | ×3.79 |  |
-| # to Level of all Spell Skills [rune] | 1 | ×2.97 | 14% of ladder (rising) |
+| # to Level of all Spell Skills [rune] | 1 | ×2.97 | 13% of ladder (falling) |
 | Bonded: Break Armour on Critical Hit with Spells equal to #% of Physical Damage dealt [rune] | 24 | ÷9.87 |  |
 | #% increased Light Radius | 15 | ÷2.79 |  |
 | Bonded: #% increased Critical Damage Bonus [rune] | 25 | ÷2.63 |  |
@@ -312,16 +312,16 @@ _Item-level effects: per ilvl ×1.24 · per extra mod ÷1.13 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: # to Level of all Minion Skills | — | ×11.93 | 5% of ladder (rising) |
-| #% increased Spirit [rune] | 15 | ×5.04 | 5% of ladder (rising) |
+| T1 roll: # to Level of all Minion Skills | — | ×11.93 | 4% of ladder (falling) |
+| #% increased Spirit [rune] | 15 | ×5.04 | 4% of ladder (falling) |
 | Allies in your Presence deal #% increased Damage [crafted] | 82 | ×4.23 |  |
 | Allies in your Presence deal #% increased Damage [desecrated] | 54 | ×2.82 |  |
-| T2 roll: # to Level of all Minion Skills | — | ×2.76 | 5% of ladder (rising) |
+| T2 roll: # to Level of all Minion Skills | — | ×2.76 | 4% of ladder (falling) |
 | T1 roll: Allies in your Presence have #% increased Critical Damage Bonus | — | ×2.50 |  |
 | # to Strength | 27 | ×2.36 |  |
 | T2 roll: Allies in your Presence deal #% increased Damage | — | ×2.35 |  |
 | Bonded: Minions have #% increased Cooldown Recovery Rate for Command Skills [rune] | 30 | ×2.32 |  |
-| #% increased Spirit [desecrated] | 32 | ×2.19 | 5% of ladder (rising) |
+| #% increased Spirit [desecrated] | 32 | ×2.19 | 4% of ladder (falling) |
 | T2 roll: # to Strength | — | ÷2.58 |  |
 | T1 roll: # to Strength | — | ÷1.67 |  |
 | T2 roll: Allies in your Presence deal # to # added Attack Lightning Damage | — | ÷1.66 |  |
@@ -332,17 +332,17 @@ _Item-level effects: per ilvl ×1.32 · per extra mod ÷1.03 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| #% increased Attack Speed (Local) [crafted] | 23 | ×30.15 | 43% of ladder (falling) |
+| #% increased Attack Speed (Local) [crafted] | 23 | ×30.15 | 44% of ladder (steady) |
 | #% to Critical Hit Chance [crafted] | 3.48 | ×11.16 |  |
 | Companions have #% increased Attack Speed [desecrated] | 15 | ×10.30 |  |
 | # to Level of all Attack Skills [crafted] | 2 | ×9.86 |  |
 | Bonded: #% increased Magnitude of Shock you inflict [rune] | 30 | ×3.94 |  |
-| #% increased Physical Damage [rune] | 18 | ×3.43 | 35% of ladder (falling) |
-| T1 roll: # to Level of all Projectile Skills | — | ×2.52 | 8% of ladder (falling) |
+| #% increased Physical Damage [rune] | 18 | ×3.43 | 36% of ladder (falling) |
+| T1 roll: # to Level of all Projectile Skills | — | ×2.52 | 8% of ladder (rising) |
 | # to Accuracy Rating (Local) [desecrated] | 101 | ×1.94 |  |
 | T1 roll: Adds # to # Fire Damage | — | ×1.80 |  |
-| # to Level of all Melee Skills | 3 | ×1.73 | 35% of ladder (falling) |
-| T2 roll: #% increased Attack Speed (Local) [crafted] | — | ÷30.12 | 43% of ladder (falling) |
+| # to Level of all Melee Skills | 3 | ×1.73 | 36% of ladder (falling) |
+| T2 roll: #% increased Attack Speed (Local) [crafted] | — | ÷30.12 | 44% of ladder (steady) |
 | T1 roll: Companions have #% increased Attack Speed [desecrated] | — | ÷5.81 |  |
 | T1 roll: Adds # to # Cold Damage | — | ÷3.93 |  |
 
@@ -355,14 +355,14 @@ _Item-level effects: per ilvl ×1.22 · per extra mod ÷1.18 · per top-tier rol
 | #% increased Energy Shield [crafted] | 73 | ×3.98 |  |
 | #% to Chaos Resistance | 20 | ×3.69 | universal |
 | total weapon spell power | 68 | ×3.53 | universal |
-| T1 roll: #% increased Spell Damage [crafted] | — | ×3.05 | 14% of ladder (rising) |
-| #% increased Cast Speed [crafted] | 28 | ×3.04 | 14% of ladder (rising) |
+| T1 roll: #% increased Spell Damage [crafted] | — | ×3.05 | 13% of ladder (falling) |
+| #% increased Cast Speed [crafted] | 28 | ×3.04 | 13% of ladder (falling) |
 | #% increased Critical Spell Damage Bonus [desecrated] | 22 | ×2.99 |  |
-| #% increased Critical Hit Chance for Spells [crafted] | 50 | ×2.87 | 14% of ladder (rising) |
-| #% increased Critical Hit Chance for Spells [desecrated] | 42 | ×2.81 | 14% of ladder (rising) |
+| #% increased Critical Hit Chance for Spells [crafted] | 50 | ×2.87 | 13% of ladder (falling) |
+| #% increased Critical Hit Chance for Spells [desecrated] | 42 | ×2.81 | 13% of ladder (falling) |
 | # to maximum Energy Shield (Local) [desecrated] | 67 | ×2.57 | universal |
 | #% increased Fire Damage | 69 | ×1.87 |  |
-| #% increased Spell Damage [crafted] | 83 | ÷7.33 | 14% of ladder (rising) |
+| #% increased Spell Damage [crafted] | 83 | ÷7.33 | 13% of ladder (falling) |
 | T1 roll: #% to Chaos Resistance | — | ÷5.60 | universal |
 | T1 roll: #% to Cold Resistance | — | ÷4.26 | universal |
 
@@ -374,17 +374,17 @@ _Item-level effects: per ilvl ×1.23 · per extra mod ÷1.20 · per top-tier rol
 |---|---|---|---|
 | T1 roll: Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | — | ×136.40 |  |
 | Adds # to # Lightning damage to Attacks [desecrated] | 21.5 | ×3.98 |  |
-| #% increased Attack Speed [desecrated] | 12 | ×3.51 | 43% of ladder (falling) |
-| #% increased Attack Speed | 14 | ×2.83 | 43% of ladder (falling) |
-| #% increased Critical Hit Chance for Attacks [implicit] | 25 | ×2.22 | 43% of ladder (falling) |
-| #% increased Attack Speed [implicit] | 8 | ×2.17 | 43% of ladder (falling) |
-| #% increased Critical Hit Chance for Attacks | 27 | ×2.14 | 43% of ladder (falling) |
-| #% increased Critical Hit Chance for Attacks [desecrated] | 23 | ×2.05 | 43% of ladder (falling) |
+| #% increased Attack Speed [desecrated] | 12 | ×3.51 | 44% of ladder (steady) |
+| #% increased Attack Speed | 14 | ×2.83 | 44% of ladder (steady) |
+| #% increased Critical Hit Chance for Attacks [implicit] | 25 | ×2.22 | 44% of ladder (steady) |
+| #% increased Attack Speed [implicit] | 8 | ×2.17 | 44% of ladder (steady) |
+| #% increased Critical Hit Chance for Attacks | 27 | ×2.14 | 44% of ladder (steady) |
+| #% increased Critical Hit Chance for Attacks [desecrated] | 23 | ×2.05 | 44% of ladder (steady) |
 | Adds # to # Fire damage to Attacks [desecrated] | 23 | ×2.04 |  |
 | Adds # to # Physical Damage to Attacks [desecrated] | 12.5 | ×2.04 |  |
 | Projectile Attacks have a #% chance to fire two additional Projectiles while moving [desecrated] | 10 | ÷13.15 |  |
-| T2 roll: #% increased Attack Speed | — | ÷3.74 | 43% of ladder (falling) |
-| T1 roll: #% increased Attack Speed | — | ÷3.11 | 43% of ladder (falling) |
+| T2 roll: #% increased Attack Speed | — | ÷3.74 | 44% of ladder (steady) |
+| T1 roll: #% increased Attack Speed | — | ÷3.11 | 44% of ladder (steady) |
 
 _Item-level effects: per ilvl ×1.25 · per extra mod ÷1.04 · per top-tier roll ×1.96 · corrupted ×2.88_
 
@@ -412,17 +412,17 @@ _Item-level effects: per ilvl ×1.19 · per extra mod ÷1.19 · per top-tier rol
 
 | driver | typical roll | price effect | demand |
 |---|---|---|---|
-| T1 roll: #% increased Physical Damage [desecrated] | — | ×24.39 | 35% of ladder (falling) |
-| #% increased Physical Damage [desecrated] | 112 | ×10.43 | 35% of ladder (falling) |
-| #% increased Physical Damage [rune] | 36 | ×5.46 | 35% of ladder (falling) |
-| #% increased Attack Speed (Local) [desecrated] | 15 | ×4.08 | 43% of ladder (falling) |
+| T1 roll: #% increased Physical Damage [desecrated] | — | ×24.39 | 36% of ladder (falling) |
+| #% increased Physical Damage [desecrated] | 112 | ×10.43 | 36% of ladder (falling) |
+| #% increased Physical Damage [rune] | 36 | ×5.46 | 36% of ladder (falling) |
+| #% increased Attack Speed (Local) [desecrated] | 15 | ×4.08 | 44% of ladder (steady) |
 | # to Level of all Attack Skills [crafted] | 3 | ×2.46 |  |
 | T1 roll: #% to Critical Damage Bonus | — | ×2.36 |  |
-| #% increased Attack Speed (Local) [crafted] | 23 | ×2.04 | 43% of ladder (falling) |
-| # to Level of all Melee Skills | 4 | ×1.81 | 35% of ladder (falling) |
+| #% increased Attack Speed (Local) [crafted] | 23 | ×2.04 | 44% of ladder (steady) |
+| # to Level of all Melee Skills | 4 | ×1.81 | 36% of ladder (falling) |
 | T1 roll: Adds # to # Fire Damage | — | ×1.61 |  |
 | T1 roll: Gain # Mana per enemy killed | — | ×1.58 |  |
-| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷412.17 | 43% of ladder (falling) |
+| T1 roll: #% increased Attack Speed (Local) [desecrated] | — | ÷412.17 | 44% of ladder (steady) |
 | # to Accuracy Rating (Local) [desecrated] | 100 | ÷6.32 |  |
 | T1 roll: Adds # to # Cold Damage | — | ÷3.62 |  |
 
@@ -430,14 +430,14 @@ _Item-level effects: per ilvl ×1.16 · per extra mod ÷1.24 · per top-tier rol
 
 ## Current build meta (demand context)
 
-- Martial Artist: 20.5% ↓
-- Gemling Legionnaire: 16.6% ↑
-- Spirit Walker: 11.1% ↓
-- Deadeye: 8.0% ↓
-- Oracle: 5.7% ↑
-- Infernalist: 5.0% ↑
-- Stormweaver: 4.7% ↑
-- Blood Mage: 3.5% ↑
+- Martial Artist: 20.3% ↓
+- Gemling Legionnaire: 15.5% ↓
+- Spirit Walker: 12.6% ↑
+- Deadeye: 8.2% ↑
+- Oracle: 5.6% ↓
+- Infernalist: 4.5% ↓
+- Stormweaver: 4.4% ↓
+- Disciple of Varashta: 3.5% ↑
+- Blood Mage: 3.4% ↓
 - Titan: 3.4% ↓
-- Disciple of Varashta: 3.2% ↑
 
